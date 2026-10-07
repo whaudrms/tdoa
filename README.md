@@ -23,6 +23,34 @@ CSV 읽기 → 평균 제거 → 대역통과 필터 → 포락선 피크 검출
 python3 -m signal_process.process_ultrasound
 ```
 
+## 실행 결과 예시
+
+잡음이 포함된 `signal_example/waveforms_noisy.csv`를 처리한 결과입니다.
+신호 구간은 2.5–4.2 ms이며, 오차 평가용 실제 위치는 `(0.4, 0.6)` m로
+지정했습니다.
+
+### 신호처리 및 피크 검출
+
+회색은 원본 파형, 파란색은 대역통과 필터 결과, 주황색은 포락선입니다.
+빨간 점과 점선은 센서별 포락선 피크 및 그 시각을 표시합니다.
+
+![센서 4개의 원본·필터링 파형, 포락선과 피크 시각](docs/images/processed_signals.png)
+
+### TDOA 위치 추정
+
+실선은 센서 쌍별 TDOA 곡선, 검은 삼각형은 센서, 초록 별은 실제 위치,
+빨간 X는 추정 위치입니다. 오른쪽에는 S1 기준 피크 시간차를 표시합니다.
+이 예제의 추정 위치는 약 `(0.4040, 0.5965)` m, 위치 오차는 약 `5.35 mm`입니다.
+
+![TDOA 곡선과 추정 음원 위치 및 센서별 시간차](docs/images/tdoa_position.png)
+
+위 이미지는 프로젝트 루트에서 다음 명령으로 다시 생성할 수 있습니다.
+`docs/images/` 폴더에 저장된 README용 이미지를 갱신합니다.
+
+```bash
+python3 tdoa.py --csv signal_example/waveforms_noisy.csv --true-pos 0.4 0.6 --search-range-ms 2.5 4.2 --save docs/images/tdoa_position.png --save-signals docs/images/processed_signals.png --no-show
+```
+
 ## 설치
 
 Python 3.9 이상과 pip가 필요합니다. 프로젝트 폴더에서 가상환경을 만들고

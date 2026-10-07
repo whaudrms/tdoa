@@ -44,7 +44,7 @@ def visualize_tdoa(sensors, true_pos, estimated_pos, tdoa, c, output=None,
         error = np.linalg.norm(true_pos - estimated_pos)
         title += f' (error: {error:.6f} m)'
     ax.scatter(*estimated_pos, marker='x', s=100, linewidths=2,
-               color='red', label='Estimated source', zorder=6)
+               color='red', label='Estimated position', zorder=6)
     ax.set(title=title,
            xlabel='X [m]', ylabel='Y [m]',
            xlim=(lower[0], upper[0]), ylim=(lower[1], upper[1]))
