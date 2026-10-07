@@ -1,0 +1,14 @@
+parameter,value,unit
+sample_rate_hz_per_channel,500000.0,Hz
+carrier_frequency_hz,40000.0,Hz
+burst_cycles,12,cycles
+burst_duration_s,0.0003,s
+emission_time_s,0.001,s
+record_duration_s,0.008,s
+sample_count_per_channel,4000,samples
+sound_speed_m_per_s,343.0,m/s
+noise_std,0.03,arbitrary_amplitude_units
+random_seed,42,integer
+channel_time_offset_s,0,s
+reflection_amplitude,0,arbitrary_amplitude_units
+dc_offset,0,arbitrary_amplitude_units
