@@ -8,13 +8,49 @@
 CSV 읽기 → 평균 제거 → 대역통과 필터 → 포락선 피크 검출 →
 피크 시간차 계산 → 위치 추정 → 신호 및 위치 시각화.
 
-- `tdoa.py`: 전체 실행과 `estimate_position()` 위치 추정
+- `tdoa.py`: 전체 실행과 신호처리·위치 추정 연결
+- `optimization/linear_least_squares.py`: `estimate_position()` 선형 최소제곱 위치 추정
+- `optimization/levenberg_marquardt.py`: 고정 lambda 감쇠를 적용한 LM 변형
+- `optimization/gauss_newton.py`: 잔차 야코비안 기반 순수 Gauss–Newton 위치 추정
+- `optimization/newton_method.py`: 정확한 헤시안을 사용하는 순수 Newton 위치 추정
+- `optimization/gradient_descent.py`: 거리차 잔차의 비선형 최소제곱 gradient descent
 - `signal_process/process_ultrasound.py`: 필터링, 피크 검출, 시간 출력 및 신호 그래프
 - `visualization/tdoa_visualization.py`: TDOA 위치 그래프
 - `visualization/waveform_visualization.py`: CSV 읽기 및 원본 파형 그래프
 
 합성 초음파 파형과 정답 도착 시간 CSV는 `signal_example/`에 있습니다.
 생성 조건과 읽기 예제는 [합성 데이터 설명](signal_example/README.md)을 참고하세요.
+
+`--solver`로 위치 추정 방법을 선택합니다. 기본값은 `linear_least_squares`입니다.
+
+```bash
+python3 tdoa.py --solver linear_least_squares
+python3 tdoa.py --solver gradient_descent
+python3 tdoa.py --solver newton_method
+python3 tdoa.py --solver gauss_newton
+python3 tdoa.py --solver levenberg_marquardt --lm-lambda 0.001
+```
+
+`gradient_descent`는 선형 최소제곱 해를 초기값으로 사용하고, 실제 거리차
+잔차 제곱합을 Armijo backtracking으로 줄입니다. 그래디언트 노름이
+`1e-8` 이하이면 종료하며 최대 반복 횟수는 10,000회입니다. 미수렴 시
+오류를 보고합니다. 비볼록 문제이므로 전역 최적해는 보장하지 않습니다.
+
+`newton_method`도 같은 초기값과 종료 조건을 사용합니다. 잔차의 2차 미분까지
+포함한 헤시안으로 `H * delta_p = -gradient`를 풀고 `p += delta_p`로
+갱신합니다. 감쇠와 backtracking 없이 전체 스텝을 적용하므로 목적함수
+감소나 수렴을 보장하지 않습니다. 헤시안이 특이하거나 미수렴하면 오류를 보고합니다.
+
+`gauss_newton`은 같은 초기값과 종료 조건을 사용하며, 잔차 야코비안 `J`로
+`(J.T @ J) * delta_p = -J.T @ e`를 풀어 전체 스텝을 적용합니다.
+감쇠나 backtracking은 없으며, 목적함수 감소나 수렴을 보장하지 않습니다.
+야코비안의 열 랭크가 부족하거나 미수렴하면 오류를 보고합니다.
+
+`levenberg_marquardt`는 `(J.T @ J + lambda * I) * delta_p = -J.T @ e`를
+풀어 전체 스텝을 적용합니다. `--lm-lambda`는 유한한 0 이상의 값이며 기본값은
+0.001입니다. 0이면 Gauss–Newton과 같습니다. 같은 초기값과 종료 조건을
+사용하며, lambda 자동 조절이나 스텝 수락/거부를 포함하지 않는 고정 감쇠
+변형입니다. 목적함수 감소나 수렴을 보장하지 않습니다.
 
 신호처리만 단독 실행하려면 다음 명령을 사용합니다.
 자세한 옵션은 [신호처리 설명](signal_process/README.md)에 있습니다.
@@ -197,3 +233,32 @@ python3 -m visualization.waveform_visualization --truth signal_example/ground_tr
 형태를 가정해 피크 차이를 TDOA로 사용합니다. 잡음·반사파·채널 응답 차이는
 오차를 만들 수 있으며 신호 유무 판정은 아직 포함하지 않았습니다.
 신호처리는 전체 기록을 사용하는 오프라인 방식입니다.
+
+## 모든 솔버 비교
+
+```bash
+python3 run.py
+python3 run.py --no-show
+python3 run.py --csv signal_example/waveforms_clean.csv --output-dir results/clean --no-show
+python3 run.py --csv measurement.csv --true-pos 0.4 0.6
+```
+
+`run.py`는 신호를 한 번 처리하고 동일한 TDOA로 모든 솔버를 실행합니다.
+기본 clean/noisy 예제의 실제 위치는 `signal_example/ground_truth.csv`에서
+평가용으로만 읽습니다. 다른 CSV에는 `--true-pos X Y`가 필요합니다.
+센서 좌표는 `tdoa.py`의 `SENSORS`를 사용합니다.
+
+기본 출력 폴더는 `results/solver_comparison/`이며, `comparison.png`와
+`metrics.csv`를 저장합니다. 그래프는 센서/추정 위치, 솔버별 계산 시간,
+위치 오차 막대그래프, 기준 거리 `d_0` 절대오차 막대그래프를 포함합니다.
+단일 기록의 오차 크기를 나타내며 통계적 신뢰구간은 아닙니다.
+계산 시간은 `perf_counter`로 솔버 호출 1회를 측정한 ms 값이며, 솔버 내부의
+초기화는 포함하고 CSV 읽기·공통 신호처리·오차 평가·시각화는 제외합니다.
+실행 환경에 따라 달라질 수 있으며 `metrics.csv`의 `solve_time_ms`에도 저장합니다.
+
+여기서 `d_0`는 S1까지의 거리이며 기존 솔버의 `r1` 반환값입니다.
+선형 솔버의 독립 미지수 `r1`을 그대로 평가하며, 그래프에는 솔버가 반환한
+`d_0`의 절대오차만 파란 막대로 표시합니다. `metrics.csv`에는 두 거리의
+차이, 부호 있는 `d_0` 오차, 절대오차와 목적함수도 기록합니다.
+솔버 하나가 실패해도 다른 솔버를 실행하며 그래프에 FAILED를 표시하고
+CSV에 원인을 기록합니다. 실패가 있으면 결과 저장 후 종료 코드 1을 반환합니다.

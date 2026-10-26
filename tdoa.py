@@ -5,6 +5,11 @@ from pathlib import Path
 
 import numpy as np
 
+from optimization.linear_least_squares import SOUND_SPEED, estimate_position
+from optimization.gradient_descent import estimate_position as estimate_gradient_descent
+from optimization.newton_method import estimate_position as estimate_newton
+from optimization.gauss_newton import estimate_position as estimate_gauss_newton
+from optimization.levenberg_marquardt import estimate_position as estimate_lm
 from signal_process.process_ultrasound import (
     plot_processed, print_peak_times, process_signals,
 )
@@ -14,36 +19,20 @@ from visualization.waveform_visualization import DATA_DIR, load_waveforms
 
 # Sensor coordinates [m], in S1, S2, S3, S4 order. S1 is the reference.
 SENSORS = np.array([[0., 0.], [1., 0.], [0., 1.], [1., 1.]])
-SOUND_SPEED = 343.0  # m/s
+SOLVERS = {'linear_least_squares': estimate_position,
+           'gradient_descent': estimate_gradient_descent,
+           'newton_method': estimate_newton,
+           'gauss_newton': estimate_gauss_newton,
+           'levenberg_marquardt': estimate_lm}
 EXAMPLE_TRUE_POS = None  # Evaluation only; never used to estimate.
 
 
-def estimate_position(sensors, tdoa, c=SOUND_SPEED):
-    """Solve A @ [x, y, r1] = b using measured differences relative to S1."""
-    sensors = np.asarray(sensors, dtype=float)
-    tdoa = np.asarray(tdoa, dtype=float)
-    if sensors.ndim != 2 or sensors.shape[1] != 2 or len(sensors) < 4:
-        raise ValueError('At least four 2D sensor coordinates are required')
-    if tdoa.shape != (len(sensors) - 1,):
-        raise ValueError('Provide one TDOA value per non-reference sensor')
-    if not np.isfinite(sensors).all() or not np.isfinite(tdoa).all():
-        raise ValueError('Sensor coordinates and TDOA must be finite')
-    if not np.isfinite(c) or c <= 0:
-        raise ValueError('Sound speed must be positive and finite')
-    offsets = sensors[1:] - sensors[0]
-    if np.linalg.matrix_rank(offsets) < 2:
-        raise ValueError('2D localization requires non-collinear sensors')
-    delta_r = c * tdoa
-    a = np.column_stack((offsets, delta_r))
-    b = 0.5 * (np.sum(sensors[1:] ** 2, axis=1)
-               - np.sum(sensors[0] ** 2) - delta_r ** 2)
-    estimate = np.linalg.pinv(a) @ b
-    return estimate[:2], estimate[2]
-
-
 def run_pipeline(csv_path, sensors=SENSORS, c=SOUND_SPEED,
-                 low_hz=30_000, high_hz=50_000, search_range_ms=None):
+                 low_hz=30_000, high_hz=50_000, search_range_ms=None,
+                 solver='linear_least_squares', lm_lambda=1e-3):
     """Process measured waveforms without using ground-truth positions or times."""
+    if solver not in SOLVERS:
+        raise ValueError(f'Unknown solver: {solver}; choose from {tuple(SOLVERS)}')
     time_s, raw, labels = load_waveforms(csv_path)
     expected = [f'S{i + 1}' for i in range(len(sensors))]
     if len(labels) != len(expected) or set(labels) != set(expected):
@@ -54,15 +43,20 @@ def run_pipeline(csv_path, sensors=SENSORS, c=SOUND_SPEED,
         time_s, raw, low_hz, high_hz, search_range_ms)
     peak_times = time_s[peaks]
     tdoa = peak_times[1:] - peak_times[0]
-    position, r1 = estimate_position(sensors, tdoa, c)
+    solver_options = {'damping': lm_lambda} if solver == 'levenberg_marquardt' else {}
+    position, r1 = SOLVERS[solver](sensors, tdoa, c, **solver_options)
     return dict(time_s=time_s, raw=raw, labels=expected, filtered=filtered,
                 envelope=envelope, peaks=peaks, peak_times=peak_times,
-                tdoa=tdoa, position=position, r1=r1)
+                tdoa=tdoa, position=position, r1=r1, solver=solver)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--csv', type=Path, default=DATA_DIR / 'waveforms_noisy.csv')
+    parser.add_argument('--solver', choices=tuple(SOLVERS),
+                        default='linear_least_squares', help='Position estimation method')
+    parser.add_argument('--lm-lambda', type=float, default=1e-3,
+                        help='Fixed non-negative damping for levenberg_marquardt (default: 0.001)')
     parser.add_argument('--low-hz', type=float, default=30_000)
     parser.add_argument('--high-hz', type=float, default=50_000)
     parser.add_argument('--sound-speed', type=float, default=SOUND_SPEED)
@@ -74,12 +68,15 @@ def main():
     parser.add_argument('--save-signals', type=Path, help='Save the processed waveform plot')
     parser.add_argument('--no-show', action='store_true', help='Do not open plot windows')
     args = parser.parse_args()
+    if not np.isfinite(args.lm_lambda) or args.lm_lambda < 0:
+        parser.error('--lm-lambda must be non-negative and finite')
     if args.true_pos is not None and not np.isfinite(args.true_pos).all():
         parser.error('--true-pos requires finite coordinates')
     try:
         result = run_pipeline(args.csv, SENSORS, args.sound_speed,
-                              args.low_hz, args.high_hz, args.search_range_ms)
-    except (ValueError, OSError) as exc:
+                              args.low_hz, args.high_hz, args.search_range_ms,
+                              solver=args.solver, lm_lambda=args.lm_lambda)
+    except (ValueError, OSError, RuntimeError) as exc:
         parser.error(str(exc))
 
     true_pos = None
@@ -91,6 +88,7 @@ def main():
         true_pos = EXAMPLE_TRUE_POS
 
     print(f'Input CSV: {args.csv}')
+    print(f'Solver: {result["solver"]}')
     print_peak_times(result['time_s'], result['peaks'], result['labels'])
     print('\nEstimated position [m]:', result['position'])
     print('Estimated r1 [m]:', result['r1'])
