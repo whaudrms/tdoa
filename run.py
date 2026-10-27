@@ -1,6 +1,6 @@
 """Compare all TDOA solvers on one measurement; truth is evaluation-only.
 
-The error bars are bars of single-record errors, not confidence intervals.
+Position/distance errors use one record. Timing shows repeated-call median and IQR.
 d_0 denotes distance to S1 (the value called r1 by the solvers).
 """
 
@@ -37,8 +37,60 @@ def example_truth(csv_path):
     return positions[0]
 
 
+def benchmark_solvers(tdoa, c, lm_lambda, *, warmup=5, repeats=100, seed=42):
+    """Time full solver calls, including linear initialization, in shuffled rounds.
+
+    Warmup, validation, RNG, and aggregation are outside the timed region.
+    A failed solver has no reported timing statistics, even after partial success.
+    """
+    for name, value in [('warmup', warmup), ('repeats', repeats)]:
+        if not isinstance(value, int) or isinstance(value, bool) or value < 1:
+            raise ValueError(f'{name} must be a positive integer')
+    rng = np.random.default_rng(seed)
+    names = list(SOLVERS)
+    samples = {name: [] for name in names}
+    failures = {}
+    options = {name: {'damping': lm_lambda} if name == 'levenberg_marquardt' else {}
+               for name in names}
+    for measured, rounds in [(False, warmup), (True, repeats)]:
+        for _ in range(rounds):
+            for name in rng.permutation(names):
+                if name in failures:
+                    continue
+                solver = SOLVERS[name]
+                kwargs = options[name]
+                try:
+                    if measured:
+                        start = perf_counter()
+                        position, d0 = solver(SENSORS, tdoa, c, **kwargs)
+                        elapsed_ms = (perf_counter() - start) * 1000
+                    else:
+                        position, d0 = solver(SENSORS, tdoa, c, **kwargs)
+                    if not np.isfinite(position).all() or not np.isfinite(d0):
+                        raise RuntimeError('Solver returned non-finite values')
+                    if measured:
+                        samples[name].append(elapsed_ms)
+                except (ValueError, RuntimeError, np.linalg.LinAlgError) as exc:
+                    failures[name] = str(exc)
+    statistics = {}
+    for name in names:
+        stats = dict(solve_time_ms=np.nan, solve_time_p25_ms=np.nan,
+                     solve_time_p75_ms=np.nan, timing_samples=len(samples[name]),
+                     timing_warmup=warmup, timing_repeats=repeats, timing_seed=seed,
+                     timing_status='ok')
+        if name in failures:
+            stats['timing_status'] = f'failed: {failures[name]}'
+        else:
+            q25, median, q75 = np.percentile(samples[name], [25, 50, 75])
+            stats.update(solve_time_ms=median, solve_time_p25_ms=q25,
+                         solve_time_p75_ms=q75)
+        statistics[name] = stats
+    return statistics
+
+
 def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
-                    high_hz=50_000, search_range_ms=None, lm_lambda=1e-3):
+                    high_hz=50_000, search_range_ms=None, lm_lambda=1e-3,
+                    warmup=5, repeats=100, timing_seed=42):
     """Process once, then independently solve the same measured TDOA vector."""
     true_pos = np.asarray(true_pos, dtype=float)
     if true_pos.shape != (2,) or not np.isfinite(true_pos).all():
@@ -65,11 +117,7 @@ def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
                    d0_consistency_gap_m=np.nan, objective_m2=np.nan, solve_time_ms=np.nan)
         try:
             options = {'damping': lm_lambda} if name == 'levenberg_marquardt' else {}
-            start = perf_counter()
-            try:
-                position, d0 = solver(SENSORS, tdoa, c, **options)
-            finally:
-                row['solve_time_ms'] = (perf_counter() - start) * 1000
+            position, d0 = solver(SENSORS, tdoa, c, **options)
             if not np.isfinite(position).all() or not np.isfinite(d0):
                 raise RuntimeError('Solver returned non-finite values')
             distances = np.linalg.norm(position - SENSORS, axis=1)
@@ -85,6 +133,10 @@ def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
         except (ValueError, RuntimeError, np.linalg.LinAlgError) as exc:
             row['status'] = f'failed: {exc}'
         rows.append(row)
+    timing = benchmark_solvers(tdoa, c, lm_lambda, warmup=warmup,
+                               repeats=repeats, seed=timing_seed)
+    for row in rows:
+        row.update(timing[row['solver']])
     return rows, tdoa
 
 
@@ -114,11 +166,24 @@ def plot_comparison(rows, true_pos):
     ax.legend(fontsize=8)
     labels = [row['solver'].replace('_', '\n') for row in rows]
     indices = np.arange(len(rows))
-    bars = time_ax.bar(indices, [row['solve_time_ms'] if row['status'] == 'ok'
-                                 else np.nan for row in rows], color=colors[:len(rows)])
-    time_ax.bar_label(bars, fmt='%.3f', padding=4, fontsize=9)
-    time_ax.set(title='Solver computation time (single call, including initialization)',
-                ylabel='Elapsed time [ms]')
+    times = np.array([row['solve_time_ms'] if row['status'] == 'ok'
+                      and row['timing_status'] == 'ok' else np.nan for row in rows])
+    bars = time_ax.bar(indices, times, color=colors[:len(rows)])
+    valid = np.isfinite(times)
+    if valid.any():
+        lower = times - np.array([row['solve_time_p25_ms'] for row in rows])
+        upper = np.array([row['solve_time_p75_ms'] for row in rows]) - times
+        time_ax.errorbar(indices[valid], times[valid],
+                         yerr=np.vstack((lower[valid], upper[valid])),
+                         fmt='none', ecolor='black', capsize=5, label='25–75% range')
+        time_ax.legend(fontsize=8)
+    for i in np.flatnonzero(valid):
+        time_ax.annotate(f'{times[i]:.3f}',
+                         (i, rows[i]['solve_time_p75_ms']), xytext=(0, 5),
+                         textcoords='offset points', ha='center', fontsize=9)
+    time_ax.set(title=f"Solver time: median of {rows[0]['timing_repeats']} shuffled calls"
+                      f" ({rows[0]['timing_warmup']} warmups)",
+                ylabel='Full call including initialization [ms]')
     bars = error_ax.bar(indices, [row['position_error_m'] * 1000 for row in rows],
                         color=colors[:len(rows)])
     error_ax.bar_label(bars, fmt='%.4f', padding=4, fontsize=9)
@@ -135,7 +200,7 @@ def plot_comparison(rows, true_pos):
         axis.margins(y=0.25)
         axis.grid(axis='y', alpha=0.25)
         for i, row in enumerate(rows):
-            if row['status'] != 'ok':
+            if row['status'] != 'ok' or (axis is time_ax and row['timing_status'] != 'ok'):
                 axis.text(i, 0.05, 'FAILED', transform=axis.get_xaxis_transform(),
                           ha='center', color='red', fontsize=8)
     fig.suptitle('TDOA solver comparison — single-record errors (not confidence intervals)')
@@ -151,6 +216,9 @@ def main():
     parser.add_argument('--high-hz', type=float, default=50_000)
     parser.add_argument('--search-range-ms', type=float, nargs=2, metavar=('START', 'END'))
     parser.add_argument('--lm-lambda', type=float, default=1e-3)
+    parser.add_argument('--warmup', type=int, default=5, help='Warmup calls per solver (default: 5)')
+    parser.add_argument('--repeats', type=int, default=100, help='Timed calls per solver (default: 100)')
+    parser.add_argument('--timing-seed', type=int, default=42, help='Seed for shuffled solver order')
     parser.add_argument('--output-dir', type=Path, default=Path('results/solver_comparison'))
     parser.add_argument('--no-show', action='store_true')
     args = parser.parse_args()
@@ -158,7 +226,8 @@ def main():
         true_pos = np.asarray(args.true_pos) if args.true_pos is not None else example_truth(args.csv)
         rows, tdoa = compare_solvers(args.csv, true_pos, c=args.sound_speed,
                                     low_hz=args.low_hz, high_hz=args.high_hz,
-                                    search_range_ms=args.search_range_ms, lm_lambda=args.lm_lambda)
+                                    search_range_ms=args.search_range_ms, lm_lambda=args.lm_lambda,
+                                    warmup=args.warmup, repeats=args.repeats, timing_seed=args.timing_seed)
     except (ValueError, OSError, KeyError) as exc:
         parser.error(str(exc))
     print(f'True position [m]: {true_pos}; true d_0 [m]: {rows[0]["true_d0_m"]:.9f}')
@@ -170,13 +239,18 @@ def main():
                   f'{row["d0_signed_error_m"]*1000:>+17.6f} {row["d0_consistency_gap_m"]*1000:>+23.6f}')
         else:
             print(f'{row["solver"]}: {row["status"]}')
+    print('Timing: full solver calls, including initialization; median [25%, 75%] ms')
+    for row in rows:
+        print(f"{row['solver']:<24} {row['solve_time_ms']:.6f} "
+              f"[{row['solve_time_p25_ms']:.6f}, {row['solve_time_p75_ms']:.6f}] "
+              f"n={row['timing_samples']} {row['timing_status']}")
     import matplotlib
     if args.no_show:
         matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     args.output_dir.mkdir(parents=True, exist_ok=True)
     with (args.output_dir / 'metrics.csv').open('w', newline='') as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator='\n')
         writer.writeheader()
         writer.writerows(rows)
     fig = plot_comparison(rows, true_pos)
@@ -187,7 +261,7 @@ def main():
             plt.show()
     finally:
         plt.close(fig)
-    if any(row['status'] != 'ok' for row in rows):
+    if any(row['status'] != 'ok' or row['timing_status'] != 'ok' for row in rows):
         raise SystemExit(1)
 
 
