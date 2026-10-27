@@ -1,12 +1,12 @@
 # TDOA 위치 추정 및 시각화
 
-센서 4개의 초음파 파형에서 포락선 피크 시간차(TDOA)를 구해 음원의
+센서 4개의 초음파 파형에서 포락선 교차상관 시간차(TDOA)를 구해 음원의
 2차원 위치를 추정합니다.
 
 `tdoa.py`를 실행하면 다음 과정을 한 번에 처리합니다.
 
-CSV 읽기 → 평균 제거 → 대역통과 필터 → 포락선 피크 검출 →
-피크 시간차 계산 → 위치 추정 → 신호 및 위치 시각화.
+CSV 읽기 → 평균 제거 → 대역통과 필터 → Hilbert 포락선 →
+교차상관 및 포물선 보간으로 시간차 계산 → 위치 추정 → 신호 및 위치 시각화.
 
 - `tdoa.py`: 전체 실행과 신호처리·위치 추정 연결
 - `optimization/linear_least_squares.py`: `estimate_position()` 선형 최소제곱 위치 추정
@@ -14,7 +14,7 @@ CSV 읽기 → 평균 제거 → 대역통과 필터 → 포락선 피크 검출
 - `optimization/gauss_newton.py`: 잔차 야코비안 기반 순수 Gauss–Newton 위치 추정
 - `optimization/newton_method.py`: 정확한 헤시안을 사용하는 순수 Newton 위치 추정
 - `optimization/gradient_descent.py`: 거리차 잔차의 비선형 최소제곱 gradient descent
-- `signal_process/process_ultrasound.py`: 필터링, 피크 검출, 시간 출력 및 신호 그래프
+- `signal_process/tdoa_signal_processing.py`: 필터링, 피크 검출, 시간 출력 및 신호 그래프
 - `visualization/tdoa_visualization.py`: TDOA 위치 그래프
 - `visualization/waveform_visualization.py`: CSV 읽기 및 원본 파형 그래프
 
@@ -56,7 +56,7 @@ python3 tdoa.py --solver levenberg_marquardt --lm-lambda 0.001
 자세한 옵션은 [신호처리 설명](signal_process/README.md)에 있습니다.
 
 ```bash
-python3 -m signal_process.process_ultrasound
+python3 -m signal_process.tdoa_signal_processing
 ```
 
 ## 실행 결과 예시
@@ -75,7 +75,7 @@ python3 -m signal_process.process_ultrasound
 ### TDOA 위치 추정
 
 실선은 센서 쌍별 TDOA 곡선, 검은 삼각형은 센서, 초록 별은 실제 위치,
-빨간 X는 추정 위치입니다. 오른쪽에는 S1 기준 피크 시간차를 표시합니다.
+빨간 X는 추정 위치입니다. 오른쪽에는 S1 기준 교차상관 시간차를 표시합니다.
 이 예제의 추정 위치는 약 `(0.4040, 0.5965)` m, 위치 오차는 약 `5.35 mm`입니다.
 
 ![TDOA 곡선과 추정 음원 위치 및 센서별 시간차](docs/images/tdoa_position.png)
@@ -132,7 +132,7 @@ python3 tdoa.py
 Windows에서는 `python tdoa.py`로 실행하세요.
 
 기본 입력은 `signal_example/waveforms_noisy.csv`입니다. 콘솔에 센서별
-포락선 피크 시각(s/ms), S1 기준 시간차, 추정 위치를 출력하고 두 그래프를
+진단용 포락선 피크 시각(s/ms), S1 기준 교차상관 시간차, 추정 위치를 출력하고 두 그래프를
 함께 엽니다. 신호 그래프에는 원본, 필터 결과, 포락선과 피크가 표시됩니다.
 
 위치 그래프의 왼쪽에는 센서, 실제 음원 위치(알려진 경우), 추정 위치와 센서 1을 기준으로 한
@@ -145,8 +145,8 @@ TDOA 쌍곡선이 표시됩니다. 각 곡선은 해당 측정 시간차를 만�
 이 시간차를 밀리초 단위로 표시합니다.
 
 ```text
-TDOA = 해당 센서의 피크 시각 − S1의 피크 시각
-양수: S1보다 늦은 피크 / 음수: S1보다 이른 피크
+TDOA = 포락선 교차상관으로 추정한 해당 센서의 S1 대비 지연
+양수: S1보다 늦은 신호 / 음수: S1보다 이른 신호
 ```
 
 신호 그래프의 빨간 점선은 포락선 피크 시각을 나타냅니다.
@@ -159,7 +159,7 @@ TDOA = 해당 센서의 피크 시각 − S1의 피크 시각
 python3 tdoa.py --save tdoa_visualization.png --save-signals processed.png --no-show
 ```
 
-입력 파일과 피크 탐색 구간을 지정할 수 있습니다.
+입력 파일과 교차상관 및 진단용 피크 탐색 구간을 지정할 수 있습니다.
 
 ```bash
 python3 tdoa.py --csv signal_example/waveforms_clean.csv --search-range-ms 2.5 4.2
@@ -171,10 +171,10 @@ python3 tdoa.py --csv signal_example/waveforms_clean.csv --search-range-ms 2.5 4
 | `--low-hz HZ` | 대역통과 필터 하한 | `30000` |
 | `--high-hz HZ` | 대역통과 필터 상한 | `50000` |
 | `--sound-speed VALUE` | 음속(m/s) | `343` |
-| `--search-range-ms START END` | 피크 탐색 및 신호 그래프 표시 구간(ms) | 전체 기록 |
+| `--search-range-ms START END` | 교차상관·진단용 피크 탐색 및 신호 그래프 표시 구간(ms) | 전체 기록 |
 | `--true-pos X Y` | 오차 평가용 실제 위치(m) | 미지정 |
-| `--save PATH` | 위치 그래프 저장 | 저장 안 함 |
-| `--save-signals PATH` | 처리 파형 그래프 저장 | 저장 안 함 |
+| `--save PATH` | 위치 그래프 저장 | `results/tdoa_position.png` |
+| `--save-signals PATH` | 처리 파형 그래프 저장 | `results/processed_signals.png` |
 | `--no-show` | GUI 없이 실행 | GUI 표시 |
 
 ## 실제 데이터 연결
@@ -229,8 +229,8 @@ python3 -m visualization.waveform_visualization --truth signal_example/ground_tr
 
 ## 현재 처리 방식의 범위
 
-현재 검출 시각은 포락선 최대점이며 첫 도착 시각과 다릅니다. 동일한 버스트
-형태를 가정해 피크 차이를 TDOA로 사용합니다. 잡음·반사파·채널 응답 차이는
+포락선 교차상관 최대점에 3점 포물선 보간을 적용해 TDOA를 계산합니다.
+출력과 신호 그래프의 포락선 피크는 진단용이며 위치 계산에는 사용하지 않습니다. 잡음·반사파·채널 응답 차이는
 오차를 만들 수 있으며 신호 유무 판정은 아직 포함하지 않았습니다.
 신호처리는 전체 기록을 사용하는 오프라인 방식입니다.
 

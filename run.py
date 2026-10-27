@@ -12,8 +12,8 @@ from time import perf_counter
 import numpy as np
 
 from tdoa import SENSORS, SOLVERS, SOUND_SPEED
-from signal_process.process_ultrasound import process_signals
-from visualization.waveform_visualization import DATA_DIR, load_waveforms
+from signal_process.tdoa_signal_processing import process_measurement, load_measurement
+from visualization.waveform_visualization import DATA_DIR
 
 
 def example_truth(csv_path):
@@ -99,14 +99,11 @@ def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
         raise ValueError('Sound speed must be positive and finite')
     if not np.isfinite(lm_lambda) or lm_lambda < 0:
         raise ValueError('lm_lambda must be non-negative and finite')
-    time_s, raw, labels = load_waveforms(csv_path)
-    expected = [f'S{i+1}' for i in range(len(SENSORS))]
-    if len(labels) != len(expected) or set(labels) != set(expected):
-        raise ValueError(f'CSV channels must match sensor coordinates: {expected}')
-    raw = raw[[labels.index(label) for label in expected]]
-    _, _, peaks = process_signals(time_s, raw, low_hz, high_hz, search_range_ms)
-    peak_times = time_s[peaks]
-    tdoa = peak_times[1:] - peak_times[0]
+    time_s, raw = load_measurement(csv_path)
+    if len(raw) != len(SENSORS):
+        raise ValueError('CSV channels must match sensor coordinates')
+    processed = process_measurement(time_s, raw, low_hz, high_hz, search_range_ms)
+    tdoa = processed['tdoa']
     true_d0 = np.linalg.norm(true_pos - SENSORS[0])
     rows = []
     for name, solver in SOLVERS.items():
