@@ -2,28 +2,37 @@
 
 import numpy as np
 
+# Fixed OCP: this solver does not use the nonlinear objective selection.
+from ocp.linear_least_square import build_system
+from ocp.measurement import validate_measurement
+
 
 SOUND_SPEED = 343.0  # m/s
 
 
 def estimate_position(sensors, tdoa, c=SOUND_SPEED):
-    """Solve A @ [x, y, r1] = b using measured differences relative to S1."""
-    sensors = np.asarray(sensors, dtype=float)
-    tdoa = np.asarray(tdoa, dtype=float)
-    if sensors.ndim != 2 or sensors.shape[1] != 2 or len(sensors) < 4:
-        raise ValueError('At least four 2D sensor coordinates are required')
-    if tdoa.shape != (len(sensors) - 1,):
-        raise ValueError('Provide one TDOA value per non-reference sensor')
-    if not np.isfinite(sensors).all() or not np.isfinite(tdoa).all():
-        raise ValueError('Sensor coordinates and TDOA must be finite')
-    if not np.isfinite(c) or c <= 0:
-        raise ValueError('Sound speed must be positive and finite')
-    offsets = sensors[1:] - sensors[0]
-    if np.linalg.matrix_rank(offsets) < 2:
-        raise ValueError('2D localization requires non-collinear sensors')
-    delta_r = c * tdoa
-    a = np.column_stack((offsets, delta_r))
-    b = 0.5 * (np.sum(sensors[1:] ** 2, axis=1)
-               - np.sum(sensors[0] ** 2) - delta_r ** 2)
+    """Solve A @ [x, y, r0] = b using reference-relative differences.
+
+    At least four sensors are required for the three linear unknowns.
+    The returned r0
+    is an independent linear variable and may disagree with geometric range.
+    """
+    sensors, tdoa = validate_measurement(sensors, tdoa, c)
+    if len(sensors) < 4:
+        raise ValueError('linear_least_squares requires at least four sensors; '
+                         'select four or more sensors')
+    a, b = build_system(sensors, tdoa, c)
     estimate = np.linalg.pinv(a) @ b
     return estimate[:2], estimate[2]
+
+
+def initial_position(sensors, tdoa, c=SOUND_SPEED):
+    """Use the sensor centroid, with a shared offset if it hits a sensor."""
+    sensors, _ = validate_measurement(sensors, tdoa, c)
+    position = np.mean(sensors, axis=0)
+    scale = max(float(np.max(np.ptp(sensors, axis=0))), 1e-3)
+    clearance = scale * 1e-6
+    # Deterministic offset, identical for every solver; no ground truth used.
+    while np.any(np.linalg.norm(position - sensors, axis=1) <= clearance):
+        position = position + clearance * np.array([1.0, 0.5])
+    return position, np.linalg.norm(position - sensors[0])

@@ -12,7 +12,7 @@ tdoa[i - 2]가 delta_t_i에 해당한다.
 최적화 변수
 -----------
 p = (x, y) in R^2: 추정할 음원의 위치 [m].
-기준 센서까지의 거리 r_1 = ||p - s_1||_2는 p로 결정되므로
+기준 센서까지의 거리 r0 = ||p - sensors[0]||_2는 p로 결정되므로
 별도의 독립 변수로 두지 않는다.
 
 측정 모델과 잔차
@@ -43,7 +43,7 @@ p = (x, y) in R^2: 추정할 음원의 위치 [m].
 거리의 비선형성 때문에 일반적으로 비볼록이며, 해의 유일성이나
 전역 최적해 도달은 보장되지 않는다. 목적함수는 센서 위치에서도
 정의되지만 거리 노름은 p = s_i에서 미분 불가능하다.
-구현에서는 해당 지점에서 명시적으로 실패를 보고한다.
+구현에서는 공통 목적함수의 1 nm 거리 평활화로 해당 지점의 미분을 정의한다.
 
 미분과 Levenberg–Marquardt 방향
 ------------------
@@ -60,49 +60,40 @@ lambda >= 0은 고정 감쇠 계수이며 기본값은 1e-3이다. lambda > 0이
 정규행렬이 수학적으로 양의 정부호가 된다. lambda = 0이면 Gauss–Newton이다.
 일반적인 LM의 적응형 lambda 조절과 스텝 수락/거부는 구현하지 않는다.
 요청한 업데이트 식만 사용하는 고정 감쇠 변형이며 backtracking은 없다.
-선형 최소제곱 해를 초기값으로 사용하며 그래디언트 노름으로 수렴을 판정한다.
+센서 중심점을 공통 초기값으로 사용하며 그래디언트 노름으로 수렴을 판정한다.
 고정 lambda Levenberg–Marquardt 업데이트는 목적함수 감소나 수렴을 보장하지 않는다.
 """
 
 import numpy as np
+from ocp.registry import DEFAULT_OCP, get_ocp
 
 from optimization.linear_least_squares import (
-    SOUND_SPEED, estimate_position as linear_estimate,
+    SOUND_SPEED, initial_position,
 )
 
 
-def _residual_jacobian(position, sensors, delta_r):
-    offsets = position - sensors
-    distances = np.linalg.norm(offsets, axis=1)
-    if np.any(distances == 0):
-        raise ValueError('Levenberg-Marquardt Jacobian is undefined at a sensor position')
-    residual = distances[1:] - distances[0] - delta_r
-    directions = offsets / distances[:, None]
-    jacobian = directions[1:] - directions[0]
-    return residual, jacobian
 
 
-def estimate_position(sensors, tdoa, c=SOUND_SPEED, *,
+def estimate_position(sensors, tdoa, c=SOUND_SPEED, *, ocp=DEFAULT_OCP,
                       max_iterations=10_000, gradient_tolerance=1e-8, damping=1e-3):
-    """Refine the linear estimate with fixed-damping Levenberg-Marquardt updates.
+    """Refine the sensor-centroid initial position with fixed-damping Levenberg-Marquardt updates.
 
-    Return (position, distance to S1). Raise RuntimeError on failure.
+    Return (position, distance to the reference sensor). Raise RuntimeError on failure.
     Gradient convergence does not guarantee a local or global minimum.
     """
+    problem = get_ocp(ocp, solver='levenberg_marquardt')
     if not isinstance(max_iterations, int) or max_iterations < 1:
         raise ValueError('max_iterations must be a positive integer')
     if not np.isfinite(gradient_tolerance) or gradient_tolerance <= 0:
         raise ValueError('gradient_tolerance must be positive and finite')
     if not np.isfinite(damping) or damping < 0:
         raise ValueError('damping must be non-negative and finite')
-    position, _ = linear_estimate(sensors, tdoa, c)
+    position, _ = initial_position(sensors, tdoa, c)
     sensors = np.asarray(sensors, dtype=float)
     delta_r = c * np.asarray(tdoa, dtype=float)
     for iteration in range(max_iterations + 1):
-        residual, jacobian = _residual_jacobian(position, sensors, delta_r)
-        value = 0.5 * (residual @ residual)
-        gradient = jacobian.T @ residual
-        hessian = jacobian.T @ jacobian
+        value, gradient, hessian, jacobian = problem.gauss_newton_terms(
+            position, sensors, delta_r)
         if (not np.isfinite(value) or not np.isfinite(gradient).all()
                 or not np.isfinite(hessian).all()):
             raise RuntimeError('Levenberg-Marquardt method encountered non-finite values')

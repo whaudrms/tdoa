@@ -1,0 +1,11964 @@
+Arrival index: 0
+value: 14
+Arrival index: 1
+value: 16
+Arrival index: 2
+value: 20
+Arrival index: 3
+value: 15
+Arrival index: 4
+value: 19
+Arrival index: 5
+value: 16
+Arrival index: 6
+value: 16
+Arrival index: 7
+value: 19
+Arrival index: 8
+value: 16
+Arrival index: 9
+value: 17
+Arrival index: 10
+value: 21
+Arrival index: 11
+value: 15
+Arrival index: 12
+value: 20
+Arrival index: 13
+value: 20
+Arrival index: 14
+value: 17
+Arrival index: 15
+value: 20
+Arrival index: 16
+value: 18
+Arrival index: 17
+value: 18
+Arrival index: 18
+value: 22
+Arrival index: 19
+value: 18
+Arrival index: 20
+value: 19
+Arrival index: 21
+value: 20
+Arrival index: 22
+value: 15
+Arrival index: 23
+value: 15
+Arrival index: 24
+value: 16
+Arrival index: 25
+value: 17
+Arrival index: 26
+value: 20
+Arrival index: 27
+value: 13
+Arrival index: 28
+value: 19
+Arrival index: 29
+value: 21
+Arrival index: 30
+value: 15
+Arrival index: 31
+value: 21
+Arrival index: 32
+value: 18
+Arrival index: 33
+value: 15
+Arrival index: 34
+value: 20
+Arrival index: 35
+value: 16
+Arrival index: 36
+value: 16
+Arrival index: 37
+value: 18
+Arrival index: 38
+value: 14
+Arrival index: 39
+value: 18
+Arrival index: 40
+value: 23
+Arrival index: 41
+value: 17
+Arrival index: 42
+value: 20
+Arrival index: 43
+value: 20
+Arrival index: 44
+value: 14
+Arrival index: 45
+value: 21
+Arrival index: 46
+value: 20
+Arrival index: 47
+value: 15
+Arrival index: 48
+value: 17
+Arrival index: 49
+value: 14
+Arrival index: 50
+value: 17
+Arrival index: 51
+value: 20
+Arrival index: 52
+value: 13
+Arrival index: 53
+value: 20
+Arrival index: 54
+value: 16
+Arrival index: 55
+value: 16
+Arrival index: 56
+value: 22
+Arrival index: 57
+value: 13
+Arrival index: 58
+value: 15
+Arrival index: 59
+value: 16
+Arrival index: 60
+value: 13
+Arrival index: 61
+value: 17
+Arrival index: 62
+value: 17
+Arrival index: 63
+value: 13
+Arrival index: 64
+value: 18
+Arrival index: 65
+value: 20
+Arrival index: 66
+value: 15
+Arrival index: 67
+value: 19
+Arrival index: 68
+value: 18
+Arrival index: 69
+value: 14
+Arrival index: 70
+value: 20
+Arrival index: 71
+value: 19
+Arrival index: 72
+value: 15
+Arrival index: 73
+value: 18
+Arrival index: 74
+value: 13
+Arrival index: 75
+value: 16
+Arrival index: 76
+value: 22
+Arrival index: 77
+value: 14
+Arrival index: 78
+value: 20
+Arrival index: 79
+value: 20
+Arrival index: 80
+value: 16
+Arrival index: 81
+value: 23
+Arrival index: 82
+value: 21
+Arrival index: 83
+value: 18
+Arrival index: 84
+value: 22
+Arrival index: 85
+value: 18
+Arrival index: 86
+value: 18
+Arrival index: 87
+value: 22
+Arrival index: 88
+value: 16
+Arrival index: 89
+value: 20
+Arrival index: 90
+value: 23
+Arrival index: 91
+value: 17
+Arrival index: 92
+value: 21
+Arrival index: 93
+value: 23
+Arrival index: 94
+value: 17
+Arrival index: 95
+value: 21
+Arrival index: 96
+value: 24
+Arrival index: 97
+value: 18
+Arrival index: 98
+value: 20
+Arrival index: 99
+value: 22
+Arrival index: 100
+value: 18
+Arrival index: 101
+value: 25
+Arrival index: 102
+value: 21
+Arrival index: 103
+value: 19
+Arrival index: 104
+value: 24
+Arrival index: 105
+value: 23
+Arrival index: 106
+value: 24
+Arrival index: 107
+value: 25
+Arrival index: 108
+value: 22
+Arrival index: 109
+value: 22
+Arrival index: 110
+value: 25
+Arrival index: 111
+value: 20
+Arrival index: 112
+value: 23
+Arrival index: 113
+value: 26
+Arrival index: 114
+value: 20
+Arrival index: 115
+value: 25
+Arrival index: 116
+value: 25
+Arrival index: 117
+value: 21
+Arrival index: 118
+value: 26
+Arrival index: 119
+value: 27
+Arrival index: 120
+value: 22
+Arrival index: 121
+value: 24
+Arrival index: 122
+value: 25
+Arrival index: 123
+value: 22
+Arrival index: 124
+value: 21
+Arrival index: 125
+value: 23
+Arrival index: 126
+value: 19
+Arrival index: 127
+value: 21
+Arrival index: 128
+value: 23
+Arrival index: 129
+value: 20
+Arrival index: 130
+value: 23
+Arrival index: 131
+value: 22
+Arrival index: 132
+value: 20
+Arrival index: 133
+value: 23
+Arrival index: 134
+value: 20
+Arrival index: 135
+value: 21
+Arrival index: 136
+value: 21
+Arrival index: 137
+value: 18
+Arrival index: 138
+value: 18
+Arrival index: 139
+value: 24
+Arrival index: 140
+value: 21
+Arrival index: 141
+value: 18
+Arrival index: 142
+value: 22
+Arrival index: 143
+value: 19
+Arrival index: 144
+value: 18
+Arrival index: 145
+value: 23
+Arrival index: 146
+value: 21
+Arrival index: 147
+value: 18
+Arrival index: 148
+value: 17
+Arrival index: 149
+value: 20
+Arrival index: 150
+value: 18
+Arrival index: 151
+value: 22
+Arrival index: 152
+value: 19
+Arrival index: 153
+value: 16
+Arrival index: 154
+value: 20
+Arrival index: 155
+value: 17
+Arrival index: 156
+value: 17
+Arrival index: 157
+value: 19
+Arrival index: 158
+value: 14
+Arrival index: 159
+value: 17
+Arrival index: 160
+value: 18
+Arrival index: 161
+value: 16
+Arrival index: 162
+value: 20
+Arrival index: 163
+value: 17
+Arrival index: 164
+value: 15
+Arrival index: 165
+value: 22
+Arrival index: 166
+value: 17
+Arrival index: 167
+value: 18
+Arrival index: 168
+value: 22
+Arrival index: 169
+value: 18
+Arrival index: 170
+value: 19
+Arrival index: 171
+value: 20
+Arrival index: 172
+value: 17
+Arrival index: 173
+value: 22
+Arrival index: 174
+value: 18
+Arrival index: 175
+value: 15
+Arrival index: 176
+value: 19
+Arrival index: 177
+value: 15
+Arrival index: 178
+value: 15
+Arrival index: 179
+value: 21
+Arrival index: 180
+value: 15
+Arrival index: 181
+value: 15
+Arrival index: 182
+value: 18
+Arrival index: 183
+value: 11
+Arrival index: 184
+value: 15
+Arrival index: 185
+value: 18
+Arrival index: 186
+value: 13
+Arrival index: 187
+value: 17
+Arrival index: 188
+value: 15
+Arrival index: 189
+value: 14
+Arrival index: 190
+value: 20
+Arrival index: 191
+value: 17
+Arrival index: 192
+value: 13
+Arrival index: 193
+value: 19
+Arrival index: 194
+value: 15
+Arrival index: 195
+value: 15
+Arrival index: 196
+value: 21
+Arrival index: 197
+value: 16
+Arrival index: 198
+value: 6
+Arrival index: 199
+value: 19
+Arrival index: 200
+value: 17
+Arrival index: 201
+value: 14
+Arrival index: 202
+value: 19
+Arrival index: 203
+value: 18
+Arrival index: 204
+value: 12
+Arrival index: 205
+value: 19
+Arrival index: 206
+value: 17
+Arrival index: 207
+value: 14
+Arrival index: 208
+value: 22
+Arrival index: 209
+value: 15
+Arrival index: 210
+value: 17
+Arrival index: 211
+value: 21
+Arrival index: 212
+value: 15
+Arrival index: 213
+value: 18
+Arrival index: 214
+value: 19
+Arrival index: 215
+value: 14
+Arrival index: 216
+value: 19
+Arrival index: 217
+value: 21
+Arrival index: 218
+value: 17
+Arrival index: 219
+value: 22
+Arrival index: 220
+value: 20
+Arrival index: 221
+value: 16
+Arrival index: 222
+value: 21
+Arrival index: 223
+value: 16
+Arrival index: 224
+value: 15
+Arrival index: 225
+value: 19
+Arrival index: 226
+value: 21
+Arrival index: 227
+value: 14
+Arrival index: 228
+value: 21
+Arrival index: 229
+value: 23
+Arrival index: 230
+value: 18
+Arrival index: 231
+value: 23
+Arrival index: 232
+value: 21
+Arrival index: 233
+value: 20
+Arrival index: 234
+value: 23
+Arrival index: 235
+value: 19
+Arrival index: 236
+value: 19
+Arrival index: 237
+value: 22
+Arrival index: 238
+value: 20
+Arrival index: 239
+value: 21
+Arrival index: 240
+value: 23
+Arrival index: 241
+value: 21
+Arrival index: 242
+value: 19
+Arrival index: 243
+value: 22
+Arrival index: 244
+value: 19
+Arrival index: 245
+value: 20
+Arrival index: 246
+value: 23
+Arrival index: 247
+value: 19
+Arrival index: 248
+value: 21
+Arrival index: 249
+value: 22
+Arrival index: 250
+value: 20
+Arrival index: 251
+value: 19
+Arrival index: 252
+value: 21
+Arrival index: 253
+value: 19
+Arrival index: 254
+value: 15
+Arrival index: 255
+value: 19
+Arrival index: 256
+value: 19
+Arrival index: 257
+value: 13
+Arrival index: 258
+value: 18
+Arrival index: 259
+value: 15
+Arrival index: 260
+value: 13
+Arrival index: 261
+value: 19
+Arrival index: 262
+value: 12
+Arrival index: 263
+value: 16
+Arrival index: 264
+value: 17
+Arrival index: 265
+value: 12
+Arrival index: 266
+value: 18
+Arrival index: 267
+value: 17
+Arrival index: 268
+value: 12
+Arrival index: 269
+value: 21
+Arrival index: 270
+value: 15
+Arrival index: 271
+value: 17
+Arrival index: 272
+value: 22
+Arrival index: 273
+value: 15
+Arrival index: 274
+value: 14
+Arrival index: 275
+value: 20
+Arrival index: 276
+value: 15
+Arrival index: 277
+value: 15
+Arrival index: 278
+value: 20
+Arrival index: 279
+value: 15
+Arrival index: 280
+value: 19
+Arrival index: 281
+value: 23
+Arrival index: 282
+value: 18
+Arrival index: 283
+value: 21
+Arrival index: 284
+value: 20
+Arrival index: 285
+value: 18
+Arrival index: 286
+value: 23
+Arrival index: 287
+value: 21
+Arrival index: 288
+value: 19
+Arrival index: 289
+value: 24
+Arrival index: 290
+value: 20
+Arrival index: 291
+value: 20
+Arrival index: 292
+value: 25
+Arrival index: 293
+value: 21
+Arrival index: 294
+value: 21
+Arrival index: 295
+value: 26
+Arrival index: 296
+value: 22
+Arrival index: 297
+value: 20
+Arrival index: 298
+value: 22
+Arrival index: 299
+value: 19
+Arrival index: 300
+value: 20
+Arrival index: 301
+value: 24
+Arrival index: 302
+value: 22
+Arrival index: 303
+value: 22
+Arrival index: 304
+value: 22
+Arrival index: 305
+value: 18
+Arrival index: 306
+value: 20
+Arrival index: 307
+value: 22
+Arrival index: 308
+value: 21
+Arrival index: 309
+value: 21
+Arrival index: 310
+value: 22
+Arrival index: 311
+value: 18
+Arrival index: 312
+value: 19
+Arrival index: 313
+value: 20
+Arrival index: 314
+value: 15
+Arrival index: 315
+value: 19
+Arrival index: 316
+value: 20
+Arrival index: 317
+value: 16
+Arrival index: 318
+value: 19
+Arrival index: 319
+value: 17
+Arrival index: 320
+value: 13
+Arrival index: 321
+value: 19
+Arrival index: 322
+value: 19
+Arrival index: 323
+value: 14
+Arrival index: 324
+value: 17
+Arrival index: 325
+value: 17
+Arrival index: 326
+value: 14
+Arrival index: 327
+value: 18
+Arrival index: 328
+value: 20
+Arrival index: 329
+value: 15
+Arrival index: 330
+value: 18
+Arrival index: 331
+value: 19
+Arrival index: 332
+value: 17
+Arrival index: 333
+value: 18
+Arrival index: 334
+value: 17
+Arrival index: 335
+value: 13
+Arrival index: 336
+value: 17
+Arrival index: 337
+value: 19
+Arrival index: 338
+value: 13
+Arrival index: 339
+value: 19
+Arrival index: 340
+value: 16
+Arrival index: 341
+value: 17
+Arrival index: 342
+value: 23
+Arrival index: 343
+value: 17
+Arrival index: 344
+value: 16
+Arrival index: 345
+value: 22
+Arrival index: 346
+value: 17
+Arrival index: 347
+value: 21
+Arrival index: 348
+value: 26
+Arrival index: 349
+value: 17
+Arrival index: 350
+value: 21
+Arrival index: 351
+value: 23
+Arrival index: 352
+value: 19
+Arrival index: 353
+value: 22
+Arrival index: 354
+value: 22
+Arrival index: 355
+value: 19
+Arrival index: 356
+value: 23
+Arrival index: 357
+value: 25
+Arrival index: 358
+value: 22
+Arrival index: 359
+value: 24
+Arrival index: 360
+value: 23
+Arrival index: 361
+value: 20
+Arrival index: 362
+value: 24
+Arrival index: 363
+value: 23
+Arrival index: 364
+value: 18
+Arrival index: 365
+value: 23
+Arrival index: 366
+value: 23
+Arrival index: 367
+value: 18
+Arrival index: 368
+value: 22
+Arrival index: 369
+value: 21
+Arrival index: 370
+value: 17
+Arrival index: 371
+value: 20
+Arrival index: 372
+value: 21
+Arrival index: 373
+value: 10
+Arrival index: 374
+value: 17
+Arrival index: 375
+value: 19
+Arrival index: 376
+value: 17
+Arrival index: 377
+value: 20
+Arrival index: 378
+value: 22
+Arrival index: 379
+value: 18
+Arrival index: 380
+value: 21
+Arrival index: 381
+value: 20
+Arrival index: 382
+value: 17
+Arrival index: 383
+value: 18
+Arrival index: 384
+value: 20
+Arrival index: 385
+value: 17
+Arrival index: 386
+value: 15
+Arrival index: 387
+value: 17
+Arrival index: 388
+value: 15
+Arrival index: 389
+value: 14
+Arrival index: 390
+value: 18
+Arrival index: 391
+value: 12
+Arrival index: 392
+value: 15
+Arrival index: 393
+value: 19
+Arrival index: 394
+value: 13
+Arrival index: 395
+value: 18
+Arrival index: 396
+value: 19
+Arrival index: 397
+value: 13
+Arrival index: 398
+value: 20
+Arrival index: 399
+value: 20
+Arrival index: 400
+value: 13
+Arrival index: 401
+value: 17
+Arrival index: 402
+value: 22
+Arrival index: 403
+value: 16
+Arrival index: 404
+value: 18
+Arrival index: 405
+value: 23
+Arrival index: 406
+value: 16
+Arrival index: 407
+value: 19
+Arrival index: 408
+value: 25
+Arrival index: 409
+value: 21
+Arrival index: 410
+value: 19
+Arrival index: 411
+value: 23
+Arrival index: 412
+value: 21
+Arrival index: 413
+value: 19
+Arrival index: 414
+value: 26
+Arrival index: 415
+value: 20
+Arrival index: 416
+value: 22
+Arrival index: 417
+value: 24
+Arrival index: 418
+value: 22
+Arrival index: 419
+value: 23
+Arrival index: 420
+value: 25
+Arrival index: 421
+value: 20
+Arrival index: 422
+value: 23
+Arrival index: 423
+value: 17
+Arrival index: 424
+value: 17
+Arrival index: 425
+value: 22
+Arrival index: 426
+value: 23
+Arrival index: 427
+value: 20
+Arrival index: 428
+value: 23
+Arrival index: 429
+value: 24
+Arrival index: 430
+value: 21
+Arrival index: 431
+value: 22
+Arrival index: 432
+value: 23
+Arrival index: 433
+value: 20
+Arrival index: 434
+value: 20
+Arrival index: 435
+value: 20
+Arrival index: 436
+value: 18
+Arrival index: 437
+value: 20
+Arrival index: 438
+value: 23
+Arrival index: 439
+value: 20
+Arrival index: 440
+value: 19
+Arrival index: 441
+value: 21
+Arrival index: 442
+value: 18
+Arrival index: 443
+value: 18
+Arrival index: 444
+value: 18
+Arrival index: 445
+value: 14
+Arrival index: 446
+value: 18
+Arrival index: 447
+value: 20
+Arrival index: 448
+value: 11
+Arrival index: 449
+value: 18
+Arrival index: 450
+value: 20
+Arrival index: 451
+value: 16
+Arrival index: 452
+value: 16
+Arrival index: 453
+value: 19
+Arrival index: 454
+value: 13
+Arrival index: 455
+value: 14
+Arrival index: 456
+value: 20
+Arrival index: 457
+value: 16
+Arrival index: 458
+value: 15
+Arrival index: 459
+value: 21
+Arrival index: 460
+value: 19
+Arrival index: 461
+value: 14
+Arrival index: 462
+value: 18
+Arrival index: 463
+value: 19
+Arrival index: 464
+value: 12
+Arrival index: 465
+value: 16
+Arrival index: 466
+value: 19
+Arrival index: 467
+value: 15
+Arrival index: 468
+value: 17
+Arrival index: 469
+value: 20
+Arrival index: 470
+value: 14
+Arrival index: 471
+value: 21
+Arrival index: 472
+value: 21
+Arrival index: 473
+value: 17
+Arrival index: 474
+value: 21
+Arrival index: 475
+value: 18
+Arrival index: 476
+value: 16
+Arrival index: 477
+value: 19
+Arrival index: 478
+value: 17
+Arrival index: 479
+value: 17
+Arrival index: 480
+value: 23
+Arrival index: 481
+value: 21
+Arrival index: 482
+value: 19
+Arrival index: 483
+value: 24
+Arrival index: 484
+value: 21
+Arrival index: 485
+value: 17
+Arrival index: 486
+value: 21
+Arrival index: 487
+value: 18
+Arrival index: 488
+value: 14
+Arrival index: 489
+value: 19
+Arrival index: 490
+value: 20
+Arrival index: 491
+value: 17
+Arrival index: 492
+value: 23
+Arrival index: 493
+value: 22
+Arrival index: 494
+value: 18
+Arrival index: 495
+value: 21
+Arrival index: 496
+value: 22
+Arrival index: 497
+value: 17
+Arrival index: 498
+value: 24
+Arrival index: 499
+value: 21
+Arrival index: 500
+value: 17
+Arrival index: 501
+value: 24
+Arrival index: 502
+value: 25
+Arrival index: 503
+value: 22
+Arrival index: 504
+value: 23
+Arrival index: 505
+value: 26
+Arrival index: 506
+value: 21
+Arrival index: 507
+value: 20
+Arrival index: 508
+value: 25
+Arrival index: 509
+value: 19
+Arrival index: 510
+value: 23
+Arrival index: 511
+value: 23
+Arrival index: 512
+value: 21
+Arrival index: 513
+value: 18
+Arrival index: 514
+value: 26
+Arrival index: 515
+value: 25
+Arrival index: 516
+value: 20
+Arrival index: 517
+value: 21
+Arrival index: 518
+value: 22
+Arrival index: 519
+value: 18
+Arrival index: 520
+value: 20
+Arrival index: 521
+value: 22
+Arrival index: 522
+value: 19
+Arrival index: 523
+value: 24
+Arrival index: 524
+value: 22
+Arrival index: 525
+value: 19
+Arrival index: 526
+value: 21
+Arrival index: 527
+value: 21
+Arrival index: 528
+value: 18
+Arrival index: 529
+value: 16
+Arrival index: 530
+value: 18
+Arrival index: 531
+value: 16
+Arrival index: 532
+value: 18
+Arrival index: 533
+value: 21
+Arrival index: 534
+value: 20
+Arrival index: 535
+value: 20
+Arrival index: 536
+value: 22
+Arrival index: 537
+value: 21
+Arrival index: 538
+value: 19
+Arrival index: 539
+value: 19
+Arrival index: 540
+value: 19
+Arrival index: 541
+value: 17
+Arrival index: 542
+value: 17
+Arrival index: 543
+value: 20
+Arrival index: 544
+value: 18
+Arrival index: 545
+value: 17
+Arrival index: 546
+value: 23
+Arrival index: 547
+value: 20
+Arrival index: 548
+value: 12
+Arrival index: 549
+value: 18
+Arrival index: 550
+value: 16
+Arrival index: 551
+value: 14
+Arrival index: 552
+value: 18
+Arrival index: 553
+value: 16
+Arrival index: 554
+value: 13
+Arrival index: 555
+value: 20
+Arrival index: 556
+value: 19
+Arrival index: 557
+value: 15
+Arrival index: 558
+value: 19
+Arrival index: 559
+value: 19
+Arrival index: 560
+value: 15
+Arrival index: 561
+value: 17
+Arrival index: 562
+value: 16
+Arrival index: 563
+value: 12
+Arrival index: 564
+value: 15
+Arrival index: 565
+value: 20
+Arrival index: 566
+value: 15
+Arrival index: 567
+value: 13
+Arrival index: 568
+value: 22
+Arrival index: 569
+value: 20
+Arrival index: 570
+value: 14
+Arrival index: 571
+value: 18
+Arrival index: 572
+value: 20
+Arrival index: 573
+value: 15
+Arrival index: 574
+value: 15
+Arrival index: 575
+value: 19
+Arrival index: 576
+value: 13
+Arrival index: 577
+value: 15
+Arrival index: 578
+value: 22
+Arrival index: 579
+value: 16
+Arrival index: 580
+value: 19
+Arrival index: 581
+value: 24
+Arrival index: 582
+value: 20
+Arrival index: 583
+value: 18
+Arrival index: 584
+value: 22
+Arrival index: 585
+value: 19
+Arrival index: 586
+value: 16
+Arrival index: 587
+value: 21
+Arrival index: 588
+value: 20
+Arrival index: 589
+value: 17
+Arrival index: 590
+value: 23
+Arrival index: 591
+value: 25
+Arrival index: 592
+value: 19
+Arrival index: 593
+value: 21
+Arrival index: 594
+value: 22
+Arrival index: 595
+value: 19
+Arrival index: 596
+value: 20
+Arrival index: 597
+value: 23
+Arrival index: 598
+value: 13
+Arrival index: 599
+value: 19
+Arrival index: 600
+value: 25
+Arrival index: 601
+value: 22
+Arrival index: 602
+value: 25
+Arrival index: 603
+value: 27
+Arrival index: 604
+value: 23
+Arrival index: 605
+value: 21
+Arrival index: 606
+value: 22
+Arrival index: 607
+value: 20
+Arrival index: 608
+value: 20
+Arrival index: 609
+value: 24
+Arrival index: 610
+value: 22
+Arrival index: 611
+value: 19
+Arrival index: 612
+value: 22
+Arrival index: 613
+value: 24
+Arrival index: 614
+value: 20
+Arrival index: 615
+value: 21
+Arrival index: 616
+value: 19
+Arrival index: 617
+value: 16
+Arrival index: 618
+value: 19
+Arrival index: 619
+value: 21
+Arrival index: 620
+value: 19
+Arrival index: 621
+value: 19
+Arrival index: 622
+value: 24
+Arrival index: 623
+value: 16
+Arrival index: 624
+value: 18
+Arrival index: 625
+value: 18
+Arrival index: 626
+value: 18
+Arrival index: 627
+value: 14
+Arrival index: 628
+value: 17
+Arrival index: 629
+value: 16
+Arrival index: 630
+value: 12
+Arrival index: 631
+value: 19
+Arrival index: 632
+value: 19
+Arrival index: 633
+value: 15
+Arrival index: 634
+value: 18
+Arrival index: 635
+value: 17
+Arrival index: 636
+value: 13
+Arrival index: 637
+value: 18
+Arrival index: 638
+value: 16
+Arrival index: 639
+value: 14
+Arrival index: 640
+value: 19
+Arrival index: 641
+value: 19
+Arrival index: 642
+value: 15
+Arrival index: 643
+value: 21
+Arrival index: 644
+value: 21
+Arrival index: 645
+value: 18
+Arrival index: 646
+value: 20
+Arrival index: 647
+value: 22
+Arrival index: 648
+value: 19
+Arrival index: 649
+value: 19
+Arrival index: 650
+value: 21
+Arrival index: 651
+value: 17
+Arrival index: 652
+value: 21
+Arrival index: 653
+value: 24
+Arrival index: 654
+value: 20
+Arrival index: 655
+value: 23
+Arrival index: 656
+value: 24
+Arrival index: 657
+value: 21
+Arrival index: 658
+value: 25
+Arrival index: 659
+value: 24
+Arrival index: 660
+value: 19
+Arrival index: 661
+value: 18
+Arrival index: 662
+value: 23
+Arrival index: 663
+value: 19
+Arrival index: 664
+value: 19
+Arrival index: 665
+value: 23
+Arrival index: 666
+value: 19
+Arrival index: 667
+value: 20
+Arrival index: 668
+value: 23
+Arrival index: 669
+value: 20
+Arrival index: 670
+value: 20
+Arrival index: 671
+value: 23
+Arrival index: 672
+value: 20
+Arrival index: 673
+value: 17
+Arrival index: 674
+value: 20
+Arrival index: 675
+value: 19
+Arrival index: 676
+value: 17
+Arrival index: 677
+value: 20
+Arrival index: 678
+value: 19
+Arrival index: 679
+value: 18
+Arrival index: 680
+value: 21
+Arrival index: 681
+value: 17
+Arrival index: 682
+value: 15
+Arrival index: 683
+value: 19
+Arrival index: 684
+value: 14
+Arrival index: 685
+value: 16
+Arrival index: 686
+value: 17
+Arrival index: 687
+value: 10
+Arrival index: 688
+value: 16
+Arrival index: 689
+value: 21
+Arrival index: 690
+value: 13
+Arrival index: 691
+value: 17
+Arrival index: 692
+value: 20
+Arrival index: 693
+value: 14
+Arrival index: 694
+value: 17
+Arrival index: 695
+value: 20
+Arrival index: 696
+value: 13
+Arrival index: 697
+value: 17
+Arrival index: 698
+value: 21
+Arrival index: 699
+value: 16
+Arrival index: 700
+value: 16
+Arrival index: 701
+value: 23
+Arrival index: 702
+value: 17
+Arrival index: 703
+value: 17
+Arrival index: 704
+value: 22
+Arrival index: 705
+value: 17
+Arrival index: 706
+value: 20
+Arrival index: 707
+value: 22
+Arrival index: 708
+value: 18
+Arrival index: 709
+value: 23
+Arrival index: 710
+value: 22
+Arrival index: 711
+value: 20
+Arrival index: 712
+value: 22
+Arrival index: 713
+value: 21
+Arrival index: 714
+value: 19
+Arrival index: 715
+value: 22
+Arrival index: 716
+value: 20
+Arrival index: 717
+value: 18
+Arrival index: 718
+value: 25
+Arrival index: 719
+value: 22
+Arrival index: 720
+value: 21
+Arrival index: 721
+value: 24
+Arrival index: 722
+value: 23
+Arrival index: 723
+value: 20
+Arrival index: 724
+value: 24
+Arrival index: 725
+value: 21
+Arrival index: 726
+value: 19
+Arrival index: 727
+value: 21
+Arrival index: 728
+value: 22
+Arrival index: 729
+value: 19
+Arrival index: 730
+value: 20
+Arrival index: 731
+value: 18
+Arrival index: 732
+value: 16
+Arrival index: 733
+value: 20
+Arrival index: 734
+value: 17
+Arrival index: 735
+value: 18
+Arrival index: 736
+value: 18
+Arrival index: 737
+value: 12
+Arrival index: 738
+value: 14
+Arrival index: 739
+value: 19
+Arrival index: 740
+value: 13
+Arrival index: 741
+value: 18
+Arrival index: 742
+value: 21
+Arrival index: 743
+value: 14
+Arrival index: 744
+value: 19
+Arrival index: 745
+value: 19
+Arrival index: 746
+value: 14
+Arrival index: 747
+value: 16
+Arrival index: 748
+value: 20
+Arrival index: 749
+value: 12
+Arrival index: 750
+value: 15
+Arrival index: 751
+value: 18
+Arrival index: 752
+value: 15
+Arrival index: 753
+value: 17
+Arrival index: 754
+value: 21
+Arrival index: 755
+value: 15
+Arrival index: 756
+value: 19
+Arrival index: 757
+value: 18
+Arrival index: 758
+value: 14
+Arrival index: 759
+value: 21
+Arrival index: 760
+value: 17
+Arrival index: 761
+value: 16
+Arrival index: 762
+value: 24
+Arrival index: 763
+value: 19
+Arrival index: 764
+value: 20
+Arrival index: 765
+value: 25
+Arrival index: 766
+value: 18
+Arrival index: 767
+value: 20
+Arrival index: 768
+value: 24
+Arrival index: 769
+value: 20
+Arrival index: 770
+value: 20
+Arrival index: 771
+value: 23
+Arrival index: 772
+value: 19
+Arrival index: 773
+value: 16
+Arrival index: 774
+value: 25
+Arrival index: 775
+value: 21
+Arrival index: 776
+value: 22
+Arrival index: 777
+value: 24
+Arrival index: 778
+value: 24
+Arrival index: 779
+value: 21
+Arrival index: 780
+value: 25
+Arrival index: 781
+value: 21
+Arrival index: 782
+value: 20
+Arrival index: 783
+value: 25
+Arrival index: 784
+value: 23
+Arrival index: 785
+value: 23
+Arrival index: 786
+value: 25
+Arrival index: 787
+value: 21
+Arrival index: 788
+value: 23
+Arrival index: 789
+value: 26
+Arrival index: 790
+value: 21
+Arrival index: 791
+value: 23
+Arrival index: 792
+value: 22
+Arrival index: 793
+value: 19
+Arrival index: 794
+value: 22
+Arrival index: 795
+value: 25
+Arrival index: 796
+value: 21
+Arrival index: 797
+value: 23
+Arrival index: 798
+value: 27
+Arrival index: 799
+value: 21
+Arrival index: 800
+value: 22
+Arrival index: 801
+value: 23
+Arrival index: 802
+value: 19
+Arrival index: 803
+value: 21
+Arrival index: 804
+value: 23
+Arrival index: 805
+value: 20
+Arrival index: 806
+value: 21
+Arrival index: 807
+value: 23
+Arrival index: 808
+value: 21
+Arrival index: 809
+value: 24
+Arrival index: 810
+value: 23
+Arrival index: 811
+value: 19
+Arrival index: 812
+value: 20
+Arrival index: 813
+value: 21
+Arrival index: 814
+value: 17
+Arrival index: 815
+value: 19
+Arrival index: 816
+value: 19
+Arrival index: 817
+value: 15
+Arrival index: 818
+value: 20
+Arrival index: 819
+value: 22
+Arrival index: 820
+value: 16
+Arrival index: 821
+value: 18
+Arrival index: 822
+value: 19
+Arrival index: 823
+value: 16
+Arrival index: 824
+value: 20
+Arrival index: 825
+value: 22
+Arrival index: 826
+value: 17
+Arrival index: 827
+value: 20
+Arrival index: 828
+value: 22
+Arrival index: 829
+value: 19
+Arrival index: 830
+value: 22
+Arrival index: 831
+value: 21
+Arrival index: 832
+value: 20
+Arrival index: 833
+value: 20
+Arrival index: 834
+value: 20
+Arrival index: 835
+value: 15
+Arrival index: 836
+value: 16
+Arrival index: 837
+value: 19
+Arrival index: 838
+value: 16
+Arrival index: 839
+value: 19
+Arrival index: 840
+value: 17
+Arrival index: 841
+value: 14
+Arrival index: 842
+value: 21
+Arrival index: 843
+value: 17
+Arrival index: 844
+value: 13
+Arrival index: 845
+value: 18
+Arrival index: 846
+value: 17
+Arrival index: 847
+value: 12
+Arrival index: 848
+value: 21
+Arrival index: 849
+value: 17
+Arrival index: 850
+value: 12
+Arrival index: 851
+value: 17
+Arrival index: 852
+value: 20
+Arrival index: 853
+value: 14
+Arrival index: 854
+value: 19
+Arrival index: 855
+value: 20
+Arrival index: 856
+value: 15
+Arrival index: 857
+value: 16
+Arrival index: 858
+value: 19
+Arrival index: 859
+value: 14
+Arrival index: 860
+value: 17
+Arrival index: 861
+value: 19
+Arrival index: 862
+value: 15
+Arrival index: 863
+value: 17
+Arrival index: 864
+value: 21
+Arrival index: 865
+value: 16
+Arrival index: 866
+value: 21
+Arrival index: 867
+value: 20
+Arrival index: 868
+value: 17
+Arrival index: 869
+value: 24
+Arrival index: 870
+value: 20
+Arrival index: 871
+value: 18
+Arrival index: 872
+value: 23
+Arrival index: 873
+value: 23
+Arrival index: 874
+value: 18
+Arrival index: 875
+value: 25
+Arrival index: 876
+value: 22
+Arrival index: 877
+value: 18
+Arrival index: 878
+value: 24
+Arrival index: 879
+value: 22
+Arrival index: 880
+value: 18
+Arrival index: 881
+value: 23
+Arrival index: 882
+value: 22
+Arrival index: 883
+value: 17
+Arrival index: 884
+value: 21
+Arrival index: 885
+value: 26
+Arrival index: 886
+value: 18
+Arrival index: 887
+value: 20
+Arrival index: 888
+value: 25
+Arrival index: 889
+value: 19
+Arrival index: 890
+value: 21
+Arrival index: 891
+value: 22
+Arrival index: 892
+value: 18
+Arrival index: 893
+value: 22
+Arrival index: 894
+value: 19
+Arrival index: 895
+value: 20
+Arrival index: 896
+value: 23
+Arrival index: 897
+value: 21
+Arrival index: 898
+value: 24
+Arrival index: 899
+value: 26
+Arrival index: 900
+value: 21
+Arrival index: 901
+value: 19
+Arrival index: 902
+value: 24
+Arrival index: 903
+value: 22
+Arrival index: 904
+value: 20
+Arrival index: 905
+value: 25
+Arrival index: 906
+value: 22
+Arrival index: 907
+value: 21
+Arrival index: 908
+value: 29
+Arrival index: 909
+value: 27
+Arrival index: 910
+value: 25
+Arrival index: 911
+value: 25
+Arrival index: 912
+value: 22
+Arrival index: 913
+value: 20
+Arrival index: 914
+value: 25
+Arrival index: 915
+value: 21
+Arrival index: 916
+value: 19
+Arrival index: 917
+value: 22
+Arrival index: 918
+value: 21
+Arrival index: 919
+value: 22
+Arrival index: 920
+value: 22
+Arrival index: 921
+value: 20
+Arrival index: 922
+value: 21
+Arrival index: 923
+value: 25
+Arrival index: 924
+value: 17
+Arrival index: 925
+value: 19
+Arrival index: 926
+value: 20
+Arrival index: 927
+value: 16
+Arrival index: 928
+value: 20
+Arrival index: 929
+value: 23
+Arrival index: 930
+value: 20
+Arrival index: 931
+value: 21
+Arrival index: 932
+value: 26
+Arrival index: 933
+value: 22
+Arrival index: 934
+value: 22
+Arrival index: 935
+value: 26
+Arrival index: 936
+value: 19
+Arrival index: 937
+value: 19
+Arrival index: 938
+value: 23
+Arrival index: 939
+value: 22
+Arrival index: 940
+value: 20
+Arrival index: 941
+value: 23
+Arrival index: 942
+value: 22
+Arrival index: 943
+value: 22
+Arrival index: 944
+value: 23
+Arrival index: 945
+value: 19
+Arrival index: 946
+value: 16
+Arrival index: 947
+value: 19
+Arrival index: 948
+value: 11
+Arrival index: 949
+value: 17
+Arrival index: 950
+value: 19
+Arrival index: 951
+value: 15
+Arrival index: 952
+value: 17
+Arrival index: 953
+value: 21
+Arrival index: 954
+value: 17
+Arrival index: 955
+value: 16
+Arrival index: 956
+value: 19
+Arrival index: 957
+value: 14
+Arrival index: 958
+value: 15
+Arrival index: 959
+value: 19
+Arrival index: 960
+value: 15
+Arrival index: 961
+value: 15
+Arrival index: 962
+value: 21
+Arrival index: 963
+value: 20
+Arrival index: 964
+value: 17
+Arrival index: 965
+value: 20
+Arrival index: 966
+value: 16
+Arrival index: 967
+value: 13
+Arrival index: 968
+value: 16
+Arrival index: 969
+value: 15
+Arrival index: 970
+value: 12
+Arrival index: 971
+value: 18
+Arrival index: 972
+value: 18
+Arrival index: 973
+value: 21
+Arrival index: 974
+value: 21
+Arrival index: 975
+value: 17
+Arrival index: 976
+value: 21
+Arrival index: 977
+value: 21
+Arrival index: 978
+value: 13
+Arrival index: 979
+value: 17
+Arrival index: 980
+value: 18
+Arrival index: 981
+value: 12
+Arrival index: 982
+value: 18
+Arrival index: 983
+value: 21
+Arrival index: 984
+value: 15
+Arrival index: 985
+value: 19
+Arrival index: 986
+value: 21
+Arrival index: 987
+value: 16
+Arrival index: 988
+value: 18
+Arrival index: 989
+value: 21
+Arrival index: 990
+value: 15
+Arrival index: 991
+value: 15
+Arrival index: 992
+value: 22
+Arrival index: 993
+value: 17
+Arrival index: 994
+value: 19
+Arrival index: 995
+value: 26
+Arrival index: 996
+value: 22
+Arrival index: 997
+value: 24
+Arrival index: 998
+value: 19
+Arrival index: 999
+value: 18
+Arrival index: 1000
+value: 21
+Arrival index: 1001
+value: 21
+Arrival index: 1002
+value: 19
+Arrival index: 1003
+value: 24
+Arrival index: 1004
+value: 24
+Arrival index: 1005
+value: 23
+Arrival index: 1006
+value: 28
+Arrival index: 1007
+value: 28
+Arrival index: 1008
+value: 22
+Arrival index: 1009
+value: 24
+Arrival index: 1010
+value: 23
+Arrival index: 1011
+value: 20
+Arrival index: 1012
+value: 25
+Arrival index: 1013
+value: 25
+Arrival index: 1014
+value: 21
+Arrival index: 1015
+value: 26
+Arrival index: 1016
+value: 29
+Arrival index: 1017
+value: 24
+Arrival index: 1018
+value: 26
+Arrival index: 1019
+value: 24
+Arrival index: 1020
+value: 20
+Arrival index: 1021
+value: 23
+Arrival index: 1022
+value: 24
+Arrival index: 1023
+value: 13
+Arrival index: 1024
+value: 24
+Arrival index: 1025
+value: 22
+Arrival index: 1026
+value: 22
+Arrival index: 1027
+value: 25
+Arrival index: 1028
+value: 23
+Arrival index: 1029
+value: 23
+Arrival index: 1030
+value: 26
+Arrival index: 1031
+value: 21
+Arrival index: 1032
+value: 22
+Arrival index: 1033
+value: 24
+Arrival index: 1034
+value: 19
+Arrival index: 1035
+value: 22
+Arrival index: 1036
+value: 23
+Arrival index: 1037
+value: 21
+Arrival index: 1038
+value: 22
+Arrival index: 1039
+value: 25
+Arrival index: 1040
+value: 22
+Arrival index: 1041
+value: 21
+Arrival index: 1042
+value: 24
+Arrival index: 1043
+value: 20
+Arrival index: 1044
+value: 20
+Arrival index: 1045
+value: 22
+Arrival index: 1046
+value: 23
+Arrival index: 1047
+value: 20
+Arrival index: 1048
+value: 22
+Arrival index: 1049
+value: 20
+Arrival index: 1050
+value: 18
+Arrival index: 1051
+value: 22
+Arrival index: 1052
+value: 19
+Arrival index: 1053
+value: 18
+Arrival index: 1054
+value: 20
+Arrival index: 1055
+value: 19
+Arrival index: 1056
+value: 18
+Arrival index: 1057
+value: 22
+Arrival index: 1058
+value: 20
+Arrival index: 1059
+value: 20
+Arrival index: 1060
+value: 24
+Arrival index: 1061
+value: 18
+Arrival index: 1062
+value: 20
+Arrival index: 1063
+value: 25
+Arrival index: 1064
+value: 22
+Arrival index: 1065
+value: 23
+Arrival index: 1066
+value: 25
+Arrival index: 1067
+value: 21
+Arrival index: 1068
+value: 23
+Arrival index: 1069
+value: 26
+Arrival index: 1070
+value: 23
+Arrival index: 1071
+value: 21
+Arrival index: 1072
+value: 24
+Arrival index: 1073
+value: 21
+Arrival index: 1074
+value: 18
+Arrival index: 1075
+value: 21
+Arrival index: 1076
+value: 19
+Arrival index: 1077
+value: 21
+Arrival index: 1078
+value: 22
+Arrival index: 1079
+value: 18
+Arrival index: 1080
+value: 20
+Arrival index: 1081
+value: 19
+Arrival index: 1082
+value: 16
+Arrival index: 1083
+value: 20
+Arrival index: 1084
+value: 15
+Arrival index: 1085
+value: 14
+Arrival index: 1086
+value: 20
+Arrival index: 1087
+value: 17
+Arrival index: 1088
+value: 19
+Arrival index: 1089
+value: 24
+Arrival index: 1090
+value: 21
+Arrival index: 1091
+value: 20
+Arrival index: 1092
+value: 26
+Arrival index: 1093
+value: 21
+Arrival index: 1094
+value: 19
+Arrival index: 1095
+value: 20
+Arrival index: 1096
+value: 17
+Arrival index: 1097
+value: 17
+Arrival index: 1098
+value: 20
+Arrival index: 1099
+value: 17
+Arrival index: 1100
+value: 20
+Arrival index: 1101
+value: 22
+Arrival index: 1102
+value: 21
+Arrival index: 1103
+value: 25
+Arrival index: 1104
+value: 21
+Arrival index: 1105
+value: 18
+Arrival index: 1106
+value: 21
+Arrival index: 1107
+value: 16
+Arrival index: 1108
+value: 13
+Arrival index: 1109
+value: 15
+Arrival index: 1110
+value: 15
+Arrival index: 1111
+value: 11
+Arrival index: 1112
+value: 21
+Arrival index: 1113
+value: 20
+Arrival index: 1114
+value: 19
+Arrival index: 1115
+value: 24
+Arrival index: 1116
+value: 22
+Arrival index: 1117
+value: 20
+Arrival index: 1118
+value: 20
+Arrival index: 1119
+value: 16
+Arrival index: 1120
+value: 15
+Arrival index: 1121
+value: 17
+Arrival index: 1122
+value: 16
+Arrival index: 1123
+value: 19
+Arrival index: 1124
+value: 20
+Arrival index: 1125
+value: 20
+Arrival index: 1126
+value: 23
+Arrival index: 1127
+value: 24
+Arrival index: 1128
+value: 20
+Arrival index: 1129
+value: 22
+Arrival index: 1130
+value: 21
+Arrival index: 1131
+value: 13
+Arrival index: 1132
+value: 18
+Arrival index: 1133
+value: 17
+Arrival index: 1134
+value: 13
+Arrival index: 1135
+value: 22
+Arrival index: 1136
+value: 18
+Arrival index: 1137
+value: 17
+Arrival index: 1138
+value: 23
+Arrival index: 1139
+value: 21
+Arrival index: 1140
+value: 19
+Arrival index: 1141
+value: 21
+Arrival index: 1142
+value: 19
+Arrival index: 1143
+value: 17
+Arrival index: 1144
+value: 19
+Arrival index: 1145
+value: 17
+Arrival index: 1146
+value: 17
+Arrival index: 1147
+value: 23
+Arrival index: 1148
+value: 25
+Arrival index: 1149
+value: 22
+Arrival index: 1150
+value: 26
+Arrival index: 1151
+value: 25
+Arrival index: 1152
+value: 21
+Arrival index: 1153
+value: 22
+Arrival index: 1154
+value: 16
+Arrival index: 1155
+value: 14
+Arrival index: 1156
+value: 18
+Arrival index: 1157
+value: 15
+Arrival index: 1158
+value: 15
+Arrival index: 1159
+value: 18
+Arrival index: 1160
+value: 18
+Arrival index: 1161
+value: 21
+Arrival index: 1162
+value: 24
+Arrival index: 1163
+value: 23
+Arrival index: 1164
+value: 24
+Arrival index: 1165
+value: 21
+Arrival index: 1166
+value: 18
+Arrival index: 1167
+value: 20
+Arrival index: 1168
+value: 17
+Arrival index: 1169
+value: 17
+Arrival index: 1170
+value: 23
+Arrival index: 1171
+value: 22
+Arrival index: 1172
+value: 24
+Arrival index: 1173
+value: 24
+Arrival index: 1174
+value: 25
+Arrival index: 1175
+value: 26
+Arrival index: 1176
+value: 27
+Arrival index: 1177
+value: 21
+Arrival index: 1178
+value: 21
+Arrival index: 1179
+value: 20
+Arrival index: 1180
+value: 15
+Arrival index: 1181
+value: 17
+Arrival index: 1182
+value: 21
+Arrival index: 1183
+value: 20
+Arrival index: 1184
+value: 25
+Arrival index: 1185
+value: 26
+Arrival index: 1186
+value: 25
+Arrival index: 1187
+value: 30
+Arrival index: 1188
+value: 25
+Arrival index: 1189
+value: 23
+Arrival index: 1190
+value: 22
+Arrival index: 1191
+value: 17
+Arrival index: 1192
+value: 20
+Arrival index: 1193
+value: 22
+Arrival index: 1194
+value: 19
+Arrival index: 1195
+value: 24
+Arrival index: 1196
+value: 28
+Arrival index: 1197
+value: 26
+Arrival index: 1198
+value: 31
+Arrival index: 1199
+value: 29
+Arrival index: 1200
+value: 24
+Arrival index: 1201
+value: 21
+Arrival index: 1202
+value: 23
+Arrival index: 1203
+value: 16
+Arrival index: 1204
+value: 15
+Arrival index: 1205
+value: 20
+Arrival index: 1206
+value: 16
+Arrival index: 1207
+value: 19
+Arrival index: 1208
+value: 26
+Arrival index: 1209
+value: 24
+Arrival index: 1210
+value: 30
+Arrival index: 1211
+value: 29
+Arrival index: 1212
+value: 26
+Arrival index: 1213
+value: 28
+Arrival index: 1214
+value: 23
+Arrival index: 1215
+value: 16
+Arrival index: 1216
+value: 15
+Arrival index: 1217
+value: 16
+Arrival index: 1218
+value: 12
+Arrival index: 1219
+value: 19
+Arrival index: 1220
+value: 23
+Arrival index: 1221
+value: 19
+Arrival index: 1222
+value: 28
+Arrival index: 1223
+value: 33
+Arrival index: 1224
+value: 23
+Arrival index: 1225
+value: 24
+Arrival index: 1226
+value: 22
+Arrival index: 1227
+value: 12
+Arrival index: 1228
+value: 14
+Arrival index: 1229
+value: 14
+Arrival index: 1230
+value: 10
+Arrival index: 1231
+value: 14
+Arrival index: 1232
+value: 21
+Arrival index: 1233
+value: 21
+Arrival index: 1234
+value: 28
+Arrival index: 1235
+value: 30
+Arrival index: 1236
+value: 27
+Arrival index: 1237
+value: 28
+Arrival index: 1238
+value: 22
+Arrival index: 1239
+value: 19
+Arrival index: 1240
+value: 18
+Arrival index: 1241
+value: 9
+Arrival index: 1242
+value: 14
+Arrival index: 1243
+value: 19
+Arrival index: 1244
+value: 14
+Arrival index: 1245
+value: 23
+Arrival index: 1246
+value: 30
+Arrival index: 1247
+value: 26
+Arrival index: 1248
+value: 31
+Arrival index: 1249
+value: 28
+Arrival index: 1250
+value: 17
+Arrival index: 1251
+value: 13
+Arrival index: 1252
+value: 16
+Arrival index: 1253
+value: 10
+Arrival index: 1254
+value: 9
+Arrival index: 1255
+value: 15
+Arrival index: 1256
+value: 12
+Arrival index: 1257
+value: 19
+Arrival index: 1258
+value: 27
+Arrival index: 1259
+value: 21
+Arrival index: 1260
+value: 25
+Arrival index: 1261
+value: 24
+Arrival index: 1262
+value: 20
+Arrival index: 1263
+value: 21
+Arrival index: 1264
+value: 13
+Arrival index: 1265
+value: 9
+Arrival index: 1266
+value: 17
+Arrival index: 1267
+value: 14
+Arrival index: 1268
+value: 12
+Arrival index: 1269
+value: 20
+Arrival index: 1270
+value: 21
+Arrival index: 1271
+value: 18
+Arrival index: 1272
+value: 27
+Arrival index: 1273
+value: 22
+Arrival index: 1274
+value: 15
+Arrival index: 1275
+value: 20
+Arrival index: 1276
+value: 15
+Arrival index: 1277
+value: 9
+Arrival index: 1278
+value: 14
+Arrival index: 1279
+value: 12
+Arrival index: 1280
+value: 9
+Arrival index: 1281
+value: 17
+Arrival index: 1282
+value: 16
+Arrival index: 1283
+value: 15
+Arrival index: 1284
+value: 20
+Arrival index: 1285
+value: 20
+Arrival index: 1286
+value: 18
+Arrival index: 1287
+value: 22
+Arrival index: 1288
+value: 15
+Arrival index: 1289
+value: 19
+Arrival index: 1290
+value: 16
+Arrival index: 1291
+value: 11
+Arrival index: 1292
+value: 18
+Arrival index: 1293
+value: 14
+Arrival index: 1294
+value: 13
+Arrival index: 1295
+value: 20
+Arrival index: 1296
+value: 16
+Arrival index: 1297
+value: 18
+Arrival index: 1298
+value: 25
+Arrival index: 1299
+value: 19
+Arrival index: 1300
+value: 20
+Arrival index: 1301
+value: 19
+Arrival index: 1302
+value: 14
+Arrival index: 1303
+value: 14
+Arrival index: 1304
+value: 14
+Arrival index: 1305
+value: 9
+Arrival index: 1306
+value: 12
+Arrival index: 1307
+value: 15
+Arrival index: 1308
+value: 13
+Arrival index: 1309
+value: 22
+Arrival index: 1310
+value: 23
+Arrival index: 1311
+value: 19
+Arrival index: 1312
+value: 25
+Arrival index: 1313
+value: 20
+Arrival index: 1314
+value: 16
+Arrival index: 1315
+value: 20
+Arrival index: 1316
+value: 11
+Arrival index: 1317
+value: 13
+Arrival index: 1318
+value: 16
+Arrival index: 1319
+value: 11
+Arrival index: 1320
+value: 18
+Arrival index: 1321
+value: 18
+Arrival index: 1322
+value: 16
+Arrival index: 1323
+value: 23
+Arrival index: 1324
+value: 23
+Arrival index: 1325
+value: 18
+Arrival index: 1326
+value: 21
+Arrival index: 1327
+value: 18
+Arrival index: 1328
+value: 10
+Arrival index: 1329
+value: 13
+Arrival index: 1330
+value: 14
+Arrival index: 1331
+value: 9
+Arrival index: 1332
+value: 18
+Arrival index: 1333
+value: 19
+Arrival index: 1334
+value: 16
+Arrival index: 1335
+value: 24
+Arrival index: 1336
+value: 22
+Arrival index: 1337
+value: 18
+Arrival index: 1338
+value: 23
+Arrival index: 1339
+value: 16
+Arrival index: 1340
+value: 11
+Arrival index: 1341
+value: 12
+Arrival index: 1342
+value: 8
+Arrival index: 1343
+value: 13
+Arrival index: 1344
+value: 14
+Arrival index: 1345
+value: 12
+Arrival index: 1346
+value: 21
+Arrival index: 1347
+value: 19
+Arrival index: 1348
+value: 15
+Arrival index: 1349
+value: 23
+Arrival index: 1350
+value: 18
+Arrival index: 1351
+value: 14
+Arrival index: 1352
+value: 18
+Arrival index: 1353
+value: 14
+Arrival index: 1354
+value: 12
+Arrival index: 1355
+value: 18
+Arrival index: 1356
+value: 15
+Arrival index: 1357
+value: 16
+Arrival index: 1358
+value: 23
+Arrival index: 1359
+value: 20
+Arrival index: 1360
+value: 24
+Arrival index: 1361
+value: 22
+Arrival index: 1362
+value: 20
+Arrival index: 1363
+value: 23
+Arrival index: 1364
+value: 19
+Arrival index: 1365
+value: 14
+Arrival index: 1366
+value: 18
+Arrival index: 1367
+value: 15
+Arrival index: 1368
+value: 16
+Arrival index: 1369
+value: 21
+Arrival index: 1370
+value: 16
+Arrival index: 1371
+value: 17
+Arrival index: 1372
+value: 23
+Arrival index: 1373
+value: 21
+Arrival index: 1374
+value: 22
+Arrival index: 1375
+value: 22
+Arrival index: 1376
+value: 19
+Arrival index: 1377
+value: 24
+Arrival index: 1378
+value: 23
+Arrival index: 1379
+value: 18
+Arrival index: 1380
+value: 21
+Arrival index: 1381
+value: 19
+Arrival index: 1382
+value: 20
+Arrival index: 1383
+value: 26
+Arrival index: 1384
+value: 23
+Arrival index: 1385
+value: 23
+Arrival index: 1386
+value: 27
+Arrival index: 1387
+value: 25
+Arrival index: 1388
+value: 24
+Arrival index: 1389
+value: 26
+Arrival index: 1390
+value: 22
+Arrival index: 1391
+value: 22
+Arrival index: 1392
+value: 22
+Arrival index: 1393
+value: 17
+Arrival index: 1394
+value: 19
+Arrival index: 1395
+value: 18
+Arrival index: 1396
+value: 19
+Arrival index: 1397
+value: 23
+Arrival index: 1398
+value: 18
+Arrival index: 1399
+value: 24
+Arrival index: 1400
+value: 27
+Arrival index: 1401
+value: 22
+Arrival index: 1402
+value: 25
+Arrival index: 1403
+value: 24
+Arrival index: 1404
+value: 18
+Arrival index: 1405
+value: 21
+Arrival index: 1406
+value: 21
+Arrival index: 1407
+value: 19
+Arrival index: 1408
+value: 24
+Arrival index: 1409
+value: 22
+Arrival index: 1410
+value: 24
+Arrival index: 1411
+value: 26
+Arrival index: 1412
+value: 23
+Arrival index: 1413
+value: 28
+Arrival index: 1414
+value: 25
+Arrival index: 1415
+value: 22
+Arrival index: 1416
+value: 24
+Arrival index: 1417
+value: 18
+Arrival index: 1418
+value: 21
+Arrival index: 1419
+value: 23
+Arrival index: 1420
+value: 18
+Arrival index: 1421
+value: 24
+Arrival index: 1422
+value: 25
+Arrival index: 1423
+value: 26
+Arrival index: 1424
+value: 27
+Arrival index: 1425
+value: 22
+Arrival index: 1426
+value: 23
+Arrival index: 1427
+value: 23
+Arrival index: 1428
+value: 18
+Arrival index: 1429
+value: 22
+Arrival index: 1430
+value: 21
+Arrival index: 1431
+value: 18
+Arrival index: 1432
+value: 27
+Arrival index: 1433
+value: 22
+Arrival index: 1434
+value: 19
+Arrival index: 1435
+value: 27
+Arrival index: 1436
+value: 21
+Arrival index: 1437
+value: 19
+Arrival index: 1438
+value: 24
+Arrival index: 1439
+value: 17
+Arrival index: 1440
+value: 18
+Arrival index: 1441
+value: 20
+Arrival index: 1442
+value: 14
+Arrival index: 1443
+value: 21
+Arrival index: 1444
+value: 18
+Arrival index: 1445
+value: 19
+Arrival index: 1446
+value: 23
+Arrival index: 1447
+value: 16
+Arrival index: 1448
+value: 22
+Arrival index: 1449
+value: 22
+Arrival index: 1450
+value: 16
+Arrival index: 1451
+value: 22
+Arrival index: 1452
+value: 18
+Arrival index: 1453
+value: 17
+Arrival index: 1454
+value: 22
+Arrival index: 1455
+value: 18
+Arrival index: 1456
+value: 19
+Arrival index: 1457
+value: 19
+Arrival index: 1458
+value: 14
+Arrival index: 1459
+value: 19
+Arrival index: 1460
+value: 18
+Arrival index: 1461
+value: 11
+Arrival index: 1462
+value: 20
+Arrival index: 1463
+value: 18
+Arrival index: 1464
+value: 17
+Arrival index: 1465
+value: 22
+Arrival index: 1466
+value: 18
+Arrival index: 1467
+value: 19
+Arrival index: 1468
+value: 20
+Arrival index: 1469
+value: 13
+Arrival index: 1470
+value: 18
+Arrival index: 1471
+value: 16
+Arrival index: 1472
+value: 14
+Arrival index: 1473
+value: 22
+Arrival index: 1474
+value: 14
+Arrival index: 1475
+value: 19
+Arrival index: 1476
+value: 21
+Arrival index: 1477
+value: 16
+Arrival index: 1478
+value: 20
+Arrival index: 1479
+value: 16
+Arrival index: 1480
+value: 12
+Arrival index: 1481
+value: 19
+Arrival index: 1482
+value: 14
+Arrival index: 1483
+value: 13
+Arrival index: 1484
+value: 18
+Arrival index: 1485
+value: 17
+Arrival index: 1486
+value: 19
+Arrival index: 1487
+value: 21
+Arrival index: 1488
+value: 18
+Arrival index: 1489
+value: 21
+Arrival index: 1490
+value: 20
+Arrival index: 1491
+value: 16
+Arrival index: 1492
+value: 18
+Arrival index: 1493
+value: 14
+Arrival index: 1494
+value: 13
+Arrival index: 1495
+value: 17
+Arrival index: 1496
+value: 15
+Arrival index: 1497
+value: 19
+Arrival index: 1498
+value: 20
+Arrival index: 1499
+value: 17
+Arrival index: 1500
+value: 20
+Arrival index: 1501
+value: 15
+Arrival index: 1502
+value: 19
+Arrival index: 1503
+value: 17
+Arrival index: 1504
+value: 13
+Arrival index: 1505
+value: 18
+Arrival index: 1506
+value: 14
+Arrival index: 1507
+value: 17
+Arrival index: 1508
+value: 19
+Arrival index: 1509
+value: 16
+Arrival index: 1510
+value: 21
+Arrival index: 1511
+value: 21
+Arrival index: 1512
+value: 20
+Arrival index: 1513
+value: 22
+Arrival index: 1514
+value: 19
+Arrival index: 1515
+value: 20
+Arrival index: 1516
+value: 21
+Arrival index: 1517
+value: 17
+Arrival index: 1518
+value: 19
+Arrival index: 1519
+value: 19
+Arrival index: 1520
+value: 19
+Arrival index: 1521
+value: 24
+Arrival index: 1522
+value: 20
+Arrival index: 1523
+value: 18
+Arrival index: 1524
+value: 19
+Arrival index: 1525
+value: 16
+Arrival index: 1526
+value: 20
+Arrival index: 1527
+value: 19
+Arrival index: 1528
+value: 20
+Arrival index: 1529
+value: 22
+Arrival index: 1530
+value: 18
+Arrival index: 1531
+value: 21
+Arrival index: 1532
+value: 18
+Arrival index: 1533
+value: 19
+Arrival index: 1534
+value: 22
+Arrival index: 1535
+value: 23
+Arrival index: 1536
+value: 21
+Arrival index: 1537
+value: 21
+Arrival index: 1538
+value: 21
+Arrival index: 1539
+value: 25
+Arrival index: 1540
+value: 20
+Arrival index: 1541
+value: 22
+Arrival index: 1542
+value: 25
+Arrival index: 1543
+value: 20
+Arrival index: 1544
+value: 21
+Arrival index: 1545
+value: 23
+Arrival index: 1546
+value: 18
+Arrival index: 1547
+value: 22
+Arrival index: 1548
+value: 22
+Arrival index: 1549
+value: 21
+Arrival index: 1550
+value: 24
+Arrival index: 1551
+value: 20
+Arrival index: 1552
+value: 28
+Arrival index: 1553
+value: 23
+Arrival index: 1554
+value: 20
+Arrival index: 1555
+value: 23
+Arrival index: 1556
+value: 17
+Arrival index: 1557
+value: 20
+Arrival index: 1558
+value: 20
+Arrival index: 1559
+value: 16
+Arrival index: 1560
+value: 24
+Arrival index: 1561
+value: 19
+Arrival index: 1562
+value: 22
+Arrival index: 1563
+value: 24
+Arrival index: 1564
+value: 19
+Arrival index: 1565
+value: 26
+Arrival index: 1566
+value: 20
+Arrival index: 1567
+value: 17
+Arrival index: 1568
+value: 23
+Arrival index: 1569
+value: 13
+Arrival index: 1570
+value: 16
+Arrival index: 1571
+value: 21
+Arrival index: 1572
+value: 17
+Arrival index: 1573
+value: 21
+Arrival index: 1574
+value: 19
+Arrival index: 1575
+value: 23
+Arrival index: 1576
+value: 23
+Arrival index: 1577
+value: 17
+Arrival index: 1578
+value: 25
+Arrival index: 1579
+value: 17
+Arrival index: 1580
+value: 21
+Arrival index: 1581
+value: 20
+Arrival index: 1582
+value: 17
+Arrival index: 1583
+value: 22
+Arrival index: 1584
+value: 17
+Arrival index: 1585
+value: 26
+Arrival index: 1586
+value: 22
+Arrival index: 1587
+value: 17
+Arrival index: 1588
+value: 25
+Arrival index: 1589
+value: 18
+Arrival index: 1590
+value: 19
+Arrival index: 1591
+value: 24
+Arrival index: 1592
+value: 16
+Arrival index: 1593
+value: 21
+Arrival index: 1594
+value: 17
+Arrival index: 1595
+value: 15
+Arrival index: 1596
+value: 23
+Arrival index: 1597
+value: 17
+Arrival index: 1598
+value: 23
+Arrival index: 1599
+value: 22
+Arrival index: 1600
+value: 15
+Arrival index: 1601
+value: 23
+Arrival index: 1602
+value: 18
+Arrival index: 1603
+value: 19
+Arrival index: 1604
+value: 20
+Arrival index: 1605
+value: 14
+Arrival index: 1606
+value: 19
+Arrival index: 1607
+value: 15
+Arrival index: 1608
+value: 18
+Arrival index: 1609
+value: 24
+Arrival index: 1610
+value: 15
+Arrival index: 1611
+value: 19
+Arrival index: 1612
+value: 16
+Arrival index: 1613
+value: 14
+Arrival index: 1614
+value: 21
+Arrival index: 1615
+value: 14
+Arrival index: 1616
+value: 17
+Arrival index: 1617
+value: 16
+Arrival index: 1618
+value: 12
+Arrival index: 1619
+value: 19
+Arrival index: 1620
+value: 14
+Arrival index: 1621
+value: 15
+Arrival index: 1622
+value: 21
+Arrival index: 1623
+value: 16
+Arrival index: 1624
+value: 18
+Arrival index: 1625
+value: 15
+Arrival index: 1626
+value: 15
+Arrival index: 1627
+value: 19
+Arrival index: 1628
+value: 12
+Arrival index: 1629
+value: 19
+Arrival index: 1630
+value: 13
+Arrival index: 1631
+value: 16
+Arrival index: 1632
+value: 19
+Arrival index: 1633
+value: 13
+Arrival index: 1634
+value: 19
+Arrival index: 1635
+value: 14
+Arrival index: 1636
+value: 16
+Arrival index: 1637
+value: 14
+Arrival index: 1638
+value: 14
+Arrival index: 1639
+value: 19
+Arrival index: 1640
+value: 15
+Arrival index: 1641
+value: 19
+Arrival index: 1642
+value: 19
+Arrival index: 1643
+value: 14
+Arrival index: 1644
+value: 19
+Arrival index: 1645
+value: 15
+Arrival index: 1646
+value: 16
+Arrival index: 1647
+value: 17
+Arrival index: 1648
+value: 14
+Arrival index: 1649
+value: 17
+Arrival index: 1650
+value: 13
+Arrival index: 1651
+value: 16
+Arrival index: 1652
+value: 22
+Arrival index: 1653
+value: 16
+Arrival index: 1654
+value: 18
+Arrival index: 1655
+value: 14
+Arrival index: 1656
+value: 16
+Arrival index: 1657
+value: 15
+Arrival index: 1658
+value: 12
+Arrival index: 1659
+value: 20
+Arrival index: 1660
+value: 9
+Arrival index: 1661
+value: 18
+Arrival index: 1662
+value: 16
+Arrival index: 1663
+value: 15
+Arrival index: 1664
+value: 20
+Arrival index: 1665
+value: 15
+Arrival index: 1666
+value: 20
+Arrival index: 1667
+value: 16
+Arrival index: 1668
+value: 16
+Arrival index: 1669
+value: 18
+Arrival index: 1670
+value: 14
+Arrival index: 1671
+value: 21
+Arrival index: 1672
+value: 19
+Arrival index: 1673
+value: 20
+Arrival index: 1674
+value: 21
+Arrival index: 1675
+value: 18
+Arrival index: 1676
+value: 23
+Arrival index: 1677
+value: 23
+Arrival index: 1678
+value: 21
+Arrival index: 1679
+value: 21
+Arrival index: 1680
+value: 16
+Arrival index: 1681
+value: 20
+Arrival index: 1682
+value: 15
+Arrival index: 1683
+value: 20
+Arrival index: 1684
+value: 17
+Arrival index: 1685
+value: 19
+Arrival index: 1686
+value: 21
+Arrival index: 1687
+value: 15
+Arrival index: 1688
+value: 22
+Arrival index: 1689
+value: 18
+Arrival index: 1690
+value: 19
+Arrival index: 1691
+value: 20
+Arrival index: 1692
+value: 17
+Arrival index: 1693
+value: 23
+Arrival index: 1694
+value: 19
+Arrival index: 1695
+value: 22
+Arrival index: 1696
+value: 23
+Arrival index: 1697
+value: 21
+Arrival index: 1698
+value: 28
+Arrival index: 1699
+value: 20
+Arrival index: 1700
+value: 22
+Arrival index: 1701
+value: 21
+Arrival index: 1702
+value: 20
+Arrival index: 1703
+value: 25
+Arrival index: 1704
+value: 20
+Arrival index: 1705
+value: 25
+Arrival index: 1706
+value: 22
+Arrival index: 1707
+value: 22
+Arrival index: 1708
+value: 25
+Arrival index: 1709
+value: 22
+Arrival index: 1710
+value: 24
+Arrival index: 1711
+value: 17
+Arrival index: 1712
+value: 23
+Arrival index: 1713
+value: 21
+Arrival index: 1714
+value: 22
+Arrival index: 1715
+value: 24
+Arrival index: 1716
+value: 19
+Arrival index: 1717
+value: 25
+Arrival index: 1718
+value: 20
+Arrival index: 1719
+value: 25
+Arrival index: 1720
+value: 22
+Arrival index: 1721
+value: 17
+Arrival index: 1722
+value: 24
+Arrival index: 1723
+value: 19
+Arrival index: 1724
+value: 18
+Arrival index: 1725
+value: 19
+Arrival index: 1726
+value: 14
+Arrival index: 1727
+value: 22
+Arrival index: 1728
+value: 16
+Arrival index: 1729
+value: 22
+Arrival index: 1730
+value: 20
+Arrival index: 1731
+value: 16
+Arrival index: 1732
+value: 22
+Arrival index: 1733
+value: 12
+Arrival index: 1734
+value: 21
+Arrival index: 1735
+value: 18
+Arrival index: 1736
+value: 19
+Arrival index: 1737
+value: 19
+Arrival index: 1738
+value: 18
+Arrival index: 1739
+value: 23
+Arrival index: 1740
+value: 16
+Arrival index: 1741
+value: 24
+Arrival index: 1742
+value: 16
+Arrival index: 1743
+value: 19
+Arrival index: 1744
+value: 17
+Arrival index: 1745
+value: 16
+Arrival index: 1746
+value: 22
+Arrival index: 1747
+value: 12
+Arrival index: 1748
+value: 20
+Arrival index: 1749
+value: 17
+Arrival index: 1750
+value: 16
+Arrival index: 1751
+value: 21
+Arrival index: 1752
+value: 13
+Arrival index: 1753
+value: 19
+Arrival index: 1754
+value: 12
+Arrival index: 1755
+value: 16
+Arrival index: 1756
+value: 14
+Arrival index: 1757
+value: 13
+Arrival index: 1758
+value: 19
+Arrival index: 1759
+value: 13
+Arrival index: 1760
+value: 22
+Arrival index: 1761
+value: 11
+Arrival index: 1762
+value: 20
+Arrival index: 1763
+value: 14
+Arrival index: 1764
+value: 17
+Arrival index: 1765
+value: 17
+Arrival index: 1766
+value: 12
+Arrival index: 1767
+value: 17
+Arrival index: 1768
+value: 10
+Arrival index: 1769
+value: 20
+Arrival index: 1770
+value: 13
+Arrival index: 1771
+value: 18
+Arrival index: 1772
+value: 21
+Arrival index: 1773
+value: 17
+Arrival index: 1774
+value: 20
+Arrival index: 1775
+value: 16
+Arrival index: 1776
+value: 18
+Arrival index: 1777
+value: 16
+Arrival index: 1778
+value: 15
+Arrival index: 1779
+value: 20
+Arrival index: 1780
+value: 14
+Arrival index: 1781
+value: 19
+Arrival index: 1782
+value: 18
+Arrival index: 1783
+value: 19
+Arrival index: 1784
+value: 22
+Arrival index: 1785
+value: 18
+Arrival index: 1786
+value: 21
+Arrival index: 1787
+value: 13
+Arrival index: 1788
+value: 19
+Arrival index: 1789
+value: 15
+Arrival index: 1790
+value: 16
+Arrival index: 1791
+value: 15
+Arrival index: 1792
+value: 14
+Arrival index: 1793
+value: 19
+Arrival index: 1794
+value: 13
+Arrival index: 1795
+value: 18
+Arrival index: 1796
+value: 13
+Arrival index: 1797
+value: 17
+Arrival index: 1798
+value: 18
+Arrival index: 1799
+value: 16
+Arrival index: 1800
+value: 18
+Arrival index: 1801
+value: 14
+Arrival index: 1802
+value: 22
+Arrival index: 1803
+value: 18
+Arrival index: 1804
+value: 20
+Arrival index: 1805
+value: 20
+Arrival index: 1806
+value: 18
+Arrival index: 1807
+value: 20
+Arrival index: 1808
+value: 17
+Arrival index: 1809
+value: 23
+Arrival index: 1810
+value: 17
+Arrival index: 1811
+value: 21
+Arrival index: 1812
+value: 17
+Arrival index: 1813
+value: 20
+Arrival index: 1814
+value: 18
+Arrival index: 1815
+value: 18
+Arrival index: 1816
+value: 20
+Arrival index: 1817
+value: 15
+Arrival index: 1818
+value: 20
+Arrival index: 1819
+value: 14
+Arrival index: 1820
+value: 17
+Arrival index: 1821
+value: 15
+Arrival index: 1822
+value: 22
+Arrival index: 1823
+value: 17
+Arrival index: 1824
+value: 20
+Arrival index: 1825
+value: 18
+Arrival index: 1826
+value: 20
+Arrival index: 1827
+value: 20
+Arrival index: 1828
+value: 25
+Arrival index: 1829
+value: 25
+Arrival index: 1830
+value: 19
+Arrival index: 1831
+value: 23
+Arrival index: 1832
+value: 20
+Arrival index: 1833
+value: 22
+Arrival index: 1834
+value: 20
+Arrival index: 1835
+value: 20
+Arrival index: 1836
+value: 18
+Arrival index: 1837
+value: 18
+Arrival index: 1838
+value: 22
+Arrival index: 1839
+value: 18
+Arrival index: 1840
+value: 21
+Arrival index: 1841
+value: 18
+Arrival index: 1842
+value: 21
+Arrival index: 1843
+value: 16
+Arrival index: 1844
+value: 19
+Arrival index: 1845
+value: 16
+Arrival index: 1846
+value: 17
+Arrival index: 1847
+value: 17
+Arrival index: 1848
+value: 18
+Arrival index: 1849
+value: 21
+Arrival index: 1850
+value: 17
+Arrival index: 1851
+value: 21
+Arrival index: 1852
+value: 18
+Arrival index: 1853
+value: 22
+Arrival index: 1854
+value: 20
+Arrival index: 1855
+value: 22
+Arrival index: 1856
+value: 21
+Arrival index: 1857
+value: 19
+Arrival index: 1858
+value: 23
+Arrival index: 1859
+value: 18
+Arrival index: 1860
+value: 26
+Arrival index: 1861
+value: 21
+Arrival index: 1862
+value: 26
+Arrival index: 1863
+value: 22
+Arrival index: 1864
+value: 20
+Arrival index: 1865
+value: 20
+Arrival index: 1866
+value: 18
+Arrival index: 1867
+value: 20
+Arrival index: 1868
+value: 18
+Arrival index: 1869
+value: 23
+Arrival index: 1870
+value: 19
+Arrival index: 1871
+value: 25
+Arrival index: 1872
+value: 22
+Arrival index: 1873
+value: 26
+Arrival index: 1874
+value: 22
+Arrival index: 1875
+value: 21
+Arrival index: 1876
+value: 21
+Arrival index: 1877
+value: 20
+Arrival index: 1878
+value: 23
+Arrival index: 1879
+value: 20
+Arrival index: 1880
+value: 22
+Arrival index: 1881
+value: 20
+Arrival index: 1882
+value: 26
+Arrival index: 1883
+value: 23
+Arrival index: 1884
+value: 23
+Arrival index: 1885
+value: 27
+Arrival index: 1886
+value: 22
+Arrival index: 1887
+value: 25
+Arrival index: 1888
+value: 20
+Arrival index: 1889
+value: 24
+Arrival index: 1890
+value: 18
+Arrival index: 1891
+value: 23
+Arrival index: 1892
+value: 22
+Arrival index: 1893
+value: 20
+Arrival index: 1894
+value: 22
+Arrival index: 1895
+value: 21
+Arrival index: 1896
+value: 25
+Arrival index: 1897
+value: 21
+Arrival index: 1898
+value: 26
+Arrival index: 1899
+value: 20
+Arrival index: 1900
+value: 21
+Arrival index: 1901
+value: 19
+Arrival index: 1902
+value: 22
+Arrival index: 1903
+value: 23
+Arrival index: 1904
+value: 19
+Arrival index: 1905
+value: 22
+Arrival index: 1906
+value: 17
+Arrival index: 1907
+value: 23
+Arrival index: 1908
+value: 20
+Arrival index: 1909
+value: 23
+Arrival index: 1910
+value: 23
+Arrival index: 1911
+value: 23
+Arrival index: 1912
+value: 27
+Arrival index: 1913
+value: 22
+Arrival index: 1914
+value: 26
+Arrival index: 1915
+value: 19
+Arrival index: 1916
+value: 21
+Arrival index: 1917
+value: 17
+Arrival index: 1918
+value: 20
+Arrival index: 1919
+value: 18
+Arrival index: 1920
+value: 17
+Arrival index: 1921
+value: 23
+Arrival index: 1922
+value: 21
+Arrival index: 1923
+value: 28
+Arrival index: 1924
+value: 20
+Arrival index: 1925
+value: 24
+Arrival index: 1926
+value: 19
+Arrival index: 1927
+value: 17
+Arrival index: 1928
+value: 16
+Arrival index: 1929
+value: 16
+Arrival index: 1930
+value: 16
+Arrival index: 1931
+value: 15
+Arrival index: 1932
+value: 21
+Arrival index: 1933
+value: 20
+Arrival index: 1934
+value: 26
+Arrival index: 1935
+value: 25
+Arrival index: 1936
+value: 25
+Arrival index: 1937
+value: 24
+Arrival index: 1938
+value: 22
+Arrival index: 1939
+value: 21
+Arrival index: 1940
+value: 13
+Arrival index: 1941
+value: 17
+Arrival index: 1942
+value: 13
+Arrival index: 1943
+value: 18
+Arrival index: 1944
+value: 17
+Arrival index: 1945
+value: 22
+Arrival index: 1946
+value: 25
+Arrival index: 1947
+value: 22
+Arrival index: 1948
+value: 29
+Arrival index: 1949
+value: 19
+Arrival index: 1950
+value: 22
+Arrival index: 1951
+value: 15
+Arrival index: 1952
+value: 15
+Arrival index: 1953
+value: 12
+Arrival index: 1954
+value: 12
+Arrival index: 1955
+value: 14
+Arrival index: 1956
+value: 15
+Arrival index: 1957
+value: 22
+Arrival index: 1958
+value: 22
+Arrival index: 1959
+value: 27
+Arrival index: 1960
+value: 25
+Arrival index: 1961
+value: 25
+Arrival index: 1962
+value: 23
+Arrival index: 1963
+value: 19
+Arrival index: 1964
+value: 20
+Arrival index: 1965
+value: 13
+Arrival index: 1966
+value: 16
+Arrival index: 1967
+value: 14
+Arrival index: 1968
+value: 19
+Arrival index: 1969
+value: 16
+Arrival index: 1970
+value: 22
+Arrival index: 1971
+value: 21
+Arrival index: 1972
+value: 22
+Arrival index: 1973
+value: 21
+Arrival index: 1974
+value: 18
+Arrival index: 1975
+value: 19
+Arrival index: 1976
+value: 14
+Arrival index: 1977
+value: 15
+Arrival index: 1978
+value: 10
+Arrival index: 1979
+value: 15
+Arrival index: 1980
+value: 10
+Arrival index: 1981
+value: 17
+Arrival index: 1982
+value: 15
+Arrival index: 1983
+value: 22
+Arrival index: 1984
+value: 24
+Arrival index: 1985
+value: 24
+Arrival index: 1986
+value: 24
+Arrival index: 1987
+value: 19
+Arrival index: 1988
+value: 22
+Arrival index: 1989
+value: 15
+Arrival index: 1990
+value: 16
+Arrival index: 1991
+value: 12
+Arrival index: 1992
+value: 15
+Arrival index: 1993
+value: 17
+Arrival index: 1994
+value: 14
+Arrival index: 1995
+value: 21
+Arrival index: 1996
+value: 18
+Arrival index: 1997
+value: 24
+Arrival index: 1998
+value: 21
+Arrival index: 1999
+value: 24
+Arrival index: 2000
+value: 16
+Arrival index: 2001
+value: 16
+Arrival index: 2002
+value: 13
+Arrival index: 2003
+value: 13
+Arrival index: 2004
+value: 11
+Arrival index: 2005
+value: 9
+Arrival index: 2006
+value: 17
+Arrival index: 2007
+value: 13
+Arrival index: 2008
+value: 21
+Arrival index: 2009
+value: 21
+Arrival index: 2010
+value: 25
+Arrival index: 2011
+value: 22
+Arrival index: 2012
+value: 22
+Arrival index: 2013
+value: 19
+Arrival index: 2014
+value: 14
+Arrival index: 2015
+value: 17
+Arrival index: 2016
+value: 13
+Arrival index: 2017
+value: 17
+Arrival index: 2018
+value: 13
+Arrival index: 2019
+value: 18
+Arrival index: 2020
+value: 18
+Arrival index: 2021
+value: 22
+Arrival index: 2022
+value: 23
+Arrival index: 2023
+value: 25
+Arrival index: 2024
+value: 20
+Arrival index: 2025
+value: 17
+Arrival index: 2026
+value: 19
+Arrival index: 2027
+value: 13
+Arrival index: 2028
+value: 17
+Arrival index: 2029
+value: 9
+Arrival index: 2030
+value: 16
+Arrival index: 2031
+value: 12
+Arrival index: 2032
+value: 21
+Arrival index: 2033
+value: 22
+Arrival index: 2034
+value: 23
+Arrival index: 2035
+value: 27
+Arrival index: 2036
+value: 25
+Arrival index: 2037
+value: 25
+Arrival index: 2038
+value: 20
+Arrival index: 2039
+value: 23
+Arrival index: 2040
+value: 18
+Arrival index: 2041
+value: 20
+Arrival index: 2042
+value: 19
+Arrival index: 2043
+value: 22
+Arrival index: 2044
+value: 20
+Arrival index: 2045
+value: 25
+Arrival index: 2046
+value: 28
+Arrival index: 2047
+value: 25
+Arrival index: 2048
+value: 31
+Arrival index: 2049
+value: 23
+Arrival index: 2050
+value: 23
+Arrival index: 2051
+value: 16
+Arrival index: 2052
+value: 20
+Arrival index: 2053
+value: 15
+Arrival index: 2054
+value: 17
+Arrival index: 2055
+value: 18
+Arrival index: 2056
+value: 21
+Arrival index: 2057
+value: 21
+Arrival index: 2058
+value: 22
+Arrival index: 2059
+value: 25
+Arrival index: 2060
+value: 15
+Arrival index: 2061
+value: 22
+Arrival index: 2062
+value: 20
+Arrival index: 2063
+value: 21
+Arrival index: 2064
+value: 16
+Arrival index: 2065
+value: 20
+Arrival index: 2066
+value: 16
+Arrival index: 2067
+value: 21
+Arrival index: 2068
+value: 21
+Arrival index: 2069
+value: 20
+Arrival index: 2070
+value: 22
+Arrival index: 2071
+value: 21
+Arrival index: 2072
+value: 25
+Arrival index: 2073
+value: 22
+Arrival index: 2074
+value: 21
+Arrival index: 2075
+value: 18
+Arrival index: 2076
+value: 21
+Arrival index: 2077
+value: 15
+Arrival index: 2078
+value: 18
+Arrival index: 2079
+value: 14
+Arrival index: 2080
+value: 18
+Arrival index: 2081
+value: 14
+Arrival index: 2082
+value: 17
+Arrival index: 2083
+value: 16
+Arrival index: 2084
+value: 16
+Arrival index: 2085
+value: 20
+Arrival index: 2086
+value: 17
+Arrival index: 2087
+value: 21
+Arrival index: 2088
+value: 15
+Arrival index: 2089
+value: 19
+Arrival index: 2090
+value: 13
+Arrival index: 2091
+value: 16
+Arrival index: 2092
+value: 15
+Arrival index: 2093
+value: 17
+Arrival index: 2094
+value: 17
+Arrival index: 2095
+value: 16
+Arrival index: 2096
+value: 19
+Arrival index: 2097
+value: 16
+Arrival index: 2098
+value: 22
+Arrival index: 2099
+value: 14
+Arrival index: 2100
+value: 19
+Arrival index: 2101
+value: 13
+Arrival index: 2102
+value: 18
+Arrival index: 2103
+value: 12
+Arrival index: 2104
+value: 14
+Arrival index: 2105
+value: 10
+Arrival index: 2106
+value: 17
+Arrival index: 2107
+value: 12
+Arrival index: 2108
+value: 15
+Arrival index: 2109
+value: 14
+Arrival index: 2110
+value: 17
+Arrival index: 2111
+value: 15
+Arrival index: 2112
+value: 18
+Arrival index: 2113
+value: 19
+Arrival index: 2114
+value: 12
+Arrival index: 2115
+value: 15
+Arrival index: 2116
+value: 11
+Arrival index: 2117
+value: 17
+Arrival index: 2118
+value: 12
+Arrival index: 2119
+value: 15
+Arrival index: 2120
+value: 14
+Arrival index: 2121
+value: 18
+Arrival index: 2122
+value: 22
+Arrival index: 2123
+value: 22
+Arrival index: 2124
+value: 20
+Arrival index: 2125
+value: 15
+Arrival index: 2126
+value: 21
+Arrival index: 2127
+value: 11
+Arrival index: 2128
+value: 17
+Arrival index: 2129
+value: 7
+Arrival index: 2130
+value: 16
+Arrival index: 2131
+value: 9
+Arrival index: 2132
+value: 19
+Arrival index: 2133
+value: 13
+Arrival index: 2134
+value: 19
+Arrival index: 2135
+value: 18
+Arrival index: 2136
+value: 19
+Arrival index: 2137
+value: 16
+Arrival index: 2138
+value: 13
+Arrival index: 2139
+value: 15
+Arrival index: 2140
+value: 9
+Arrival index: 2141
+value: 13
+Arrival index: 2142
+value: 8
+Arrival index: 2143
+value: 16
+Arrival index: 2144
+value: 10
+Arrival index: 2145
+value: 20
+Arrival index: 2146
+value: 16
+Arrival index: 2147
+value: 17
+Arrival index: 2148
+value: 17
+Arrival index: 2149
+value: 14
+Arrival index: 2150
+value: 16
+Arrival index: 2151
+value: 10
+Arrival index: 2152
+value: 16
+Arrival index: 2153
+value: 10
+Arrival index: 2154
+value: 16
+Arrival index: 2155
+value: 12
+Arrival index: 2156
+value: 19
+Arrival index: 2157
+value: 13
+Arrival index: 2158
+value: 21
+Arrival index: 2159
+value: 17
+Arrival index: 2160
+value: 26
+Arrival index: 2161
+value: 13
+Arrival index: 2162
+value: 19
+Arrival index: 2163
+value: 15
+Arrival index: 2164
+value: 14
+Arrival index: 2165
+value: 16
+Arrival index: 2166
+value: 15
+Arrival index: 2167
+value: 20
+Arrival index: 2168
+value: 12
+Arrival index: 2169
+value: 19
+Arrival index: 2170
+value: 11
+Arrival index: 2171
+value: 18
+Arrival index: 2172
+value: 14
+Arrival index: 2173
+value: 21
+Arrival index: 2174
+value: 16
+Arrival index: 2175
+value: 18
+Arrival index: 2176
+value: 20
+Arrival index: 2177
+value: 18
+Arrival index: 2178
+value: 21
+Arrival index: 2179
+value: 16
+Arrival index: 2180
+value: 20
+Arrival index: 2181
+value: 13
+Arrival index: 2182
+value: 22
+Arrival index: 2183
+value: 14
+Arrival index: 2184
+value: 24
+Arrival index: 2185
+value: 19
+Arrival index: 2186
+value: 25
+Arrival index: 2187
+value: 18
+Arrival index: 2188
+value: 25
+Arrival index: 2189
+value: 19
+Arrival index: 2190
+value: 23
+Arrival index: 2191
+value: 17
+Arrival index: 2192
+value: 20
+Arrival index: 2193
+value: 17
+Arrival index: 2194
+value: 17
+Arrival index: 2195
+value: 22
+Arrival index: 2196
+value: 18
+Arrival index: 2197
+value: 23
+Arrival index: 2198
+value: 19
+Arrival index: 2199
+value: 26
+Arrival index: 2200
+value: 19
+Arrival index: 2201
+value: 24
+Arrival index: 2202
+value: 17
+Arrival index: 2203
+value: 22
+Arrival index: 2204
+value: 18
+Arrival index: 2205
+value: 20
+Arrival index: 2206
+value: 18
+Arrival index: 2207
+value: 20
+Arrival index: 2208
+value: 23
+Arrival index: 2209
+value: 21
+Arrival index: 2210
+value: 24
+Arrival index: 2211
+value: 18
+Arrival index: 2212
+value: 20
+Arrival index: 2213
+value: 16
+Arrival index: 2214
+value: 18
+Arrival index: 2215
+value: 15
+Arrival index: 2216
+value: 21
+Arrival index: 2217
+value: 17
+Arrival index: 2218
+value: 23
+Arrival index: 2219
+value: 21
+Arrival index: 2220
+value: 24
+Arrival index: 2221
+value: 20
+Arrival index: 2222
+value: 21
+Arrival index: 2223
+value: 20
+Arrival index: 2224
+value: 14
+Arrival index: 2225
+value: 16
+Arrival index: 2226
+value: 12
+Arrival index: 2227
+value: 16
+Arrival index: 2228
+value: 14
+Arrival index: 2229
+value: 22
+Arrival index: 2230
+value: 19
+Arrival index: 2231
+value: 25
+Arrival index: 2232
+value: 21
+Arrival index: 2233
+value: 25
+Arrival index: 2234
+value: 15
+Arrival index: 2235
+value: 16
+Arrival index: 2236
+value: 10
+Arrival index: 2237
+value: 6
+Arrival index: 2238
+value: 6
+Arrival index: 2239
+value: 5
+Arrival index: 2240
+value: 14
+Arrival index: 2241
+value: 13
+Arrival index: 2242
+value: 26
+Arrival index: 2243
+value: 21
+Arrival index: 2244
+value: 28
+Arrival index: 2245
+value: 22
+Arrival index: 2246
+value: 23
+Arrival index: 2247
+value: 12
+Arrival index: 2248
+value: 8
+Arrival index: 2249
+value: 4
+Arrival index: 2250
+value: 0
+Arrival index: 2251
+value: 5
+Arrival index: 2252
+value: 7
+Arrival index: 2253
+value: 19
+Arrival index: 2254
+value: 19
+Arrival index: 2255
+value: 33
+Arrival index: 2256
+value: 28
+Arrival index: 2257
+value: 33
+Arrival index: 2258
+value: 23
+Arrival index: 2259
+value: 18
+Arrival index: 2260
+value: 6
+Arrival index: 2261
+value: 2
+Arrival index: 2262
+value: -2
+Arrival index: 2263
+value: -1
+Arrival index: 2264
+value: 3
+Arrival index: 2265
+value: 14
+Arrival index: 2266
+value: 25
+Arrival index: 2267
+value: 31
+Arrival index: 2268
+value: 40
+Arrival index: 2269
+value: 36
+Arrival index: 2270
+value: 38
+Arrival index: 2271
+value: 20
+Arrival index: 2272
+value: 19
+Arrival index: 2273
+value: 3
+Arrival index: 2274
+value: -1
+Arrival index: 2275
+value: -6
+Arrival index: 2276
+value: -2
+Arrival index: 2277
+value: 12
+Arrival index: 2278
+value: 18
+Arrival index: 2279
+value: 36
+Arrival index: 2280
+value: 39
+Arrival index: 2281
+value: 49
+Arrival index: 2282
+value: 40
+Arrival index: 2283
+value: 37
+Arrival index: 2284
+value: 18
+Arrival index: 2285
+value: 10
+Arrival index: 2286
+value: -2
+Arrival index: 2287
+value: -8
+Arrival index: 2288
+value: -5
+Arrival index: 2289
+value: 1
+Arrival index: 2290
+value: 17
+Arrival index: 2291
+value: 29
+Arrival index: 2292
+value: 44
+Arrival index: 2293
+value: 46
+Arrival index: 2294
+value: 49
+Arrival index: 2295
+value: 38
+Arrival index: 2296
+value: 30
+Arrival index: 2297
+value: 11
+Arrival index: 2298
+value: 1
+Arrival index: 2299
+value: -9
+Arrival index: 2300
+value: -11
+Arrival index: 2301
+value: -2
+Arrival index: 2302
+value: 8
+Arrival index: 2303
+value: 28
+Arrival index: 2304
+value: 39
+Arrival index: 2305
+value: 57
+Arrival index: 2306
+value: 56
+Arrival index: 2307
+value: 51
+Arrival index: 2308
+value: 37
+Arrival index: 2309
+value: 20
+Arrival index: 2310
+value: 6
+Arrival index: 2311
+value: -11
+Arrival index: 2312
+value: -13
+Arrival index: 2313
+value: -14
+Arrival index: 2314
+value: 0
+Arrival index: 2315
+value: 14
+Arrival index: 2316
+value: 36
+Arrival index: 2317
+value: 45
+Arrival index: 2318
+value: 53
+Arrival index: 2319
+value: 51
+Arrival index: 2320
+value: 40
+Arrival index: 2321
+value: 26
+Arrival index: 2322
+value: 4
+Arrival index: 2323
+value: -9
+Arrival index: 2324
+value: -23
+Arrival index: 2325
+value: -16
+Arrival index: 2326
+value: -11
+Arrival index: 2327
+value: 6
+Arrival index: 2328
+value: 23
+Arrival index: 2329
+value: 40
+Arrival index: 2330
+value: 53
+Arrival index: 2331
+value: 50
+Arrival index: 2332
+value: 49
+Arrival index: 2333
+value: 30
+Arrival index: 2334
+value: 17
+Arrival index: 2335
+value: -6
+Arrival index: 2336
+value: -14
+Arrival index: 2337
+value: -23
+Arrival index: 2338
+value: -16
+Arrival index: 2339
+value: -6
+Arrival index: 2340
+value: 11
+Arrival index: 2341
+value: 32
+Arrival index: 2342
+value: 40
+Arrival index: 2343
+value: 52
+Arrival index: 2344
+value: 44
+Arrival index: 2345
+value: 42
+Arrival index: 2346
+value: 19
+Arrival index: 2347
+value: 7
+Arrival index: 2348
+value: -16
+Arrival index: 2349
+value: -16
+Arrival index: 2350
+value: -20
+Arrival index: 2351
+value: -15
+Arrival index: 2352
+value: 5
+Arrival index: 2353
+value: 19
+Arrival index: 2354
+value: 42
+Arrival index: 2355
+value: 45
+Arrival index: 2356
+value: 54
+Arrival index: 2357
+value: 41
+Arrival index: 2358
+value: 31
+Arrival index: 2359
+value: 13
+Arrival index: 2360
+value: -4
+Arrival index: 2361
+value: -12
+Arrival index: 2362
+value: -20
+Arrival index: 2363
+value: -12
+Arrival index: 2364
+value: -7
+Arrival index: 2365
+value: 20
+Arrival index: 2366
+value: 28
+Arrival index: 2367
+value: 45
+Arrival index: 2368
+value: 45
+Arrival index: 2369
+value: 50
+Arrival index: 2370
+value: 37
+Arrival index: 2371
+value: 24
+Arrival index: 2372
+value: 9
+Arrival index: 2373
+value: -6
+Arrival index: 2374
+value: -9
+Arrival index: 2375
+value: -12
+Arrival index: 2376
+value: -2
+Arrival index: 2377
+value: 3
+Arrival index: 2378
+value: 26
+Arrival index: 2379
+value: 36
+Arrival index: 2380
+value: 44
+Arrival index: 2381
+value: 46
+Arrival index: 2382
+value: 39
+Arrival index: 2383
+value: 37
+Arrival index: 2384
+value: 14
+Arrival index: 2385
+value: 9
+Arrival index: 2386
+value: -3
+Arrival index: 2387
+value: -8
+Arrival index: 2388
+value: -4
+Arrival index: 2389
+value: -1
+Arrival index: 2390
+value: 18
+Arrival index: 2391
+value: 22
+Arrival index: 2392
+value: 40
+Arrival index: 2393
+value: 41
+Arrival index: 2394
+value: 48
+Arrival index: 2395
+value: 38
+Arrival index: 2396
+value: 31
+Arrival index: 2397
+value: 16
+Arrival index: 2398
+value: 4
+Arrival index: 2399
+value: 1
+Arrival index: 2400
+value: -3
+Arrival index: 2401
+value: 1
+Arrival index: 2402
+value: 6
+Arrival index: 2403
+value: 24
+Arrival index: 2404
+value: 30
+Arrival index: 2405
+value: 45
+Arrival index: 2406
+value: 49
+Arrival index: 2407
+value: 42
+Arrival index: 2408
+value: 38
+Arrival index: 2409
+value: 21
+Arrival index: 2410
+value: 15
+Arrival index: 2411
+value: 0
+Arrival index: 2412
+value: -1
+Arrival index: 2413
+value: 0
+Arrival index: 2414
+value: 2
+Arrival index: 2415
+value: 17
+Arrival index: 2416
+value: 25
+Arrival index: 2417
+value: 38
+Arrival index: 2418
+value: 39
+Arrival index: 2419
+value: 45
+Arrival index: 2420
+value: 37
+Arrival index: 2421
+value: 29
+Arrival index: 2422
+value: 18
+Arrival index: 2423
+value: 7
+Arrival index: 2424
+value: 0
+Arrival index: 2425
+value: -3
+Arrival index: 2426
+value: 3
+Arrival index: 2427
+value: 6
+Arrival index: 2428
+value: 20
+Arrival index: 2429
+value: 27
+Arrival index: 2430
+value: 39
+Arrival index: 2431
+value: 40
+Arrival index: 2432
+value: 39
+Arrival index: 2433
+value: 35
+Arrival index: 2434
+value: 21
+Arrival index: 2435
+value: 18
+Arrival index: 2436
+value: 6
+Arrival index: 2437
+value: 4
+Arrival index: 2438
+value: -2
+Arrival index: 2439
+value: 3
+Arrival index: 2440
+value: 13
+Arrival index: 2441
+value: 20
+Arrival index: 2442
+value: 30
+Arrival index: 2443
+value: 33
+Arrival index: 2444
+value: 38
+Arrival index: 2445
+value: 30
+Arrival index: 2446
+value: 27
+Arrival index: 2447
+value: 14
+Arrival index: 2448
+value: 9
+Arrival index: 2449
+value: 0
+Arrival index: 2450
+value: -9
+Arrival index: 2451
+value: -4
+Arrival index: 2452
+value: 3
+Arrival index: 2453
+value: 14
+Arrival index: 2454
+value: 18
+Arrival index: 2455
+value: 31
+Arrival index: 2456
+value: 30
+Arrival index: 2457
+value: 35
+Arrival index: 2458
+value: 25
+Arrival index: 2459
+value: 19
+Arrival index: 2460
+value: 13
+Arrival index: 2461
+value: 2
+Arrival index: 2462
+value: 4
+Arrival index: 2463
+value: -3
+Arrival index: 2464
+value: 2
+Arrival index: 2465
+value: 5
+Arrival index: 2466
+value: 17
+Arrival index: 2467
+value: 22
+Arrival index: 2468
+value: 27
+Arrival index: 2469
+value: 32
+Arrival index: 2470
+value: 26
+Arrival index: 2471
+value: 30
+Arrival index: 2472
+value: 15
+Arrival index: 2473
+value: 15
+Arrival index: 2474
+value: 1
+Arrival index: 2475
+value: -1
+Arrival index: 2476
+value: -4
+Arrival index: 2477
+value: 6
+Arrival index: 2478
+value: 11
+Arrival index: 2479
+value: 21
+Arrival index: 2480
+value: 24
+Arrival index: 2481
+value: 28
+Arrival index: 2482
+value: 36
+Arrival index: 2483
+value: 25
+Arrival index: 2484
+value: 27
+Arrival index: 2485
+value: 12
+Arrival index: 2486
+value: 12
+Arrival index: 2487
+value: 3
+Arrival index: 2488
+value: 1
+Arrival index: 2489
+value: 6
+Arrival index: 2490
+value: 7
+Arrival index: 2491
+value: 21
+Arrival index: 2492
+value: 22
+Arrival index: 2493
+value: 33
+Arrival index: 2494
+value: 32
+Arrival index: 2495
+value: 36
+Arrival index: 2496
+value: 29
+Arrival index: 2497
+value: 20
+Arrival index: 2498
+value: 16
+Arrival index: 2499
+value: 10
+Arrival index: 2500
+value: 8
+Arrival index: 2501
+value: 2
+Arrival index: 2502
+value: 10
+Arrival index: 2503
+value: 12
+Arrival index: 2504
+value: 23
+Arrival index: 2505
+value: 26
+Arrival index: 2506
+value: 33
+Arrival index: 2507
+value: 32
+Arrival index: 2508
+value: 32
+Arrival index: 2509
+value: 25
+Arrival index: 2510
+value: 17
+Arrival index: 2511
+value: 15
+Arrival index: 2512
+value: 6
+Arrival index: 2513
+value: 8
+Arrival index: 2514
+value: 7
+Arrival index: 2515
+value: 13
+Arrival index: 2516
+value: 20
+Arrival index: 2517
+value: 23
+Arrival index: 2518
+value: 33
+Arrival index: 2519
+value: 32
+Arrival index: 2520
+value: 33
+Arrival index: 2521
+value: 28
+Arrival index: 2522
+value: 22
+Arrival index: 2523
+value: 14
+Arrival index: 2524
+value: 7
+Arrival index: 2525
+value: 8
+Arrival index: 2526
+value: 1
+Arrival index: 2527
+value: 6
+Arrival index: 2528
+value: 7
+Arrival index: 2529
+value: 21
+Arrival index: 2530
+value: 18
+Arrival index: 2531
+value: 28
+Arrival index: 2532
+value: 26
+Arrival index: 2533
+value: 26
+Arrival index: 2534
+value: 22
+Arrival index: 2535
+value: 14
+Arrival index: 2536
+value: 11
+Arrival index: 2537
+value: 3
+Arrival index: 2538
+value: 10
+Arrival index: 2539
+value: 4
+Arrival index: 2540
+value: 11
+Arrival index: 2541
+value: 14
+Arrival index: 2542
+value: 22
+Arrival index: 2543
+value: 26
+Arrival index: 2544
+value: 24
+Arrival index: 2545
+value: 27
+Arrival index: 2546
+value: 19
+Arrival index: 2547
+value: 20
+Arrival index: 2548
+value: 10
+Arrival index: 2549
+value: 12
+Arrival index: 2550
+value: 3
+Arrival index: 2551
+value: 9
+Arrival index: 2552
+value: 7
+Arrival index: 2553
+value: 13
+Arrival index: 2554
+value: 15
+Arrival index: 2555
+value: 22
+Arrival index: 2556
+value: 25
+Arrival index: 2557
+value: 24
+Arrival index: 2558
+value: 26
+Arrival index: 2559
+value: 17
+Arrival index: 2560
+value: 20
+Arrival index: 2561
+value: 9
+Arrival index: 2562
+value: 14
+Arrival index: 2563
+value: 6
+Arrival index: 2564
+value: 9
+Arrival index: 2565
+value: 9
+Arrival index: 2566
+value: 11
+Arrival index: 2567
+value: 19
+Arrival index: 2568
+value: 20
+Arrival index: 2569
+value: 30
+Arrival index: 2570
+value: 22
+Arrival index: 2571
+value: 28
+Arrival index: 2572
+value: 19
+Arrival index: 2573
+value: 23
+Arrival index: 2574
+value: 13
+Arrival index: 2575
+value: 17
+Arrival index: 2576
+value: 7
+Arrival index: 2577
+value: 10
+Arrival index: 2578
+value: 15
+Arrival index: 2579
+value: 18
+Arrival index: 2580
+value: 24
+Arrival index: 2581
+value: 26
+Arrival index: 2582
+value: 32
+Arrival index: 2583
+value: 26
+Arrival index: 2584
+value: 30
+Arrival index: 2585
+value: 21
+Arrival index: 2586
+value: 22
+Arrival index: 2587
+value: 10
+Arrival index: 2588
+value: 14
+Arrival index: 2589
+value: 9
+Arrival index: 2590
+value: 13
+Arrival index: 2591
+value: 19
+Arrival index: 2592
+value: 21
+Arrival index: 2593
+value: 29
+Arrival index: 2594
+value: 26
+Arrival index: 2595
+value: 34
+Arrival index: 2596
+value: 27
+Arrival index: 2597
+value: 27
+Arrival index: 2598
+value: 18
+Arrival index: 2599
+value: 18
+Arrival index: 2600
+value: 6
+Arrival index: 2601
+value: 10
+Arrival index: 2602
+value: 14
+Arrival index: 2603
+value: 12
+Arrival index: 2604
+value: 21
+Arrival index: 2605
+value: 19
+Arrival index: 2606
+value: 26
+Arrival index: 2607
+value: 21
+Arrival index: 2608
+value: 27
+Arrival index: 2609
+value: 21
+Arrival index: 2610
+value: 17
+Arrival index: 2611
+value: 13
+Arrival index: 2612
+value: 12
+Arrival index: 2613
+value: 14
+Arrival index: 2614
+value: 10
+Arrival index: 2615
+value: 17
+Arrival index: 2616
+value: 18
+Arrival index: 2617
+value: 24
+Arrival index: 2618
+value: 24
+Arrival index: 2619
+value: 28
+Arrival index: 2620
+value: 27
+Arrival index: 2621
+value: 25
+Arrival index: 2622
+value: 24
+Arrival index: 2623
+value: 17
+Arrival index: 2624
+value: 19
+Arrival index: 2625
+value: 14
+Arrival index: 2626
+value: 17
+Arrival index: 2627
+value: 14
+Arrival index: 2628
+value: 18
+Arrival index: 2629
+value: 19
+Arrival index: 2630
+value: 19
+Arrival index: 2631
+value: 26
+Arrival index: 2632
+value: 22
+Arrival index: 2633
+value: 23
+Arrival index: 2634
+value: 17
+Arrival index: 2635
+value: 20
+Arrival index: 2636
+value: 13
+Arrival index: 2637
+value: 14
+Arrival index: 2638
+value: 12
+Arrival index: 2639
+value: 9
+Arrival index: 2640
+value: 13
+Arrival index: 2641
+value: 11
+Arrival index: 2642
+value: 18
+Arrival index: 2643
+value: 15
+Arrival index: 2644
+value: 22
+Arrival index: 2645
+value: 20
+Arrival index: 2646
+value: 21
+Arrival index: 2647
+value: 20
+Arrival index: 2648
+value: 15
+Arrival index: 2649
+value: 19
+Arrival index: 2650
+value: 6
+Arrival index: 2651
+value: 13
+Arrival index: 2652
+value: 10
+Arrival index: 2653
+value: 12
+Arrival index: 2654
+value: 14
+Arrival index: 2655
+value: 13
+Arrival index: 2656
+value: 22
+Arrival index: 2657
+value: 16
+Arrival index: 2658
+value: 24
+Arrival index: 2659
+value: 17
+Arrival index: 2660
+value: 21
+Arrival index: 2661
+value: 14
+Arrival index: 2662
+value: 14
+Arrival index: 2663
+value: 14
+Arrival index: 2664
+value: 7
+Arrival index: 2665
+value: 13
+Arrival index: 2666
+value: 10
+Arrival index: 2667
+value: 16
+Arrival index: 2668
+value: 17
+Arrival index: 2669
+value: 20
+Arrival index: 2670
+value: 24
+Arrival index: 2671
+value: 20
+Arrival index: 2672
+value: 23
+Arrival index: 2673
+value: 15
+Arrival index: 2674
+value: 17
+Arrival index: 2675
+value: 14
+Arrival index: 2676
+value: 9
+Arrival index: 2677
+value: 11
+Arrival index: 2678
+value: 8
+Arrival index: 2679
+value: 18
+Arrival index: 2680
+value: 13
+Arrival index: 2681
+value: 23
+Arrival index: 2682
+value: 20
+Arrival index: 2683
+value: 26
+Arrival index: 2684
+value: 22
+Arrival index: 2685
+value: 20
+Arrival index: 2686
+value: 20
+Arrival index: 2687
+value: 13
+Arrival index: 2688
+value: 21
+Arrival index: 2689
+value: 9
+Arrival index: 2690
+value: 17
+Arrival index: 2691
+value: 14
+Arrival index: 2692
+value: 19
+Arrival index: 2693
+value: 22
+Arrival index: 2694
+value: 19
+Arrival index: 2695
+value: 28
+Arrival index: 2696
+value: 20
+Arrival index: 2697
+value: 22
+Arrival index: 2698
+value: 21
+Arrival index: 2699
+value: 15
+Arrival index: 2700
+value: 16
+Arrival index: 2701
+value: 10
+Arrival index: 2702
+value: 17
+Arrival index: 2703
+value: 14
+Arrival index: 2704
+value: 17
+Arrival index: 2705
+value: 21
+Arrival index: 2706
+value: 18
+Arrival index: 2707
+value: 24
+Arrival index: 2708
+value: 19
+Arrival index: 2709
+value: 28
+Arrival index: 2710
+value: 19
+Arrival index: 2711
+value: 21
+Arrival index: 2712
+value: 18
+Arrival index: 2713
+value: 18
+Arrival index: 2714
+value: 19
+Arrival index: 2715
+value: 14
+Arrival index: 2716
+value: 22
+Arrival index: 2717
+value: 18
+Arrival index: 2718
+value: 24
+Arrival index: 2719
+value: 23
+Arrival index: 2720
+value: 24
+Arrival index: 2721
+value: 28
+Arrival index: 2722
+value: 22
+Arrival index: 2723
+value: 25
+Arrival index: 2724
+value: 21
+Arrival index: 2725
+value: 22
+Arrival index: 2726
+value: 19
+Arrival index: 2727
+value: 15
+Arrival index: 2728
+value: 21
+Arrival index: 2729
+value: 17
+Arrival index: 2730
+value: 22
+Arrival index: 2731
+value: 24
+Arrival index: 2732
+value: 24
+Arrival index: 2733
+value: 25
+Arrival index: 2734
+value: 21
+Arrival index: 2735
+value: 24
+Arrival index: 2736
+value: 17
+Arrival index: 2737
+value: 18
+Arrival index: 2738
+value: 15
+Arrival index: 2739
+value: 14
+Arrival index: 2740
+value: 16
+Arrival index: 2741
+value: 16
+Arrival index: 2742
+value: 21
+Arrival index: 2743
+value: 18
+Arrival index: 2744
+value: 23
+Arrival index: 2745
+value: 23
+Arrival index: 2746
+value: 23
+Arrival index: 2747
+value: 23
+Arrival index: 2748
+value: 19
+Arrival index: 2749
+value: 22
+Arrival index: 2750
+value: 16
+Arrival index: 2751
+value: 16
+Arrival index: 2752
+value: 17
+Arrival index: 2753
+value: 12
+Arrival index: 2754
+value: 19
+Arrival index: 2755
+value: 17
+Arrival index: 2756
+value: 21
+Arrival index: 2757
+value: 19
+Arrival index: 2758
+value: 17
+Arrival index: 2759
+value: 22
+Arrival index: 2760
+value: 14
+Arrival index: 2761
+value: 19
+Arrival index: 2762
+value: 12
+Arrival index: 2763
+value: 14
+Arrival index: 2764
+value: 11
+Arrival index: 2765
+value: 11
+Arrival index: 2766
+value: 15
+Arrival index: 2767
+value: 10
+Arrival index: 2768
+value: 19
+Arrival index: 2769
+value: 14
+Arrival index: 2770
+value: 19
+Arrival index: 2771
+value: 19
+Arrival index: 2772
+value: 16
+Arrival index: 2773
+value: 21
+Arrival index: 2774
+value: 13
+Arrival index: 2775
+value: 19
+Arrival index: 2776
+value: 13
+Arrival index: 2777
+value: 11
+Arrival index: 2778
+value: 14
+Arrival index: 2779
+value: 9
+Arrival index: 2780
+value: 18
+Arrival index: 2781
+value: 14
+Arrival index: 2782
+value: 19
+Arrival index: 2783
+value: 20
+Arrival index: 2784
+value: 18
+Arrival index: 2785
+value: 22
+Arrival index: 2786
+value: 13
+Arrival index: 2787
+value: 21
+Arrival index: 2788
+value: 15
+Arrival index: 2789
+value: 19
+Arrival index: 2790
+value: 15
+Arrival index: 2791
+value: 18
+Arrival index: 2792
+value: 23
+Arrival index: 2793
+value: 20
+Arrival index: 2794
+value: 26
+Arrival index: 2795
+value: 21
+Arrival index: 2796
+value: 24
+Arrival index: 2797
+value: 19
+Arrival index: 2798
+value: 18
+Arrival index: 2799
+value: 20
+Arrival index: 2800
+value: 13
+Arrival index: 2801
+value: 19
+Arrival index: 2802
+value: 16
+Arrival index: 2803
+value: 17
+Arrival index: 2804
+value: 22
+Arrival index: 2805
+value: 17
+Arrival index: 2806
+value: 22
+Arrival index: 2807
+value: 16
+Arrival index: 2808
+value: 19
+Arrival index: 2809
+value: 19
+Arrival index: 2810
+value: 14
+Arrival index: 2811
+value: 20
+Arrival index: 2812
+value: 14
+Arrival index: 2813
+value: 20
+Arrival index: 2814
+value: 16
+Arrival index: 2815
+value: 17
+Arrival index: 2816
+value: 18
+Arrival index: 2817
+value: 14
+Arrival index: 2818
+value: 19
+Arrival index: 2819
+value: 15
+Arrival index: 2820
+value: 20
+Arrival index: 2821
+value: 15
+Arrival index: 2822
+value: 19
+Arrival index: 2823
+value: 17
+Arrival index: 2824
+value: 16
+Arrival index: 2825
+value: 19
+Arrival index: 2826
+value: 13
+Arrival index: 2827
+value: 16
+Arrival index: 2828
+value: 13
+Arrival index: 2829
+value: 14
+Arrival index: 2830
+value: 17
+Arrival index: 2831
+value: 14
+Arrival index: 2832
+value: 20
+Arrival index: 2833
+value: 13
+Arrival index: 2834
+value: 18
+Arrival index: 2835
+value: 12
+Arrival index: 2836
+value: 14
+Arrival index: 2837
+value: 14
+Arrival index: 2838
+value: 11
+Arrival index: 2839
+value: 20
+Arrival index: 2840
+value: 12
+Arrival index: 2841
+value: 22
+Arrival index: 2842
+value: 18
+Arrival index: 2843
+value: 25
+Arrival index: 2844
+value: 23
+Arrival index: 2845
+value: 22
+Arrival index: 2846
+value: 23
+Arrival index: 2847
+value: 17
+Arrival index: 2848
+value: 23
+Arrival index: 2849
+value: 17
+Arrival index: 2850
+value: 17
+Arrival index: 2851
+value: 18
+Arrival index: 2852
+value: 18
+Arrival index: 2853
+value: 23
+Arrival index: 2854
+value: 22
+Arrival index: 2855
+value: 27
+Arrival index: 2856
+value: 25
+Arrival index: 2857
+value: 23
+Arrival index: 2858
+value: 24
+Arrival index: 2859
+value: 19
+Arrival index: 2860
+value: 16
+Arrival index: 2861
+value: 15
+Arrival index: 2862
+value: 16
+Arrival index: 2863
+value: 16
+Arrival index: 2864
+value: 17
+Arrival index: 2865
+value: 20
+Arrival index: 2866
+value: 18
+Arrival index: 2867
+value: 23
+Arrival index: 2868
+value: 19
+Arrival index: 2869
+value: 23
+Arrival index: 2870
+value: 15
+Arrival index: 2871
+value: 14
+Arrival index: 2872
+value: 14
+Arrival index: 2873
+value: 11
+Arrival index: 2874
+value: 13
+Arrival index: 2875
+value: 9
+Arrival index: 2876
+value: 18
+Arrival index: 2877
+value: 15
+Arrival index: 2878
+value: 21
+Arrival index: 2879
+value: 23
+Arrival index: 2880
+value: 20
+Arrival index: 2881
+value: 23
+Arrival index: 2882
+value: 16
+Arrival index: 2883
+value: 17
+Arrival index: 2884
+value: 10
+Arrival index: 2885
+value: 11
+Arrival index: 2886
+value: 9
+Arrival index: 2887
+value: 8
+Arrival index: 2888
+value: 17
+Arrival index: 2889
+value: 13
+Arrival index: 2890
+value: 20
+Arrival index: 2891
+value: 16
+Arrival index: 2892
+value: 24
+Arrival index: 2893
+value: 17
+Arrival index: 2894
+value: 18
+Arrival index: 2895
+value: 14
+Arrival index: 2896
+value: 12
+Arrival index: 2897
+value: 12
+Arrival index: 2898
+value: 9
+Arrival index: 2899
+value: 15
+Arrival index: 2900
+value: 10
+Arrival index: 2901
+value: 22
+Arrival index: 2902
+value: 17
+Arrival index: 2903
+value: 23
+Arrival index: 2904
+value: 22
+Arrival index: 2905
+value: 20
+Arrival index: 2906
+value: 22
+Arrival index: 2907
+value: 13
+Arrival index: 2908
+value: 21
+Arrival index: 2909
+value: 13
+Arrival index: 2910
+value: 14
+Arrival index: 2911
+value: 15
+Arrival index: 2912
+value: 17
+Arrival index: 2913
+value: 23
+Arrival index: 2914
+value: 19
+Arrival index: 2915
+value: 27
+Arrival index: 2916
+value: 20
+Arrival index: 2917
+value: 25
+Arrival index: 2918
+value: 21
+Arrival index: 2919
+value: 22
+Arrival index: 2920
+value: 19
+Arrival index: 2921
+value: 17
+Arrival index: 2922
+value: 18
+Arrival index: 2923
+value: 14
+Arrival index: 2924
+value: 19
+Arrival index: 2925
+value: 16
+Arrival index: 2926
+value: 25
+Arrival index: 2927
+value: 22
+Arrival index: 2928
+value: 28
+Arrival index: 2929
+value: 23
+Arrival index: 2930
+value: 22
+Arrival index: 2931
+value: 26
+Arrival index: 2932
+value: 18
+Arrival index: 2933
+value: 22
+Arrival index: 2934
+value: 13
+Arrival index: 2935
+value: 19
+Arrival index: 2936
+value: 13
+Arrival index: 2937
+value: 15
+Arrival index: 2938
+value: 21
+Arrival index: 2939
+value: 20
+Arrival index: 2940
+value: 26
+Arrival index: 2941
+value: 23
+Arrival index: 2942
+value: 27
+Arrival index: 2943
+value: 19
+Arrival index: 2944
+value: 20
+Arrival index: 2945
+value: 16
+Arrival index: 2946
+value: 15
+Arrival index: 2947
+value: 13
+Arrival index: 2948
+value: 13
+Arrival index: 2949
+value: 15
+Arrival index: 2950
+value: 13
+Arrival index: 2951
+value: 21
+Arrival index: 2952
+value: 18
+Arrival index: 2953
+value: 23
+Arrival index: 2954
+value: 19
+Arrival index: 2955
+value: 22
+Arrival index: 2956
+value: 18
+Arrival index: 2957
+value: 14
+Arrival index: 2958
+value: 16
+Arrival index: 2959
+value: 11
+Arrival index: 2960
+value: 14
+Arrival index: 2961
+value: 9
+Arrival index: 2962
+value: 17
+Arrival index: 2963
+value: 14
+Arrival index: 2964
+value: 18
+Arrival index: 2965
+value: 20
+Arrival index: 2966
+value: 19
+Arrival index: 2967
+value: 22
+Arrival index: 2968
+value: 16
+Arrival index: 2969
+value: 19
+Arrival index: 2970
+value: 11
+Arrival index: 2971
+value: 14
+Arrival index: 2972
+value: 7
+Arrival index: 2973
+value: 15
+Arrival index: 2974
+value: 8
+Arrival index: 2975
+value: 16
+Arrival index: 2976
+value: 16
+Arrival index: 2977
+value: 20
+Arrival index: 2978
+value: 22
+Arrival index: 2979
+value: 18
+Arrival index: 2980
+value: 21
+Arrival index: 2981
+value: 11
+Arrival index: 2982
+value: 17
+Arrival index: 2983
+value: 9
+Arrival index: 2984
+value: 13
+Arrival index: 2985
+value: 10
+Arrival index: 2986
+value: 10
+Arrival index: 2987
+value: 14
+Arrival index: 2988
+value: 13
+Arrival index: 2989
+value: 24
+Arrival index: 2990
+value: 17
+Arrival index: 2991
+value: 22
+Arrival index: 2992
+value: 18
+Arrival index: 2993
+value: 19
+Arrival index: 2994
+value: 14
+Arrival index: 2995
+value: 11
+Arrival index: 2996
+value: 15
+Arrival index: 2997
+value: 9
+Arrival index: 2998
+value: 18
+Arrival index: 2999
+value: 10
+Arrival index: 3000
+value: 20
+Arrival index: 3001
+value: 15
+Arrival index: 3002
+value: 25
+Arrival index: 3003
+value: 19
+Arrival index: 3004
+value: 22
+Arrival index: 3005
+value: 20
+Arrival index: 3006
+value: 20
+Arrival index: 3007
+value: 19
+Arrival index: 3008
+value: 12
+Arrival index: 3009
+value: 19
+Arrival index: 3010
+value: 5
+Arrival index: 3011
+value: 18
+Arrival index: 3012
+value: 16
+Arrival index: 3013
+value: 19
+Arrival index: 3014
+value: 21
+Arrival index: 3015
+value: 19
+Arrival index: 3016
+value: 26
+Arrival index: 3017
+value: 16
+Arrival index: 3018
+value: 22
+Arrival index: 3019
+value: 16
+Arrival index: 3020
+value: 19
+Arrival index: 3021
+value: 17
+Arrival index: 3022
+value: 20
+Arrival index: 3023
+value: 22
+Arrival index: 3024
+value: 15
+Arrival index: 3025
+value: 23
+Arrival index: 3026
+value: 20
+Arrival index: 3027
+value: 27
+Arrival index: 3028
+value: 20
+Arrival index: 3029
+value: 25
+Arrival index: 3030
+value: 21
+Arrival index: 3031
+value: 22
+Arrival index: 3032
+value: 21
+Arrival index: 3033
+value: 18
+Arrival index: 3034
+value: 20
+Arrival index: 3035
+value: 15
+Arrival index: 3036
+value: 22
+Arrival index: 3037
+value: 18
+Arrival index: 3038
+value: 22
+Arrival index: 3039
+value: 24
+Arrival index: 3040
+value: 21
+Arrival index: 3041
+value: 25
+Arrival index: 3042
+value: 20
+Arrival index: 3043
+value: 26
+Arrival index: 3044
+value: 21
+Arrival index: 3045
+value: 21
+Arrival index: 3046
+value: 21
+Arrival index: 3047
+value: 15
+Arrival index: 3048
+value: 19
+Arrival index: 3049
+value: 12
+Arrival index: 3050
+value: 18
+Arrival index: 3051
+value: 16
+Arrival index: 3052
+value: 18
+Arrival index: 3053
+value: 18
+Arrival index: 3054
+value: 16
+Arrival index: 3055
+value: 22
+Arrival index: 3056
+value: 15
+Arrival index: 3057
+value: 18
+Arrival index: 3058
+value: 12
+Arrival index: 3059
+value: 16
+Arrival index: 3060
+value: 15
+Arrival index: 3061
+value: 11
+Arrival index: 3062
+value: 17
+Arrival index: 3063
+value: 13
+Arrival index: 3064
+value: 19
+Arrival index: 3065
+value: 17
+Arrival index: 3066
+value: 20
+Arrival index: 3067
+value: 20
+Arrival index: 3068
+value: 14
+Arrival index: 3069
+value: 19
+Arrival index: 3070
+value: 13
+Arrival index: 3071
+value: 14
+Arrival index: 3072
+value: 11
+Arrival index: 3073
+value: 14
+Arrival index: 3074
+value: 12
+Arrival index: 3075
+value: 13
+Arrival index: 3076
+value: 22
+Arrival index: 3077
+value: 13
+Arrival index: 3078
+value: 19
+Arrival index: 3079
+value: 13
+Arrival index: 3080
+value: 17
+Arrival index: 3081
+value: 13
+Arrival index: 3082
+value: 12
+Arrival index: 3083
+value: 14
+Arrival index: 3084
+value: 10
+Arrival index: 3085
+value: 18
+Arrival index: 3086
+value: 10
+Arrival index: 3087
+value: 18
+Arrival index: 3088
+value: 13
+Arrival index: 3089
+value: 16
+Arrival index: 3090
+value: 18
+Arrival index: 3091
+value: 13
+Arrival index: 3092
+value: 21
+Arrival index: 3093
+value: 12
+Arrival index: 3094
+value: 16
+Arrival index: 3095
+value: 13
+Arrival index: 3096
+value: 15
+Arrival index: 3097
+value: 16
+Arrival index: 3098
+value: 13
+Arrival index: 3099
+value: 17
+Arrival index: 3100
+value: 12
+Arrival index: 3101
+value: 21
+Arrival index: 3102
+value: 14
+Arrival index: 3103
+value: 23
+Arrival index: 3104
+value: 16
+Arrival index: 3105
+value: 19
+Arrival index: 3106
+value: 17
+Arrival index: 3107
+value: 15
+Arrival index: 3108
+value: 20
+Arrival index: 3109
+value: 15
+Arrival index: 3110
+value: 24
+Arrival index: 3111
+value: 14
+Arrival index: 3112
+value: 21
+Arrival index: 3113
+value: 16
+Arrival index: 3114
+value: 20
+Arrival index: 3115
+value: 23
+Arrival index: 3116
+value: 21
+Arrival index: 3117
+value: 25
+Arrival index: 3118
+value: 17
+Arrival index: 3119
+value: 23
+Arrival index: 3120
+value: 20
+Arrival index: 3121
+value: 20
+Arrival index: 3122
+value: 22
+Arrival index: 3123
+value: 18
+Arrival index: 3124
+value: 22
+Arrival index: 3125
+value: 18
+Arrival index: 3126
+value: 24
+Arrival index: 3127
+value: 20
+Arrival index: 3128
+value: 20
+Arrival index: 3129
+value: 21
+Arrival index: 3130
+value: 16
+Arrival index: 3131
+value: 19
+Arrival index: 3132
+value: 15
+Arrival index: 3133
+value: 18
+Arrival index: 3134
+value: 13
+Arrival index: 3135
+value: 21
+Arrival index: 3136
+value: 16
+Arrival index: 3137
+value: 17
+Arrival index: 3138
+value: 17
+Arrival index: 3139
+value: 14
+Arrival index: 3140
+value: 20
+Arrival index: 3141
+value: 14
+Arrival index: 3142
+value: 18
+Arrival index: 3143
+value: 14
+Arrival index: 3144
+value: 15
+Arrival index: 3145
+value: 18
+Arrival index: 3146
+value: 15
+Arrival index: 3147
+value: 18
+Arrival index: 3148
+value: 14
+Arrival index: 3149
+value: 16
+Arrival index: 3150
+value: 17
+Arrival index: 3151
+value: 15
+Arrival index: 3152
+value: 19
+Arrival index: 3153
+value: 13
+Arrival index: 3154
+value: 18
+Arrival index: 3155
+value: 12
+Arrival index: 3156
+value: 19
+Arrival index: 3157
+value: 11
+Arrival index: 3158
+value: 16
+Arrival index: 3159
+value: 15
+Arrival index: 3160
+value: 15
+Arrival index: 3161
+value: 16
+Arrival index: 3162
+value: 12
+Arrival index: 3163
+value: 19
+Arrival index: 3164
+value: 12
+Arrival index: 3165
+value: 21
+Arrival index: 3166
+value: 15
+Arrival index: 3167
+value: 17
+Arrival index: 3168
+value: 16
+Arrival index: 3169
+value: 11
+Arrival index: 3170
+value: 17
+Arrival index: 3171
+value: 10
+Arrival index: 3172
+value: 18
+Arrival index: 3173
+value: 15
+Arrival index: 3174
+value: 16
+Arrival index: 3175
+value: 21
+Arrival index: 3176
+value: 15
+Arrival index: 3177
+value: 21
+Arrival index: 3178
+value: 13
+Arrival index: 3179
+value: 20
+Arrival index: 3180
+value: 14
+Arrival index: 3181
+value: 17
+Arrival index: 3182
+value: 16
+Arrival index: 3183
+value: 15
+Arrival index: 3184
+value: 18
+Arrival index: 3185
+value: 16
+Arrival index: 3186
+value: 24
+Arrival index: 3187
+value: 19
+Arrival index: 3188
+value: 25
+Arrival index: 3189
+value: 21
+Arrival index: 3190
+value: 22
+Arrival index: 3191
+value: 20
+Arrival index: 3192
+value: 16
+Arrival index: 3193
+value: 21
+Arrival index: 3194
+value: 13
+Arrival index: 3195
+value: 20
+Arrival index: 3196
+value: 18
+Arrival index: 3197
+value: 18
+Arrival index: 3198
+value: 23
+Arrival index: 3199
+value: 19
+Arrival index: 3200
+value: 26
+Arrival index: 3201
+value: 21
+Arrival index: 3202
+value: 23
+Arrival index: 3203
+value: 21
+Arrival index: 3204
+value: 17
+Arrival index: 3205
+value: 20
+Arrival index: 3206
+value: 14
+Arrival index: 3207
+value: 19
+Arrival index: 3208
+value: 18
+Arrival index: 3209
+value: 22
+Arrival index: 3210
+value: 15
+Arrival index: 3211
+value: 17
+Arrival index: 3212
+value: 22
+Arrival index: 3213
+value: 18
+Arrival index: 3214
+value: 20
+Arrival index: 3215
+value: 15
+Arrival index: 3216
+value: 19
+Arrival index: 3217
+value: 15
+Arrival index: 3218
+value: 12
+Arrival index: 3219
+value: 16
+Arrival index: 3220
+value: 14
+Arrival index: 3221
+value: 20
+Arrival index: 3222
+value: 17
+Arrival index: 3223
+value: 22
+Arrival index: 3224
+value: 18
+Arrival index: 3225
+value: 18
+Arrival index: 3226
+value: 24
+Arrival index: 3227
+value: 16
+Arrival index: 3228
+value: 17
+Arrival index: 3229
+value: 15
+Arrival index: 3230
+value: 15
+Arrival index: 3231
+value: 15
+Arrival index: 3232
+value: 11
+Arrival index: 3233
+value: 15
+Arrival index: 3234
+value: 11
+Arrival index: 3235
+value: 19
+Arrival index: 3236
+value: 13
+Arrival index: 3237
+value: 17
+Arrival index: 3238
+value: 16
+Arrival index: 3239
+value: 13
+Arrival index: 3240
+value: 15
+Arrival index: 3241
+value: 9
+Arrival index: 3242
+value: 17
+Arrival index: 3243
+value: 9
+Arrival index: 3244
+value: 12
+Arrival index: 3245
+value: 12
+Arrival index: 3246
+value: 14
+Arrival index: 3247
+value: 18
+Arrival index: 3248
+value: 15
+Arrival index: 3249
+value: 18
+Arrival index: 3250
+value: 14
+Arrival index: 3251
+value: 18
+Arrival index: 3252
+value: 20
+Arrival index: 3253
+value: 14
+Arrival index: 3254
+value: 15
+Arrival index: 3255
+value: 9
+Arrival index: 3256
+value: 16
+Arrival index: 3257
+value: 11
+Arrival index: 3258
+value: 11
+Arrival index: 3259
+value: 16
+Arrival index: 3260
+value: 11
+Arrival index: 3261
+value: 18
+Arrival index: 3262
+value: 10
+Arrival index: 3263
+value: 20
+Arrival index: 3264
+value: 12
+Arrival index: 3265
+value: 16
+Arrival index: 3266
+value: 11
+Arrival index: 3267
+value: 12
+Arrival index: 3268
+value: 15
+Arrival index: 3269
+value: 9
+Arrival index: 3270
+value: 15
+Arrival index: 3271
+value: 10
+Arrival index: 3272
+value: 21
+Arrival index: 3273
+value: 19
+Arrival index: 3274
+value: 14
+Arrival index: 3275
+value: 20
+Arrival index: 3276
+value: 13
+Arrival index: 3277
+value: 18
+Arrival index: 3278
+value: 12
+Arrival index: 3279
+value: 13
+Arrival index: 3280
+value: 15
+Arrival index: 3281
+value: 10
+Arrival index: 3282
+value: 20
+Arrival index: 3283
+value: 13
+Arrival index: 3284
+value: 20
+Arrival index: 3285
+value: 17
+Arrival index: 3286
+value: 19
+Arrival index: 3287
+value: 20
+Arrival index: 3288
+value: 15
+Arrival index: 3289
+value: 19
+Arrival index: 3290
+value: 10
+Arrival index: 3291
+value: 17
+Arrival index: 3292
+value: 11
+Arrival index: 3293
+value: 20
+Arrival index: 3294
+value: 16
+Arrival index: 3295
+value: 19
+Arrival index: 3296
+value: 24
+Arrival index: 3297
+value: 18
+Arrival index: 3298
+value: 25
+Arrival index: 3299
+value: 17
+Arrival index: 3300
+value: 20
+Arrival index: 3301
+value: 17
+Arrival index: 3302
+value: 13
+Arrival index: 3303
+value: 18
+Arrival index: 3304
+value: 11
+Arrival index: 3305
+value: 21
+Arrival index: 3306
+value: 19
+Arrival index: 3307
+value: 19
+Arrival index: 3308
+value: 23
+Arrival index: 3309
+value: 17
+Arrival index: 3310
+value: 24
+Arrival index: 3311
+value: 15
+Arrival index: 3312
+value: 23
+Arrival index: 3313
+value: 17
+Arrival index: 3314
+value: 19
+Arrival index: 3315
+value: 20
+Arrival index: 3316
+value: 20
+Arrival index: 3317
+value: 23
+Arrival index: 3318
+value: 18
+Arrival index: 3319
+value: 24
+Arrival index: 3320
+value: 17
+Arrival index: 3321
+value: 24
+Arrival index: 3322
+value: 19
+Arrival index: 3323
+value: 19
+Arrival index: 3324
+value: 19
+Arrival index: 3325
+value: 16
+Arrival index: 3326
+value: 24
+Arrival index: 3327
+value: 15
+Arrival index: 3328
+value: 22
+Arrival index: 3329
+value: 19
+Arrival index: 3330
+value: 21
+Arrival index: 3331
+value: 21
+Arrival index: 3332
+value: 18
+Arrival index: 3333
+value: 24
+Arrival index: 3334
+value: 14
+Arrival index: 3335
+value: 23
+Arrival index: 3336
+value: 19
+Arrival index: 3337
+value: 20
+Arrival index: 3338
+value: 20
+Arrival index: 3339
+value: 17
+Arrival index: 3340
+value: 22
+Arrival index: 3341
+value: 17
+Arrival index: 3342
+value: 23
+Arrival index: 3343
+value: 18
+Arrival index: 3344
+value: 21
+Arrival index: 3345
+value: 21
+Arrival index: 3346
+value: 21
+Arrival index: 3347
+value: 23
+Arrival index: 3348
+value: 19
+Arrival index: 3349
+value: 23
+Arrival index: 3350
+value: 18
+Arrival index: 3351
+value: 22
+Arrival index: 3352
+value: 20
+Arrival index: 3353
+value: 22
+Arrival index: 3354
+value: 22
+Arrival index: 3355
+value: 18
+Arrival index: 3356
+value: 25
+Arrival index: 3357
+value: 19
+Arrival index: 3358
+value: 25
+Arrival index: 3359
+value: 23
+Arrival index: 3360
+value: 22
+Arrival index: 3361
+value: 23
+Arrival index: 3362
+value: 19
+Arrival index: 3363
+value: 24
+Arrival index: 3364
+value: 16
+Arrival index: 3365
+value: 22
+Arrival index: 3366
+value: 19
+Arrival index: 3367
+value: 21
+Arrival index: 3368
+value: 22
+Arrival index: 3369
+value: 21
+Arrival index: 3370
+value: 23
+Arrival index: 3371
+value: 21
+Arrival index: 3372
+value: 28
+Arrival index: 3373
+value: 21
+Arrival index: 3374
+value: 21
+Arrival index: 3375
+value: 19
+Arrival index: 3376
+value: 21
+Arrival index: 3377
+value: 25
+Arrival index: 3378
+value: 17
+Arrival index: 3379
+value: 24
+Arrival index: 3380
+value: 20
+Arrival index: 3381
+value: 24
+Arrival index: 3382
+value: 24
+Arrival index: 3383
+value: 21
+Arrival index: 3384
+value: 25
+Arrival index: 3385
+value: 21
+Arrival index: 3386
+value: 24
+Arrival index: 3387
+value: 18
+Arrival index: 3388
+value: 18
+Arrival index: 3389
+value: 20
+Arrival index: 3390
+value: 17
+Arrival index: 3391
+value: 21
+Arrival index: 3392
+value: 17
+Arrival index: 3393
+value: 21
+Arrival index: 3394
+value: 17
+Arrival index: 3395
+value: 22
+Arrival index: 3396
+value: 21
+Arrival index: 3397
+value: 19
+Arrival index: 3398
+value: 21
+Arrival index: 3399
+value: 16
+Arrival index: 3400
+value: 20
+Arrival index: 3401
+value: 15
+Arrival index: 3402
+value: 22
+Arrival index: 3403
+value: 20
+Arrival index: 3404
+value: 20
+Arrival index: 3405
+value: 24
+Arrival index: 3406
+value: 21
+Arrival index: 3407
+value: 26
+Arrival index: 3408
+value: 21
+Arrival index: 3409
+value: 25
+Arrival index: 3410
+value: 18
+Arrival index: 3411
+value: 16
+Arrival index: 3412
+value: 21
+Arrival index: 3413
+value: 17
+Arrival index: 3414
+value: 20
+Arrival index: 3415
+value: 17
+Arrival index: 3416
+value: 19
+Arrival index: 3417
+value: 19
+Arrival index: 3418
+value: 17
+Arrival index: 3419
+value: 22
+Arrival index: 3420
+value: 16
+Arrival index: 3421
+value: 18
+Arrival index: 3422
+value: 17
+Arrival index: 3423
+value: 21
+Arrival index: 3424
+value: 16
+Arrival index: 3425
+value: 14
+Arrival index: 3426
+value: 20
+Arrival index: 3427
+value: 15
+Arrival index: 3428
+value: 19
+Arrival index: 3429
+value: 16
+Arrival index: 3430
+value: 17
+Arrival index: 3431
+value: 18
+Arrival index: 3432
+value: 17
+Arrival index: 3433
+value: 20
+Arrival index: 3434
+value: 15
+Arrival index: 3435
+value: 20
+Arrival index: 3436
+value: 17
+Arrival index: 3437
+value: 14
+Arrival index: 3438
+value: 18
+Arrival index: 3439
+value: 12
+Arrival index: 3440
+value: 16
+Arrival index: 3441
+value: 13
+Arrival index: 3442
+value: 16
+Arrival index: 3443
+value: 16
+Arrival index: 3444
+value: 11
+Arrival index: 3445
+value: 18
+Arrival index: 3446
+value: 13
+Arrival index: 3447
+value: 17
+Arrival index: 3448
+value: 11
+Arrival index: 3449
+value: 13
+Arrival index: 3450
+value: 13
+Arrival index: 3451
+value: 10
+Arrival index: 3452
+value: 17
+Arrival index: 3453
+value: 11
+Arrival index: 3454
+value: 14
+Arrival index: 3455
+value: 11
+Arrival index: 3456
+value: 14
+Arrival index: 3457
+value: 17
+Arrival index: 3458
+value: 13
+Arrival index: 3459
+value: 20
+Arrival index: 3460
+value: 14
+Arrival index: 3461
+value: 14
+Arrival index: 3462
+value: 18
+Arrival index: 3463
+value: 12
+Arrival index: 3464
+value: 15
+Arrival index: 3465
+value: 10
+Arrival index: 3466
+value: 16
+Arrival index: 3467
+value: 15
+Arrival index: 3468
+value: 13
+Arrival index: 3469
+value: 16
+Arrival index: 3470
+value: 10
+Arrival index: 3471
+value: 20
+Arrival index: 3472
+value: 13
+Arrival index: 3473
+value: 18
+Arrival index: 3474
+value: 13
+Arrival index: 3475
+value: 10
+Arrival index: 3476
+value: 17
+Arrival index: 3477
+value: 8
+Arrival index: 3478
+value: 16
+Arrival index: 3479
+value: 12
+Arrival index: 3480
+value: 14
+Arrival index: 3481
+value: 16
+Arrival index: 3482
+value: 14
+Arrival index: 3483
+value: 18
+Arrival index: 3484
+value: 12
+Arrival index: 3485
+value: 17
+Arrival index: 3486
+value: 13
+Arrival index: 3487
+value: 10
+Arrival index: 3488
+value: 17
+Arrival index: 3489
+value: 9
+Arrival index: 3490
+value: 15
+Arrival index: 3491
+value: 13
+Arrival index: 3492
+value: 13
+Arrival index: 3493
+value: 18
+Arrival index: 3494
+value: 12
+Arrival index: 3495
+value: 20
+Arrival index: 3496
+value: 14
+Arrival index: 3497
+value: 20
+Arrival index: 3498
+value: 19
+Arrival index: 3499
+value: 16
+Arrival index: 3500
+value: 18
+Arrival index: 3501
+value: 14
+Arrival index: 3502
+value: 23
+Arrival index: 3503
+value: 14
+Arrival index: 3504
+value: 19
+Arrival index: 3505
+value: 18
+Arrival index: 3506
+value: 17
+Arrival index: 3507
+value: 23
+Arrival index: 3508
+value: 17
+Arrival index: 3509
+value: 23
+Arrival index: 3510
+value: 15
+Arrival index: 3511
+value: 16
+Arrival index: 3512
+value: 21
+Arrival index: 3513
+value: 13
+Arrival index: 3514
+value: 20
+Arrival index: 3515
+value: 16
+Arrival index: 3516
+value: 17
+Arrival index: 3517
+value: 18
+Arrival index: 3518
+value: 14
+Arrival index: 3519
+value: 24
+Arrival index: 3520
+value: 16
+Arrival index: 3521
+value: 22
+Arrival index: 3522
+value: 20
+Arrival index: 3523
+value: 18
+Arrival index: 3524
+value: 21
+Arrival index: 3525
+value: 14
+Arrival index: 3526
+value: 21
+Arrival index: 3527
+value: 15
+Arrival index: 3528
+value: 22
+Arrival index: 3529
+value: 19
+Arrival index: 3530
+value: 18
+Arrival index: 3531
+value: 24
+Arrival index: 3532
+value: 20
+Arrival index: 3533
+value: 24
+Arrival index: 3534
+value: 18
+Arrival index: 3535
+value: 22
+Arrival index: 3536
+value: 19
+Arrival index: 3537
+value: 15
+Arrival index: 3538
+value: 21
+Arrival index: 3539
+value: 15
+Arrival index: 3540
+value: 21
+Arrival index: 3541
+value: 21
+Arrival index: 3542
+value: 20
+Arrival index: 3543
+value: 24
+Arrival index: 3544
+value: 18
+Arrival index: 3545
+value: 25
+Arrival index: 3546
+value: 18
+Arrival index: 3547
+value: 20
+Arrival index: 3548
+value: 22
+Arrival index: 3549
+value: 15
+Arrival index: 3550
+value: 19
+Arrival index: 3551
+value: 15
+Arrival index: 3552
+value: 22
+Arrival index: 3553
+value: 17
+Arrival index: 3554
+value: 19
+Arrival index: 3555
+value: 21
+Arrival index: 3556
+value: 17
+Arrival index: 3557
+value: 22
+Arrival index: 3558
+value: 19
+Arrival index: 3559
+value: 23
+Arrival index: 3560
+value: 19
+Arrival index: 3561
+value: 19
+Arrival index: 3562
+value: 21
+Arrival index: 3563
+value: 15
+Arrival index: 3564
+value: 21
+Arrival index: 3565
+value: 16
+Arrival index: 3566
+value: 20
+Arrival index: 3567
+value: 21
+Arrival index: 3568
+value: 20
+Arrival index: 3569
+value: 25
+Arrival index: 3570
+value: 17
+Arrival index: 3571
+value: 24
+Arrival index: 3572
+value: 21
+Arrival index: 3573
+value: 21
+Arrival index: 3574
+value: 22
+Arrival index: 3575
+value: 16
+Arrival index: 3576
+value: 20
+Arrival index: 3577
+value: 16
+Arrival index: 3578
+value: 23
+Arrival index: 3579
+value: 21
+Arrival index: 3580
+value: 20
+Arrival index: 3581
+value: 24
+Arrival index: 3582
+value: 23
+Arrival index: 3583
+value: 25
+Arrival index: 3584
+value: 20
+Arrival index: 3585
+value: 25
+Arrival index: 3586
+value: 17
+Arrival index: 3587
+value: 17
+Arrival index: 3588
+value: 22
+Arrival index: 3589
+value: 18
+Arrival index: 3590
+value: 22
+Arrival index: 3591
+value: 18
+Arrival index: 3592
+value: 24
+Arrival index: 3593
+value: 24
+Arrival index: 3594
+value: 22
+Arrival index: 3595
+value: 26
+Arrival index: 3596
+value: 20
+Arrival index: 3597
+value: 22
+Arrival index: 3598
+value: 20
+Arrival index: 3599
+value: 18
+Arrival index: 3600
+value: 20
+Arrival index: 3601
+value: 17
+Arrival index: 3602
+value: 23
+Arrival index: 3603
+value: 19
+Arrival index: 3604
+value: 24
+Arrival index: 3605
+value: 22
+Arrival index: 3606
+value: 24
+Arrival index: 3607
+value: 23
+Arrival index: 3608
+value: 22
+Arrival index: 3609
+value: 25
+Arrival index: 3610
+value: 16
+Arrival index: 3611
+value: 22
+Arrival index: 3612
+value: 19
+Arrival index: 3613
+value: 21
+Arrival index: 3614
+value: 23
+Arrival index: 3615
+value: 19
+Arrival index: 3616
+value: 25
+Arrival index: 3617
+value: 20
+Arrival index: 3618
+value: 24
+Arrival index: 3619
+value: 23
+Arrival index: 3620
+value: 18
+Arrival index: 3621
+value: 23
+Arrival index: 3622
+value: 17
+Arrival index: 3623
+value: 22
+Arrival index: 3624
+value: 17
+Arrival index: 3625
+value: 16
+Arrival index: 3626
+value: 19
+Arrival index: 3627
+value: 15
+Arrival index: 3628
+value: 22
+Arrival index: 3629
+value: 19
+Arrival index: 3630
+value: 22
+Arrival index: 3631
+value: 20
+Arrival index: 3632
+value: 21
+Arrival index: 3633
+value: 22
+Arrival index: 3634
+value: 20
+Arrival index: 3635
+value: 26
+Arrival index: 3636
+value: 16
+Arrival index: 3637
+value: 21
+Arrival index: 3638
+value: 20
+Arrival index: 3639
+value: 21
+Arrival index: 3640
+value: 23
+Arrival index: 3641
+value: 20
+Arrival index: 3642
+value: 26
+Arrival index: 3643
+value: 21
+Arrival index: 3644
+value: 24
+Arrival index: 3645
+value: 24
+Arrival index: 3646
+value: 20
+Arrival index: 3647
+value: 25
+Arrival index: 3648
+value: 20
+Arrival index: 3649
+value: 22
+Arrival index: 3650
+value: 18
+Arrival index: 3651
+value: 21
+Arrival index: 3652
+value: 22
+Arrival index: 3653
+value: 18
+Arrival index: 3654
+value: 22
+Arrival index: 3655
+value: 19
+Arrival index: 3656
+value: 23
+Arrival index: 3657
+value: 19
+Arrival index: 3658
+value: 21
+Arrival index: 3659
+value: 20
+Arrival index: 3660
+value: 14
+Arrival index: 3661
+value: 18
+Arrival index: 3662
+value: 14
+Arrival index: 3663
+value: 18
+Arrival index: 3664
+value: 16
+Arrival index: 3665
+value: 20
+Arrival index: 3666
+value: 19
+Arrival index: 3667
+value: 17
+Arrival index: 3668
+value: 24
+Arrival index: 3669
+value: 21
+Arrival index: 3670
+value: 24
+Arrival index: 3671
+value: 20
+Arrival index: 3672
+value: 20
+Arrival index: 3673
+value: 20
+Arrival index: 3674
+value: 16
+Arrival index: 3675
+value: 22
+Arrival index: 3676
+value: 16
+Arrival index: 3677
+value: 20
+Arrival index: 3678
+value: 21
+Arrival index: 3679
+value: 23
+Arrival index: 3680
+value: 23
+Arrival index: 3681
+value: 21
+Arrival index: 3682
+value: 26
+Arrival index: 3683
+value: 18
+Arrival index: 3684
+value: 21
+Arrival index: 3685
+value: 17
+Arrival index: 3686
+value: 17
+Arrival index: 3687
+value: 17
+Arrival index: 3688
+value: 16
+Arrival index: 3689
+value: 22
+Arrival index: 3690
+value: 18
+Arrival index: 3691
+value: 24
+Arrival index: 3692
+value: 22
+Arrival index: 3693
+value: 25
+Arrival index: 3694
+value: 25
+Arrival index: 3695
+value: 21
+Arrival index: 3696
+value: 24
+Arrival index: 3697
+value: 18
+Arrival index: 3698
+value: 23
+Arrival index: 3699
+value: 19
+Arrival index: 3700
+value: 21
+Arrival index: 3701
+value: 24
+Arrival index: 3702
+value: 20
+Arrival index: 3703
+value: 25
+Arrival index: 3704
+value: 21
+Arrival index: 3705
+value: 25
+Arrival index: 3706
+value: 20
+Arrival index: 3707
+value: 19
+Arrival index: 3708
+value: 21
+Arrival index: 3709
+value: 18
+Arrival index: 3710
+value: 16
+Arrival index: 3711
+value: 16
+Arrival index: 3712
+value: 25
+Arrival index: 3713
+value: 19
+Arrival index: 3714
+value: 23
+Arrival index: 3715
+value: 21
+Arrival index: 3716
+value: 20
+Arrival index: 3717
+value: 22
+Arrival index: 3718
+value: 18
+Arrival index: 3719
+value: 23
+Arrival index: 3720
+value: 18
+Arrival index: 3721
+value: 22
+Arrival index: 3722
+value: 24
+Arrival index: 3723
+value: 23
+Arrival index: 3724
+value: 22
+Arrival index: 3725
+value: 19
+Arrival index: 3726
+value: 25
+Arrival index: 3727
+value: 18
+Arrival index: 3728
+value: 22
+Arrival index: 3729
+value: 20
+Arrival index: 3730
+value: 19
+Arrival index: 3731
+value: 22
+Arrival index: 3732
+value: 18
+Arrival index: 3733
+value: 23
+Arrival index: 3734
+value: 19
+Arrival index: 3735
+value: 22
+Arrival index: 3736
+value: 18
+Arrival index: 3737
+value: 19
+Arrival index: 3738
+value: 19
+Arrival index: 3739
+value: 19
+Arrival index: 3740
+value: 21
+Arrival index: 3741
+value: 17
+Arrival index: 3742
+value: 21
+Arrival index: 3743
+value: 18
+Arrival index: 3744
+value: 22
+Arrival index: 3745
+value: 21
+Arrival index: 3746
+value: 21
+Arrival index: 3747
+value: 21
+Arrival index: 3748
+value: 18
+Arrival index: 3749
+value: 23
+Arrival index: 3750
+value: 17
+Arrival index: 3751
+value: 23
+Arrival index: 3752
+value: 20
+Arrival index: 3753
+value: 21
+Arrival index: 3754
+value: 22
+Arrival index: 3755
+value: 19
+Arrival index: 3756
+value: 23
+Arrival index: 3757
+value: 18
+Arrival index: 3758
+value: 23
+Arrival index: 3759
+value: 20
+Arrival index: 3760
+value: 21
+Arrival index: 3761
+value: 20
+Arrival index: 3762
+value: 17
+Arrival index: 3763
+value: 19
+Arrival index: 3764
+value: 15
+Arrival index: 3765
+value: 20
+Arrival index: 3766
+value: 17
+Arrival index: 3767
+value: 19
+Arrival index: 3768
+value: 17
+Arrival index: 3769
+value: 17
+Arrival index: 3770
+value: 19
+Arrival index: 3771
+value: 15
+Arrival index: 3772
+value: 21
+Arrival index: 3773
+value: 15
+Arrival index: 3774
+value: 20
+Arrival index: 3775
+value: 18
+Arrival index: 3776
+value: 17
+Arrival index: 3777
+value: 20
+Arrival index: 3778
+value: 17
+Arrival index: 3779
+value: 22
+Arrival index: 3780
+value: 15
+Arrival index: 3781
+value: 19
+Arrival index: 3782
+value: 17
+Arrival index: 3783
+value: 16
+Arrival index: 3784
+value: 17
+Arrival index: 3785
+value: 15
+Arrival index: 3786
+value: 17
+Arrival index: 3787
+value: 13
+Arrival index: 3788
+value: 19
+Arrival index: 3789
+value: 16
+Arrival index: 3790
+value: 16
+Arrival index: 3791
+value: 16
+Arrival index: 3792
+value: 13
+Arrival index: 3793
+value: 19
+Arrival index: 3794
+value: 14
+Arrival index: 3795
+value: 18
+Arrival index: 3796
+value: 13
+Arrival index: 3797
+value: 17
+Arrival index: 3798
+value: 19
+Arrival index: 3799
+value: 16
+Arrival index: 3800
+value: 19
+Arrival index: 3801
+value: 16
+Arrival index: 3802
+value: 22
+Arrival index: 3803
+value: 17
+Arrival index: 3804
+value: 21
+Arrival index: 3805
+value: 19
+Arrival index: 3806
+value: 18
+Arrival index: 3807
+value: 20
+Arrival index: 3808
+value: 18
+Arrival index: 3809
+value: 22
+Arrival index: 3810
+value: 15
+Arrival index: 3811
+value: 21
+Arrival index: 3812
+value: 18
+Arrival index: 3813
+value: 17
+Arrival index: 3814
+value: 18
+Arrival index: 3815
+value: 13
+Arrival index: 3816
+value: 17
+Arrival index: 3817
+value: 11
+Arrival index: 3818
+value: 19
+Arrival index: 3819
+value: 14
+Arrival index: 3820
+value: 18
+Arrival index: 3821
+value: 15
+Arrival index: 3822
+value: 18
+Arrival index: 3823
+value: 18
+Arrival index: 3824
+value: 16
+Arrival index: 3825
+value: 20
+Arrival index: 3826
+value: 14
+Arrival index: 3827
+value: 18
+Arrival index: 3828
+value: 15
+Arrival index: 3829
+value: 19
+Arrival index: 3830
+value: 19
+Arrival index: 3831
+value: 17
+Arrival index: 3832
+value: 21
+Arrival index: 3833
+value: 17
+Arrival index: 3834
+value: 20
+Arrival index: 3835
+value: 16
+Arrival index: 3836
+value: 17
+Arrival index: 3837
+value: 14
+Arrival index: 3838
+value: 14
+Arrival index: 3839
+value: 18
+Arrival index: 3840
+value: 14
+Arrival index: 3841
+value: 18
+Arrival index: 3842
+value: 13
+Arrival index: 3843
+value: 18
+Arrival index: 3844
+value: 14
+Arrival index: 3845
+value: 20
+Arrival index: 3846
+value: 15
+Arrival index: 3847
+value: 15
+Arrival index: 3848
+value: 17
+Arrival index: 3849
+value: 15
+Arrival index: 3850
+value: 19
+Arrival index: 3851
+value: 14
+Arrival index: 3852
+value: 19
+Arrival index: 3853
+value: 15
+Arrival index: 3854
+value: 18
+Arrival index: 3855
+value: 20
+Arrival index: 3856
+value: 20
+Arrival index: 3857
+value: 20
+Arrival index: 3858
+value: 19
+Arrival index: 3859
+value: 25
+Arrival index: 3860
+value: 19
+Arrival index: 3861
+value: 21
+Arrival index: 3862
+value: 18
+Arrival index: 3863
+value: 19
+Arrival index: 3864
+value: 20
+Arrival index: 3865
+value: 18
+Arrival index: 3866
+value: 20
+Arrival index: 3867
+value: 14
+Arrival index: 3868
+value: 18
+Arrival index: 3869
+value: 17
+Arrival index: 3870
+value: 21
+Arrival index: 3871
+value: 18
+Arrival index: 3872
+value: 20
+Arrival index: 3873
+value: 21
+Arrival index: 3874
+value: 20
+Arrival index: 3875
+value: 23
+Arrival index: 3876
+value: 18
+Arrival index: 3877
+value: 20
+Arrival index: 3878
+value: 18
+Arrival index: 3879
+value: 24
+Arrival index: 3880
+value: 20
+Arrival index: 3881
+value: 23
+Arrival index: 3882
+value: 22
+Arrival index: 3883
+value: 22
+Arrival index: 3884
+value: 25
+Arrival index: 3885
+value: 22
+Arrival index: 3886
+value: 22
+Arrival index: 3887
+value: 17
+Arrival index: 3888
+value: 22
+Arrival index: 3889
+value: 19
+Arrival index: 3890
+value: 19
+Arrival index: 3891
+value: 19
+Arrival index: 3892
+value: 19
+Arrival index: 3893
+value: 20
+Arrival index: 3894
+value: 17
+Arrival index: 3895
+value: 20
+Arrival index: 3896
+value: 16
+Arrival index: 3897
+value: 20
+Arrival index: 3898
+value: 19
+Arrival index: 3899
+value: 20
+Arrival index: 3900
+value: 17
+Arrival index: 3901
+value: 21
+Arrival index: 3902
+value: 21
+Arrival index: 3903
+value: 19
+Arrival index: 3904
+value: 22
+Arrival index: 3905
+value: 19
+Arrival index: 3906
+value: 25
+Arrival index: 3907
+value: 20
+Arrival index: 3908
+value: 21
+Arrival index: 3909
+value: 24
+Arrival index: 3910
+value: 15
+Arrival index: 3911
+value: 23
+Arrival index: 3912
+value: 18
+Arrival index: 3913
+value: 22
+Arrival index: 3914
+value: 18
+Arrival index: 3915
+value: 21
+Arrival index: 3916
+value: 18
+Arrival index: 3917
+value: 17
+Arrival index: 3918
+value: 19
+Arrival index: 3919
+value: 18
+Arrival index: 3920
+value: 17
+Arrival index: 3921
+value: 18
+Arrival index: 3922
+value: 21
+Arrival index: 3923
+value: 16
+Arrival index: 3924
+value: 20
+Arrival index: 3925
+value: 16
+Arrival index: 3926
+value: 19
+Arrival index: 3927
+value: 16
+Arrival index: 3928
+value: 19
+Arrival index: 3929
+value: 19
+Arrival index: 3930
+value: 18
+Arrival index: 3931
+value: 21
+Arrival index: 3932
+value: 17
+Arrival index: 3933
+value: 23
+Arrival index: 3934
+value: 19
+Arrival index: 3935
+value: 27
+Arrival index: 3936
+value: 18
+Arrival index: 3937
+value: 17
+Arrival index: 3938
+value: 20
+Arrival index: 3939
+value: 20
+Arrival index: 3940
+value: 21
+Arrival index: 3941
+value: 17
+Arrival index: 3942
+value: 21
+Arrival index: 3943
+value: 17
+Arrival index: 3944
+value: 21
+Arrival index: 3945
+value: 18
+Arrival index: 3946
+value: 21
+Arrival index: 3947
+value: 17
+Arrival index: 3948
+value: 22
+Arrival index: 3949
+value: 20
+Arrival index: 3950
+value: 18
+Arrival index: 3951
+value: 21
+Arrival index: 3952
+value: 19
+Arrival index: 3953
+value: 23
+Arrival index: 3954
+value: 20
+Arrival index: 3955
+value: 25
+Arrival index: 3956
+value: 18
+Arrival index: 3957
+value: 22
+Arrival index: 3958
+value: 19
+Arrival index: 3959
+value: 23
+Arrival index: 3960
+value: 22
+Arrival index: 3961
+value: 19
+Arrival index: 3962
+value: 22
+Arrival index: 3963
+value: 17
+Arrival index: 3964
+value: 24
+Arrival index: 3965
+value: 18
+Arrival index: 3966
+value: 22
+Arrival index: 3967
+value: 20
+Arrival index: 3968
+value: 21
+Arrival index: 3969
+value: 20
+Arrival index: 3970
+value: 19
+Arrival index: 3971
+value: 21
+Arrival index: 3972
+value: 18
+Arrival index: 3973
+value: 23
+Arrival index: 3974
+value: 15
+Arrival index: 3975
+value: 21
+Arrival index: 3976
+value: 18
+Arrival index: 3977
+value: 24
+Arrival index: 3978
+value: 18
+Arrival index: 3979
+value: 22
+Arrival index: 3980
+value: 19
+Arrival index: 3981
+value: 21
+Arrival index: 3982
+value: 22
+Arrival index: 3983
+value: 19
+Arrival index: 3984
+value: 23
+Arrival index: 3985
+value: 19
+Arrival index: 3986
+value: 26
+Arrival index: 3987
+value: 17
+Arrival index: 3988
+value: 24
+Arrival index: 3989
+value: 21
+Arrival index: 3990
+value: 22
+Arrival index: 3991
+value: 20
+Arrival index: 3992
+value: 19
+Arrival index: 3993
+value: 22
+Arrival index: 3994
+value: 17
+Arrival index: 3995
+value: 23
+Arrival index: 3996
+value: 18
+Arrival index: 3997
+value: 24
+Arrival index: 3998
+value: 19
+Arrival index: 3999
+value: 23
+Arrival index: 4000
+value: 18
+Arrival index: 4001
+value: 22
+Arrival index: 4002
+value: 19
+Arrival index: 4003
+value: 19
+Arrival index: 4004
+value: 18
+Arrival index: 4005
+value: 20
+Arrival index: 4006
+value: 25
+Arrival index: 4007
+value: 18
+Arrival index: 4008
+value: 24
+Arrival index: 4009
+value: 18
+Arrival index: 4010
+value: 25
+Arrival index: 4011
+value: 18
+Arrival index: 4012
+value: 21
+Arrival index: 4013
+value: 20
+Arrival index: 4014
+value: 16
+Arrival index: 4015
+value: 21
+Arrival index: 4016
+value: 16
+Arrival index: 4017
+value: 22
+Arrival index: 4018
+value: 15
+Arrival index: 4019
+value: 22
+Arrival index: 4020
+value: 15
+Arrival index: 4021
+value: 21
+Arrival index: 4022
+value: 19
+Arrival index: 4023
+value: 20
+Arrival index: 4024
+value: 16
+Arrival index: 4025
+value: 17
+Arrival index: 4026
+value: 20
+Arrival index: 4027
+value: 15
+Arrival index: 4028
+value: 20
+Arrival index: 4029
+value: 16
+Arrival index: 4030
+value: 22
+Arrival index: 4031
+value: 14
+Arrival index: 4032
+value: 22
+Arrival index: 4033
+value: 14
+Arrival index: 4034
+value: 21
+Arrival index: 4035
+value: 18
+Arrival index: 4036
+value: 19
+Arrival index: 4037
+value: 16
+Arrival index: 4038
+value: 17
+Arrival index: 4039
+value: 22
+Arrival index: 4040
+value: 15
+Arrival index: 4041
+value: 20
+Arrival index: 4042
+value: 15
+Arrival index: 4043
+value: 23
+Arrival index: 4044
+value: 14
+Arrival index: 4045
+value: 21
+Arrival index: 4046
+value: 15
+Arrival index: 4047
+value: 21
+Arrival index: 4048
+value: 18
+Arrival index: 4049
+value: 21
+Arrival index: 4050
+value: 18
+Arrival index: 4051
+value: 18
+Arrival index: 4052
+value: 19
+Arrival index: 4053
+value: 21
+Arrival index: 4054
+value: 21
+Arrival index: 4055
+value: 19
+Arrival index: 4056
+value: 23
+Arrival index: 4057
+value: 16
+Arrival index: 4058
+value: 21
+Arrival index: 4059
+value: 16
+Arrival index: 4060
+value: 17
+Arrival index: 4061
+value: 14
+Arrival index: 4062
+value: 21
+Arrival index: 4063
+value: 15
+Arrival index: 4064
+value: 22
+Arrival index: 4065
+value: 17
+Arrival index: 4066
+value: 20
+Arrival index: 4067
+value: 18
+Arrival index: 4068
+value: 18
+Arrival index: 4069
+value: 24
+Arrival index: 4070
+value: 16
+Arrival index: 4071
+value: 21
+Arrival index: 4072
+value: 17
+Arrival index: 4073
+value: 24
+Arrival index: 4074
+value: 15
+Arrival index: 4075
+value: 25
+Arrival index: 4076
+value: 18
+Arrival index: 4077
+value: 22
+Arrival index: 4078
+value: 17
+Arrival index: 4079
+value: 25
+Arrival index: 4080
+value: 19
+Arrival index: 4081
+value: 20
+Arrival index: 4082
+value: 18
+Arrival index: 4083
+value: 23
+Arrival index: 4084
+value: 20
+Arrival index: 4085
+value: 23
+Arrival index: 4086
+value: 19
+Arrival index: 4087
+value: 19
+Arrival index: 4088
+value: 22
+Arrival index: 4089
+value: 17
+Arrival index: 4090
+value: 23
+Arrival index: 4091
+value: 15
+Arrival index: 4092
+value: 23
+Arrival index: 4093
+value: 16
+Arrival index: 4094
+value: 23
+Arrival index: 4095
+value: 17
+Arrival index: 4096
+value: 22
+Arrival index: 4097
+value: 19
+Arrival index: 4098
+value: 20
+Arrival index: 4099
+value: 20
+Arrival index: 4100
+value: 18
+Arrival index: 4101
+value: 20
+Arrival index: 4102
+value: 19
+Arrival index: 4103
+value: 22
+Arrival index: 4104
+value: 17
+Arrival index: 4105
+value: 23
+Arrival index: 4106
+value: 20
+Arrival index: 4107
+value: 23
+Arrival index: 4108
+value: 17
+Arrival index: 4109
+value: 26
+Arrival index: 4110
+value: 13
+Arrival index: 4111
+value: 21
+Arrival index: 4112
+value: 18
+Arrival index: 4113
+value: 22
+Arrival index: 4114
+value: 19
+Arrival index: 4115
+value: 21
+Arrival index: 4116
+value: 22
+Arrival index: 4117
+value: 16
+Arrival index: 4118
+value: 22
+Arrival index: 4119
+value: 14
+Arrival index: 4120
+value: 22
+Arrival index: 4121
+value: 14
+Arrival index: 4122
+value: 19
+Arrival index: 4123
+value: 16
+Arrival index: 4124
+value: 15
+Arrival index: 4125
+value: 20
+Arrival index: 4126
+value: 15
+Arrival index: 4127
+value: 19
+Arrival index: 4128
+value: 14
+Arrival index: 4129
+value: 23
+Arrival index: 4130
+value: 14
+Arrival index: 4131
+value: 20
+Arrival index: 4132
+value: 15
+Arrival index: 4133
+value: 21
+Arrival index: 4134
+value: 13
+Arrival index: 4135
+value: 26
+Arrival index: 4136
+value: 13
+Arrival index: 4137
+value: 20
+Arrival index: 4138
+value: 16
+Arrival index: 4139
+value: 18
+Arrival index: 4140
+value: 17
+Arrival index: 4141
+value: 15
+Arrival index: 4142
+value: 21
+Arrival index: 4143
+value: 13
+Arrival index: 4144
+value: 18
+Arrival index: 4145
+value: 12
+Arrival index: 4146
+value: 21
+Arrival index: 4147
+value: 13
+Arrival index: 4148
+value: 18
+Arrival index: 4149
+value: 14
+Arrival index: 4150
+value: 16
+Arrival index: 4151
+value: 17
+Arrival index: 4152
+value: 15
+Arrival index: 4153
+value: 18
+Arrival index: 4154
+value: 13
+Arrival index: 4155
+value: 20
+Arrival index: 4156
+value: 13
+Arrival index: 4157
+value: 21
+Arrival index: 4158
+value: 12
+Arrival index: 4159
+value: 20
+Arrival index: 4160
+value: 16
+Arrival index: 4161
+value: 19
+Arrival index: 4162
+value: 12
+Arrival index: 4163
+value: 17
+Arrival index: 4164
+value: 13
+Arrival index: 4165
+value: 18
+Arrival index: 4166
+value: 16
+Arrival index: 4167
+value: 13
+Arrival index: 4168
+value: 18
+Arrival index: 4169
+value: 11
+Arrival index: 4170
+value: 20
+Arrival index: 4171
+value: 10
+Arrival index: 4172
+value: 17
+Arrival index: 4173
+value: 14
+Arrival index: 4174
+value: 14
+Arrival index: 4175
+value: 15
+Arrival index: 4176
+value: 14
+Arrival index: 4177
+value: 17
+Arrival index: 4178
+value: 12
+Arrival index: 4179
+value: 18
+Arrival index: 4180
+value: 12
+Arrival index: 4181
+value: 19
+Arrival index: 4182
+value: 11
+Arrival index: 4183
+value: 20
+Arrival index: 4184
+value: 10
+Arrival index: 4185
+value: 18
+Arrival index: 4186
+value: 12
+Arrival index: 4187
+value: 17
+Arrival index: 4188
+value: 14
+Arrival index: 4189
+value: 13
+Arrival index: 4190
+value: 16
+Arrival index: 4191
+value: 13
+Arrival index: 4192
+value: 18
+Arrival index: 4193
+value: 13
+Arrival index: 4194
+value: 18
+Arrival index: 4195
+value: 13
+Arrival index: 4196
+value: 18
+Arrival index: 4197
+value: 16
+Arrival index: 4198
+value: 19
+Arrival index: 4199
+value: 18
+Arrival index: 4200
+value: 17
+Arrival index: 4201
+value: 18
+Arrival index: 4202
+value: 16
+Arrival index: 4203
+value: 20
+Arrival index: 4204
+value: 15
+Arrival index: 4205
+value: 20
+Arrival index: 4206
+value: 17
+Arrival index: 4207
+value: 20
+Arrival index: 4208
+value: 16
+Arrival index: 4209
+value: 20
+Arrival index: 4210
+value: 19
+Arrival index: 4211
+value: 15
+Arrival index: 4212
+value: 15
+Arrival index: 4213
+value: 15
+Arrival index: 4214
+value: 18
+Arrival index: 4215
+value: 15
+Arrival index: 4216
+value: 19
+Arrival index: 4217
+value: 16
+Arrival index: 4218
+value: 23
+Arrival index: 4219
+value: 18
+Arrival index: 4220
+value: 21
+Arrival index: 4221
+value: 16
+Arrival index: 4222
+value: 19
+Arrival index: 4223
+value: 21
+Arrival index: 4224
+value: 19
+Arrival index: 4225
+value: 22
+Arrival index: 4226
+value: 19
+Arrival index: 4227
+value: 22
+Arrival index: 4228
+value: 19
+Arrival index: 4229
+value: 25
+Arrival index: 4230
+value: 20
+Arrival index: 4231
+value: 21
+Arrival index: 4232
+value: 18
+Arrival index: 4233
+value: 22
+Arrival index: 4234
+value: 20
+Arrival index: 4235
+value: 22
+Arrival index: 4236
+value: 19
+Arrival index: 4237
+value: 18
+Arrival index: 4238
+value: 22
+Arrival index: 4239
+value: 20
+Arrival index: 4240
+value: 24
+Arrival index: 4241
+value: 18
+Arrival index: 4242
+value: 24
+Arrival index: 4243
+value: 19
+Arrival index: 4244
+value: 25
+Arrival index: 4245
+value: 20
+Arrival index: 4246
+value: 24
+Arrival index: 4247
+value: 21
+Arrival index: 4248
+value: 20
+Arrival index: 4249
+value: 22
+Arrival index: 4250
+value: 17
+Arrival index: 4251
+value: 22
+Arrival index: 4252
+value: 17
+Arrival index: 4253
+value: 25
+Arrival index: 4254
+value: 17
+Arrival index: 4255
+value: 24
+Arrival index: 4256
+value: 22
+Arrival index: 4257
+value: 20
+Arrival index: 4258
+value: 21
+Arrival index: 4259
+value: 21
+Arrival index: 4260
+value: 25
+Arrival index: 4261
+value: 18
+Arrival index: 4262
+value: 21
+Arrival index: 4263
+value: 16
+Arrival index: 4264
+value: 24
+Arrival index: 4265
+value: 19
+Arrival index: 4266
+value: 26
+Arrival index: 4267
+value: 19
+Arrival index: 4268
+value: 25
+Arrival index: 4269
+value: 20
+Arrival index: 4270
+value: 23
+Arrival index: 4271
+value: 19
+Arrival index: 4272
+value: 20
+Arrival index: 4273
+value: 23
+Arrival index: 4274
+value: 14
+Arrival index: 4275
+value: 22
+Arrival index: 4276
+value: 15
+Arrival index: 4277
+value: 23
+Arrival index: 4278
+value: 16
+Arrival index: 4279
+value: 19
+Arrival index: 4280
+value: 16
+Arrival index: 4281
+value: 17
+Arrival index: 4282
+value: 19
+Arrival index: 4283
+value: 13
+Arrival index: 4284
+value: 20
+Arrival index: 4285
+value: 11
+Arrival index: 4286
+value: 21
+Arrival index: 4287
+value: 11
+Arrival index: 4288
+value: 19
+Arrival index: 4289
+value: 12
+Arrival index: 4290
+value: 21
+Arrival index: 4291
+value: 14
+Arrival index: 4292
+value: 20
+Arrival index: 4293
+value: 14
+Arrival index: 4294
+value: 18
+Arrival index: 4295
+value: 19
+Arrival index: 4296
+value: 15
+Arrival index: 4297
+value: 19
+Arrival index: 4298
+value: 12
+Arrival index: 4299
+value: 17
+Arrival index: 4300
+value: 11
+Arrival index: 4301
+value: 17
+Arrival index: 4302
+value: 13
+Arrival index: 4303
+value: 16
+Arrival index: 4304
+value: 17
+Arrival index: 4305
+value: 16
+Arrival index: 4306
+value: 20
+Arrival index: 4307
+value: 12
+Arrival index: 4308
+value: 20
+Arrival index: 4309
+value: 11
+Arrival index: 4310
+value: 19
+Arrival index: 4311
+value: 12
+Arrival index: 4312
+value: 18
+Arrival index: 4313
+value: 13
+Arrival index: 4314
+value: 15
+Arrival index: 4315
+value: 16
+Arrival index: 4316
+value: 17
+Arrival index: 4317
+value: 20
+Arrival index: 4318
+value: 15
+Arrival index: 4319
+value: 19
+Arrival index: 4320
+value: 15
+Arrival index: 4321
+value: 19
+Arrival index: 4322
+value: 12
+Arrival index: 4323
+value: 20
+Arrival index: 4324
+value: 12
+Arrival index: 4325
+value: 18
+Arrival index: 4326
+value: 17
+Arrival index: 4327
+value: 17
+Arrival index: 4328
+value: 19
+Arrival index: 4329
+value: 16
+Arrival index: 4330
+value: 22
+Arrival index: 4331
+value: 17
+Arrival index: 4332
+value: 21
+Arrival index: 4333
+value: 16
+Arrival index: 4334
+value: 17
+Arrival index: 4335
+value: 17
+Arrival index: 4336
+value: 16
+Arrival index: 4337
+value: 16
+Arrival index: 4338
+value: 13
+Arrival index: 4339
+value: 16
+Arrival index: 4340
+value: 15
+Arrival index: 4341
+value: 19
+Arrival index: 4342
+value: 12
+Arrival index: 4343
+value: 19
+Arrival index: 4344
+value: 12
+Arrival index: 4345
+value: 19
+Arrival index: 4346
+value: 13
+Arrival index: 4347
+value: 17
+Arrival index: 4348
+value: 14
+Arrival index: 4349
+value: 15
+Arrival index: 4350
+value: 15
+Arrival index: 4351
+value: 16
+Arrival index: 4352
+value: 20
+Arrival index: 4353
+value: 16
+Arrival index: 4354
+value: 23
+Arrival index: 4355
+value: 19
+Arrival index: 4356
+value: 23
+Arrival index: 4357
+value: 19
+Arrival index: 4358
+value: 23
+Arrival index: 4359
+value: 21
+Arrival index: 4360
+value: 19
+Arrival index: 4361
+value: 20
+Arrival index: 4362
+value: 18
+Arrival index: 4363
+value: 19
+Arrival index: 4364
+value: 14
+Arrival index: 4365
+value: 23
+Arrival index: 4366
+value: 18
+Arrival index: 4367
+value: 22
+Arrival index: 4368
+value: 16
+Arrival index: 4369
+value: 20
+Arrival index: 4370
+value: 14
+Arrival index: 4371
+value: 17
+Arrival index: 4372
+value: 16
+Arrival index: 4373
+value: 20
+Arrival index: 4374
+value: 15
+Arrival index: 4375
+value: 16
+Arrival index: 4376
+value: 19
+Arrival index: 4377
+value: 16
+Arrival index: 4378
+value: 23
+Arrival index: 4379
+value: 18
+Arrival index: 4380
+value: 23
+Arrival index: 4381
+value: 19
+Arrival index: 4382
+value: 21
+Arrival index: 4383
+value: 20
+Arrival index: 4384
+value: 20
+Arrival index: 4385
+value: 23
+Arrival index: 4386
+value: 18
+Arrival index: 4387
+value: 22
+Arrival index: 4388
+value: 17
+Arrival index: 4389
+value: 23
+Arrival index: 4390
+value: 19
+Arrival index: 4391
+value: 23
+Arrival index: 4392
+value: 18
+Arrival index: 4393
+value: 21
+Arrival index: 4394
+value: 16
+Arrival index: 4395
+value: 20
+Arrival index: 4396
+value: 19
+Arrival index: 4397
+value: 18
+Arrival index: 4398
+value: 18
+Arrival index: 4399
+value: 13
+Arrival index: 4400
+value: 19
+Arrival index: 4401
+value: 14
+Arrival index: 4402
+value: 22
+Arrival index: 4403
+value: 17
+Arrival index: 4404
+value: 20
+Arrival index: 4405
+value: 18
+Arrival index: 4406
+value: 19
+Arrival index: 4407
+value: 19
+Arrival index: 4408
+value: 18
+Arrival index: 4409
+value: 22
+Arrival index: 4410
+value: 20
+Arrival index: 4411
+value: 21
+Arrival index: 4412
+value: 22
+Arrival index: 4413
+value: 22
+Arrival index: 4414
+value: 18
+Arrival index: 4415
+value: 22
+Arrival index: 4416
+value: 21
+Arrival index: 4417
+value: 20
+Arrival index: 4418
+value: 22
+Arrival index: 4419
+value: 17
+Arrival index: 4420
+value: 20
+Arrival index: 4421
+value: 14
+Arrival index: 4422
+value: 20
+Arrival index: 4423
+value: 16
+Arrival index: 4424
+value: 19
+Arrival index: 4425
+value: 17
+Arrival index: 4426
+value: 21
+Arrival index: 4427
+value: 17
+Arrival index: 4428
+value: 21
+Arrival index: 4429
+value: 19
+Arrival index: 4430
+value: 20
+Arrival index: 4431
+value: 19
+Arrival index: 4432
+value: 19
+Arrival index: 4433
+value: 23
+Arrival index: 4434
+value: 18
+Arrival index: 4435
+value: 24
+Arrival index: 4436
+value: 19
+Arrival index: 4437
+value: 24
+Arrival index: 4438
+value: 21
+Arrival index: 4439
+value: 24
+Arrival index: 4440
+value: 23
+Arrival index: 4441
+value: 20
+Arrival index: 4442
+value: 22
+Arrival index: 4443
+value: 20
+Arrival index: 4444
+value: 21
+Arrival index: 4445
+value: 17
+Arrival index: 4446
+value: 21
+Arrival index: 4447
+value: 18
+Arrival index: 4448
+value: 23
+Arrival index: 4449
+value: 16
+Arrival index: 4450
+value: 21
+Arrival index: 4451
+value: 17
+Arrival index: 4452
+value: 23
+Arrival index: 4453
+value: 23
+Arrival index: 4454
+value: 19
+Arrival index: 4455
+value: 21
+Arrival index: 4456
+value: 19
+Arrival index: 4457
+value: 25
+Arrival index: 4458
+value: 18
+Arrival index: 4459
+value: 23
+Arrival index: 4460
+value: 10
+Arrival index: 4461
+value: 21
+Arrival index: 4462
+value: 20
+Arrival index: 4463
+value: 20
+Arrival index: 4464
+value: 22
+Arrival index: 4465
+value: 19
+Arrival index: 4466
+value: 26
+Arrival index: 4467
+value: 18
+Arrival index: 4468
+value: 22
+Arrival index: 4469
+value: 17
+Arrival index: 4470
+value: 22
+Arrival index: 4471
+value: 18
+Arrival index: 4472
+value: 20
+Arrival index: 4473
+value: 20
+Arrival index: 4474
+value: 19
+Arrival index: 4475
+value: 21
+Arrival index: 4476
+value: 20
+Arrival index: 4477
+value: 25
+Arrival index: 4478
+value: 18
+Arrival index: 4479
+value: 25
+Arrival index: 4480
+value: 17
+Arrival index: 4481
+value: 25
+Arrival index: 4482
+value: 19
+Arrival index: 4483
+value: 20
+Arrival index: 4484
+value: 18
+Arrival index: 4485
+value: 12
+Arrival index: 4486
+value: 18
+Arrival index: 4487
+value: 12
+Arrival index: 4488
+value: 21
+Arrival index: 4489
+value: 13
+Arrival index: 4490
+value: 17
+Arrival index: 4491
+value: 17
+Arrival index: 4492
+value: 15
+Arrival index: 4493
+value: 20
+Arrival index: 4494
+value: 12
+Arrival index: 4495
+value: 19
+Arrival index: 4496
+value: 11
+Arrival index: 4497
+value: 18
+Arrival index: 4498
+value: 11
+Arrival index: 4499
+value: 18
+Arrival index: 4500
+value: 12
+Arrival index: 4501
+value: 17
+Arrival index: 4502
+value: 17
+Arrival index: 4503
+value: 16
+Arrival index: 4504
+value: 16
+Arrival index: 4505
+value: 12
+Arrival index: 4506
+value: 18
+Arrival index: 4507
+value: 9
+Arrival index: 4508
+value: 19
+Arrival index: 4509
+value: 13
+Arrival index: 4510
+value: 22
+Arrival index: 4511
+value: 16
+Arrival index: 4512
+value: 15
+Arrival index: 4513
+value: 19
+Arrival index: 4514
+value: 15
+Arrival index: 4515
+value: 21
+Arrival index: 4516
+value: 15
+Arrival index: 4517
+value: 19
+Arrival index: 4518
+value: 19
+Arrival index: 4519
+value: 18
+Arrival index: 4520
+value: 18
+Arrival index: 4521
+value: 13
+Arrival index: 4522
+value: 21
+Arrival index: 4523
+value: 15
+Arrival index: 4524
+value: 21
+Arrival index: 4525
+value: 15
+Arrival index: 4526
+value: 19
+Arrival index: 4527
+value: 14
+Arrival index: 4528
+value: 17
+Arrival index: 4529
+value: 17
+Arrival index: 4530
+value: 13
+Arrival index: 4531
+value: 19
+Arrival index: 4532
+value: 14
+Arrival index: 4533
+value: 20
+Arrival index: 4534
+value: 17
+Arrival index: 4535
+value: 26
+Arrival index: 4536
+value: 17
+Arrival index: 4537
+value: 17
+Arrival index: 4538
+value: 23
+Arrival index: 4539
+value: 20
+Arrival index: 4540
+value: 22
+Arrival index: 4541
+value: 18
+Arrival index: 4542
+value: 21
+Arrival index: 4543
+value: 21
+Arrival index: 4544
+value: 20
+Arrival index: 4545
+value: 22
+Arrival index: 4546
+value: 16
+Arrival index: 4547
+value: 20
+Arrival index: 4548
+value: 19
+Arrival index: 4549
+value: 19
+Arrival index: 4550
+value: 16
+Arrival index: 4551
+value: 18
+Arrival index: 4552
+value: 21
+Arrival index: 4553
+value: 17
+Arrival index: 4554
+value: 22
+Arrival index: 4555
+value: 17
+Arrival index: 4556
+value: 21
+Arrival index: 4557
+value: 18
+Arrival index: 4558
+value: 19
+Arrival index: 4559
+value: 21
+Arrival index: 4560
+value: 23
+Arrival index: 4561
+value: 22
+Arrival index: 4562
+value: 19
+Arrival index: 4563
+value: 22
+Arrival index: 4564
+value: 20
+Arrival index: 4565
+value: 22
+Arrival index: 4566
+value: 23
+Arrival index: 4567
+value: 17
+Arrival index: 4568
+value: 25
+Arrival index: 4569
+value: 17
+Arrival index: 4570
+value: 19
+Arrival index: 4571
+value: 21
+Arrival index: 4572
+value: 18
+Arrival index: 4573
+value: 23
+Arrival index: 4574
+value: 15
+Arrival index: 4575
+value: 23
+Arrival index: 4576
+value: 16
+Arrival index: 4577
+value: 20
+Arrival index: 4578
+value: 20
+Arrival index: 4579
+value: 19
+Arrival index: 4580
+value: 23
+Arrival index: 4581
+value: 17
+Arrival index: 4582
+value: 22
+Arrival index: 4583
+value: 16
+Arrival index: 4584
+value: 22
+Arrival index: 4585
+value: 23
+Arrival index: 4586
+value: 17
+Arrival index: 4587
+value: 20
+Arrival index: 4588
+value: 15
+Arrival index: 4589
+value: 22
+Arrival index: 4590
+value: 16
+Arrival index: 4591
+value: 20
+Arrival index: 4592
+value: 24
+Arrival index: 4593
+value: 14
+Arrival index: 4594
+value: 22
+Arrival index: 4595
+value: 15
+Arrival index: 4596
+value: 16
+Arrival index: 4597
+value: 19
+Arrival index: 4598
+value: 15
+Arrival index: 4599
+value: 22
+Arrival index: 4600
+value: 11
+Arrival index: 4601
+value: 20
+Arrival index: 4602
+value: 17
+Arrival index: 4603
+value: 17
+Arrival index: 4604
+value: 20
+Arrival index: 4605
+value: 14
+Arrival index: 4606
+value: 21
+Arrival index: 4607
+value: 13
+Arrival index: 4608
+value: 19
+Arrival index: 4609
+value: 16
+Arrival index: 4610
+value: 16
+Arrival index: 4611
+value: 18
+Arrival index: 4612
+value: 11
+Arrival index: 4613
+value: 20
+Arrival index: 4614
+value: 15
+Arrival index: 4615
+value: 16
+Arrival index: 4616
+value: 19
+Arrival index: 4617
+value: 11
+Arrival index: 4618
+value: 18
+Arrival index: 4619
+value: 15
+Arrival index: 4620
+value: 16
+Arrival index: 4621
+value: 22
+Arrival index: 4622
+value: 16
+Arrival index: 4623
+value: 21
+Arrival index: 4624
+value: 15
+Arrival index: 4625
+value: 18
+Arrival index: 4626
+value: 16
+Arrival index: 4627
+value: 13
+Arrival index: 4628
+value: 19
+Arrival index: 4629
+value: 14
+Arrival index: 4630
+value: 18
+Arrival index: 4631
+value: 15
+Arrival index: 4632
+value: 17
+Arrival index: 4633
+value: 17
+Arrival index: 4634
+value: 16
+Arrival index: 4635
+value: 22
+Arrival index: 4636
+value: 15
+Arrival index: 4637
+value: 17
+Arrival index: 4638
+value: 16
+Arrival index: 4639
+value: 19
+Arrival index: 4640
+value: 21
+Arrival index: 4641
+value: 18
+Arrival index: 4642
+value: 21
+Arrival index: 4643
+value: 18
+Arrival index: 4644
+value: 21
+Arrival index: 4645
+value: 23
+Arrival index: 4646
+value: 20
+Arrival index: 4647
+value: 23
+Arrival index: 4648
+value: 18
+Arrival index: 4649
+value: 21
+Arrival index: 4650
+value: 19
+Arrival index: 4651
+value: 18
+Arrival index: 4652
+value: 24
+Arrival index: 4653
+value: 17
+Arrival index: 4654
+value: 21
+Arrival index: 4655
+value: 19
+Arrival index: 4656
+value: 20
+Arrival index: 4657
+value: 20
+Arrival index: 4658
+value: 18
+Arrival index: 4659
+value: 24
+Arrival index: 4660
+value: 11
+Arrival index: 4661
+value: 22
+Arrival index: 4662
+value: 20
+Arrival index: 4663
+value: 21
+Arrival index: 4664
+value: 24
+Arrival index: 4665
+value: 20
+Arrival index: 4666
+value: 26
+Arrival index: 4667
+value: 18
+Arrival index: 4668
+value: 23
+Arrival index: 4669
+value: 22
+Arrival index: 4670
+value: 17
+Arrival index: 4671
+value: 25
+Arrival index: 4672
+value: 18
+Arrival index: 4673
+value: 19
+Arrival index: 4674
+value: 19
+Arrival index: 4675
+value: 15
+Arrival index: 4676
+value: 21
+Arrival index: 4677
+value: 14
+Arrival index: 4678
+value: 22
+Arrival index: 4679
+value: 18
+Arrival index: 4680
+value: 17
+Arrival index: 4681
+value: 21
+Arrival index: 4682
+value: 15
+Arrival index: 4683
+value: 23
+Arrival index: 4684
+value: 17
+Arrival index: 4685
+value: 18
+Arrival index: 4686
+value: 18
+Arrival index: 4687
+value: 16
+Arrival index: 4688
+value: 21
+Arrival index: 4689
+value: 14
+Arrival index: 4690
+value: 23
+Arrival index: 4691
+value: 18
+Arrival index: 4692
+value: 22
+Arrival index: 4693
+value: 23
+Arrival index: 4694
+value: 16
+Arrival index: 4695
+value: 22
+Arrival index: 4696
+value: 14
+Arrival index: 4697
+value: 18
+Arrival index: 4698
+value: 21
+Arrival index: 4699
+value: 14
+Arrival index: 4700
+value: 21
+Arrival index: 4701
+value: 15
+Arrival index: 4702
+value: 17
+Arrival index: 4703
+value: 18
+Arrival index: 4704
+value: 15
+Arrival index: 4705
+value: 24
+Arrival index: 4706
+value: 15
+Arrival index: 4707
+value: 18
+Arrival index: 4708
+value: 15
+Arrival index: 4709
+value: 17
+Arrival index: 4710
+value: 17
+Arrival index: 4711
+value: 13
+Arrival index: 4712
+value: 20
+Arrival index: 4713
+value: 11
+Arrival index: 4714
+value: 18
+Arrival index: 4715
+value: 17
+Arrival index: 4716
+value: 15
+Arrival index: 4717
+value: 18
+Arrival index: 4718
+value: 13
+Arrival index: 4719
+value: 21
+Arrival index: 4720
+value: 13
+Arrival index: 4721
+value: 16
+Arrival index: 4722
+value: 21
+Arrival index: 4723
+value: 13
+Arrival index: 4724
+value: 19
+Arrival index: 4725
+value: 14
+Arrival index: 4726
+value: 14
+Arrival index: 4727
+value: 18
+Arrival index: 4728
+value: 11
+Arrival index: 4729
+value: 21
+Arrival index: 4730
+value: 14
+Arrival index: 4731
+value: 18
+Arrival index: 4732
+value: 20
+Arrival index: 4733
+value: 15
+Arrival index: 4734
+value: 23
+Arrival index: 4735
+value: 17
+Arrival index: 4736
+value: 17
+Arrival index: 4737
+value: 10
+Arrival index: 4738
+value: 14
+Arrival index: 4739
+value: 17
+Arrival index: 4740
+value: 10
+Arrival index: 4741
+value: 19
+Arrival index: 4742
+value: 12
+Arrival index: 4743
+value: 17
+Arrival index: 4744
+value: 15
+Arrival index: 4745
+value: 14
+Arrival index: 4746
+value: 20
+Arrival index: 4747
+value: 11
+Arrival index: 4748
+value: 15
+Arrival index: 4749
+value: 11
+Arrival index: 4750
+value: 9
+Arrival index: 4751
+value: 17
+Arrival index: 4752
+value: 14
+Arrival index: 4753
+value: 19
+Arrival index: 4754
+value: 17
+Arrival index: 4755
+value: 15
+Arrival index: 4756
+value: 20
+Arrival index: 4757
+value: 14
+Arrival index: 4758
+value: 20
+Arrival index: 4759
+value: 15
+Arrival index: 4760
+value: 9
+Arrival index: 4761
+value: 16
+Arrival index: 4762
+value: 14
+Arrival index: 4763
+value: 21
+Arrival index: 4764
+value: 14
+Arrival index: 4765
+value: 20
+Arrival index: 4766
+value: 15
+Arrival index: 4767
+value: 17
+Arrival index: 4768
+value: 20
+Arrival index: 4769
+value: 17
+Arrival index: 4770
+value: 20
+Arrival index: 4771
+value: 16
+Arrival index: 4772
+value: 23
+Arrival index: 4773
+value: 22
+Arrival index: 4774
+value: 20
+Arrival index: 4775
+value: 21
+Arrival index: 4776
+value: 20
+Arrival index: 4777
+value: 24
+Arrival index: 4778
+value: 23
+Arrival index: 4779
+value: 22
+Arrival index: 4780
+value: 21
+Arrival index: 4781
+value: 21
+Arrival index: 4782
+value: 27
+Arrival index: 4783
+value: 21
+Arrival index: 4784
+value: 23
+Arrival index: 4785
+value: 26
+Arrival index: 4786
+value: 20
+Arrival index: 4787
+value: 23
+Arrival index: 4788
+value: 18
+Arrival index: 4789
+value: 21
+Arrival index: 4790
+value: 19
+Arrival index: 4791
+value: 22
+Arrival index: 4792
+value: 23
+Arrival index: 4793
+value: 19
+Arrival index: 4794
+value: 23
+Arrival index: 4795
+value: 19
+Arrival index: 4796
+value: 22
+Arrival index: 4797
+value: 21
+Arrival index: 4798
+value: 22
+Arrival index: 4799
+value: 24
+Arrival index: 4800
+value: 16
+Arrival index: 4801
+value: 24
+Arrival index: 4802
+value: 20
+Arrival index: 4803
+value: 18
+Arrival index: 4804
+value: 24
+Arrival index: 4805
+value: 16
+Arrival index: 4806
+value: 23
+Arrival index: 4807
+value: 18
+Arrival index: 4808
+value: 17
+Arrival index: 4809
+value: 25
+Arrival index: 4810
+value: 17
+Arrival index: 4811
+value: 25
+Arrival index: 4812
+value: 21
+Arrival index: 4813
+value: 20
+Arrival index: 4814
+value: 26
+Arrival index: 4815
+value: 16
+Arrival index: 4816
+value: 24
+Arrival index: 4817
+value: 16
+Arrival index: 4818
+value: 24
+Arrival index: 4819
+value: 21
+Arrival index: 4820
+value: 18
+Arrival index: 4821
+value: 24
+Arrival index: 4822
+value: 16
+Arrival index: 4823
+value: 22
+Arrival index: 4824
+value: 18
+Arrival index: 4825
+value: 16
+Arrival index: 4826
+value: 21
+Arrival index: 4827
+value: 14
+Arrival index: 4828
+value: 21
+Arrival index: 4829
+value: 19
+Arrival index: 4830
+value: 16
+Arrival index: 4831
+value: 23
+Arrival index: 4832
+value: 15
+Arrival index: 4833
+value: 21
+Arrival index: 4834
+value: 18
+Arrival index: 4835
+value: 14
+Arrival index: 4836
+value: 17
+Arrival index: 4837
+value: 11
+Arrival index: 4838
+value: 20
+Arrival index: 4839
+value: 14
+Arrival index: 4840
+value: 17
+Arrival index: 4841
+value: 20
+Arrival index: 4842
+value: 15
+Arrival index: 4843
+value: 21
+Arrival index: 4844
+value: 13
+Arrival index: 4845
+value: 19
+Arrival index: 4846
+value: 15
+Arrival index: 4847
+value: 12
+Arrival index: 4848
+value: 19
+Arrival index: 4849
+value: 10
+Arrival index: 4850
+value: 16
+Arrival index: 4851
+value: 15
+Arrival index: 4852
+value: 14
+Arrival index: 4853
+value: 17
+Arrival index: 4854
+value: 15
+Arrival index: 4855
+value: 21
+Arrival index: 4856
+value: 20
+Arrival index: 4857
+value: 16
+Arrival index: 4858
+value: 20
+Arrival index: 4859
+value: 18
+Arrival index: 4860
+value: 14
+Arrival index: 4861
+value: 18
+Arrival index: 4862
+value: 17
+Arrival index: 4863
+value: 20
+Arrival index: 4864
+value: 18
+Arrival index: 4865
+value: 21
+Arrival index: 4866
+value: 17
+Arrival index: 4867
+value: 14
+Arrival index: 4868
+value: 21
+Arrival index: 4869
+value: 16
+Arrival index: 4870
+value: 19
+Arrival index: 4871
+value: 14
+Arrival index: 4872
+value: 18
+Arrival index: 4873
+value: 20
+Arrival index: 4874
+value: 16
+Arrival index: 4875
+value: 21
+Arrival index: 4876
+value: 18
+Arrival index: 4877
+value: 21
+Arrival index: 4878
+value: 21
+Arrival index: 4879
+value: 20
+Arrival index: 4880
+value: 22
+Arrival index: 4881
+value: 21
+Arrival index: 4882
+value: 26
+Arrival index: 4883
+value: 24
+Arrival index: 4884
+value: 22
+Arrival index: 4885
+value: 18
+Arrival index: 4886
+value: 18
+Arrival index: 4887
+value: 22
+Arrival index: 4888
+value: 25
+Arrival index: 4889
+value: 21
+Arrival index: 4890
+value: 22
+Arrival index: 4891
+value: 18
+Arrival index: 4892
+value: 23
+Arrival index: 4893
+value: 20
+Arrival index: 4894
+value: 19
+Arrival index: 4895
+value: 24
+Arrival index: 4896
+value: 19
+Arrival index: 4897
+value: 24
+Arrival index: 4898
+value: 20
+Arrival index: 4899
+value: 22
+Arrival index: 4900
+value: 23
+Arrival index: 4901
+value: 19
+Arrival index: 4902
+value: 25
+Arrival index: 4903
+value: 19
+Arrival index: 4904
+value: 21
+Arrival index: 4905
+value: 25
+Arrival index: 4906
+value: 17
+Arrival index: 4907
+value: 22
+Arrival index: 4908
+value: 21
+Arrival index: 4909
+value: 18
+Arrival index: 4910
+value: 29
+Arrival index: 4911
+value: 13
+Arrival index: 4912
+value: 20
+Arrival index: 4913
+value: 19
+Arrival index: 4914
+value: 13
+Arrival index: 4915
+value: 22
+Arrival index: 4916
+value: 16
+Arrival index: 4917
+value: 21
+Arrival index: 4918
+value: 24
+Arrival index: 4919
+value: 18
+Arrival index: 4920
+value: 22
+Arrival index: 4921
+value: 15
+Arrival index: 4922
+value: 20
+Arrival index: 4923
+value: 17
+Arrival index: 4924
+value: 14
+Arrival index: 4925
+value: 21
+Arrival index: 4926
+value: 13
+Arrival index: 4927
+value: 21
+Arrival index: 4928
+value: 20
+Arrival index: 4929
+value: 17
+Arrival index: 4930
+value: 21
+Arrival index: 4931
+value: 15
+Arrival index: 4932
+value: 18
+Arrival index: 4933
+value: 18
+Arrival index: 4934
+value: 12
+Arrival index: 4935
+value: 22
+Arrival index: 4936
+value: 14
+Arrival index: 4937
+value: 13
+Arrival index: 4938
+value: 19
+Arrival index: 4939
+value: 13
+Arrival index: 4940
+value: 17
+Arrival index: 4941
+value: 18
+Arrival index: 4942
+value: 15
+Arrival index: 4943
+value: 20
+Arrival index: 4944
+value: 12
+Arrival index: 4945
+value: 19
+Arrival index: 4946
+value: 17
+Arrival index: 4947
+value: 12
+Arrival index: 4948
+value: 19
+Arrival index: 4949
+value: 12
+Arrival index: 4950
+value: 16
+Arrival index: 4951
+value: 18
+Arrival index: 4952
+value: 13
+Arrival index: 4953
+value: 20
+Arrival index: 4954
+value: 14
+Arrival index: 4955
+value: 15
+Arrival index: 4956
+value: 18
+Arrival index: 4957
+value: 12
+Arrival index: 4958
+value: 18
+Arrival index: 4959
+value: 17
+Arrival index: 4960
+value: 21
+Arrival index: 4961
+value: 19
+Arrival index: 4962
+value: 16
+Arrival index: 4963
+value: 16
+Arrival index: 4964
+value: 18
+Arrival index: 4965
+value: 13
+Arrival index: 4966
+value: 18
+Arrival index: 4967
+value: 18
+Arrival index: 4968
+value: 13
+Arrival index: 4969
+value: 19
+Arrival index: 4970
+value: 14
+Arrival index: 4971
+value: 17
+Arrival index: 4972
+value: 17
+Arrival index: 4973
+value: 13
+Arrival index: 4974
+value: 19
+Arrival index: 4975
+value: 15
+Arrival index: 4976
+value: 16
+Arrival index: 4977
+value: 17
+Arrival index: 4978
+value: 14
+Arrival index: 4979
+value: 21
+Arrival index: 4980
+value: 18
+Arrival index: 4981
+value: 17
+Arrival index: 4982
+value: 20
+Arrival index: 4983
+value: 16
+Arrival index: 4984
+value: 20
+Arrival index: 4985
+value: 27
+Arrival index: 4986
+value: 19
+Arrival index: 4987
+value: 22
+Arrival index: 4988
+value: 20
+Arrival index: 4989
+value: 19
+Arrival index: 4990
+value: 22
+Arrival index: 4991
+value: 19
+Arrival index: 4992
+value: 22
+Arrival index: 4993
+value: 22
+Arrival index: 4994
+value: 18
+Arrival index: 4995
+value: 24
+Arrival index: 4996
+value: 22
+Arrival index: 4997
+value: 19
+Arrival index: 4998
+value: 23
+Arrival index: 4999
+value: 19
+Arrival index: 0
+value: 19
+Arrival index: 1
+value: 13
+Arrival index: 2
+value: 16
+Arrival index: 3
+value: 18
+Arrival index: 4
+value: 14
+Arrival index: 5
+value: 25
+Arrival index: 6
+value: 21
+Arrival index: 7
+value: 20
+Arrival index: 8
+value: 22
+Arrival index: 9
+value: 16
+Arrival index: 10
+value: 19
+Arrival index: 11
+value: 14
+Arrival index: 12
+value: 14
+Arrival index: 13
+value: 18
+Arrival index: 14
+value: 14
+Arrival index: 15
+value: 24
+Arrival index: 16
+value: 20
+Arrival index: 17
+value: 23
+Arrival index: 18
+value: 22
+Arrival index: 19
+value: 22
+Arrival index: 20
+value: 23
+Arrival index: 21
+value: 16
+Arrival index: 22
+value: 16
+Arrival index: 23
+value: 13
+Arrival index: 24
+value: 11
+Arrival index: 25
+value: 19
+Arrival index: 26
+value: 16
+Arrival index: 27
+value: 23
+Arrival index: 28
+value: 23
+Arrival index: 29
+value: 22
+Arrival index: 30
+value: 23
+Arrival index: 31
+value: 16
+Arrival index: 32
+value: 14
+Arrival index: 33
+value: 17
+Arrival index: 34
+value: 11
+Arrival index: 35
+value: 22
+Arrival index: 36
+value: 16
+Arrival index: 37
+value: 21
+Arrival index: 38
+value: 22
+Arrival index: 39
+value: 22
+Arrival index: 40
+value: 23
+Arrival index: 41
+value: 18
+Arrival index: 42
+value: 18
+Arrival index: 43
+value: 16
+Arrival index: 44
+value: 10
+Arrival index: 45
+value: 19
+Arrival index: 46
+value: 13
+Arrival index: 47
+value: 20
+Arrival index: 48
+value: 18
+Arrival index: 49
+value: 20
+Arrival index: 50
+value: 24
+Arrival index: 51
+value: 20
+Arrival index: 52
+value: 25
+Arrival index: 53
+value: 20
+Arrival index: 54
+value: 14
+Arrival index: 55
+value: 19
+Arrival index: 56
+value: 14
+Arrival index: 57
+value: 14
+Arrival index: 58
+value: 19
+Arrival index: 59
+value: 14
+Arrival index: 60
+value: 22
+Arrival index: 61
+value: 18
+Arrival index: 62
+value: 22
+Arrival index: 63
+value: 22
+Arrival index: 64
+value: 20
+Arrival index: 65
+value: 23
+Arrival index: 66
+value: 19
+Arrival index: 67
+value: 19
+Arrival index: 68
+value: 19
+Arrival index: 69
+value: 15
+Arrival index: 70
+value: 20
+Arrival index: 71
+value: 15
+Arrival index: 72
+value: 16
+Arrival index: 73
+value: 14
+Arrival index: 74
+value: 11
+Arrival index: 75
+value: 18
+Arrival index: 76
+value: 11
+Arrival index: 77
+value: 15
+Arrival index: 78
+value: 15
+Arrival index: 79
+value: 14
+Arrival index: 80
+value: 21
+Arrival index: 81
+value: 15
+Arrival index: 82
+value: 22
+Arrival index: 83
+value: 21
+Arrival index: 84
+value: 19
+Arrival index: 85
+value: 25
+Arrival index: 86
+value: 19
+Arrival index: 87
+value: 20
+Arrival index: 88
+value: 20
+Arrival index: 89
+value: 18
+Arrival index: 90
+value: 19
+Arrival index: 91
+value: 17
+Arrival index: 92
+value: 21
+Arrival index: 93
+value: 20
+Arrival index: 94
+value: 16
+Arrival index: 95
+value: 21
+Arrival index: 96
+value: 16
+Arrival index: 97
+value: 17
+Arrival index: 98
+value: 15
+Arrival index: 99
+value: 14
+Arrival index: 100
+value: 18
+Arrival index: 101
+value: 13
+Arrival index: 102
+value: 18
+Arrival index: 103
+value: 17
+Arrival index: 104
+value: 15
+Arrival index: 105
+value: 22
+Arrival index: 106
+value: 14
+Arrival index: 107
+value: 16
+Arrival index: 108
+value: 18
+Arrival index: 109
+value: 14
+Arrival index: 110
+value: 19
+Arrival index: 111
+value: 12
+Arrival index: 112
+value: 17
+Arrival index: 113
+value: 19
+Arrival index: 114
+value: 14
+Arrival index: 115
+value: 22
+Arrival index: 116
+value: 15
+Arrival index: 117
+value: 18
+Arrival index: 118
+value: 19
+Arrival index: 119
+value: 17
+Arrival index: 120
+value: 20
+Arrival index: 121
+value: 14
+Arrival index: 122
+value: 20
+Arrival index: 123
+value: 17
+Arrival index: 124
+value: 16
+Arrival index: 125
+value: 24
+Arrival index: 126
+value: 15
+Arrival index: 127
+value: 20
+Arrival index: 128
+value: 18
+Arrival index: 129
+value: 16
+Arrival index: 130
+value: 22
+Arrival index: 131
+value: 15
+Arrival index: 132
+value: 19
+Arrival index: 133
+value: 18
+Arrival index: 134
+value: 15
+Arrival index: 135
+value: 24
+Arrival index: 136
+value: 16
+Arrival index: 137
+value: 17
+Arrival index: 138
+value: 23
+Arrival index: 139
+value: 16
+Arrival index: 140
+value: 23
+Arrival index: 141
+value: 18
+Arrival index: 142
+value: 18
+Arrival index: 143
+value: 22
+Arrival index: 144
+value: 15
+Arrival index: 145
+value: 23
+Arrival index: 146
+value: 21
+Arrival index: 147
+value: 21
+Arrival index: 148
+value: 23
+Arrival index: 149
+value: 15
+Arrival index: 150
+value: 24
+Arrival index: 151
+value: 19
+Arrival index: 152
+value: 18
+Arrival index: 153
+value: 24
+Arrival index: 154
+value: 14
+Arrival index: 155
+value: 19
+Arrival index: 156
+value: 20
+Arrival index: 157
+value: 20
+Arrival index: 158
+value: 26
+Arrival index: 159
+value: 21
+Arrival index: 160
+value: 22
+Arrival index: 161
+value: 22
+Arrival index: 162
+value: 17
+Arrival index: 163
+value: 23
+Arrival index: 164
+value: 18
+Arrival index: 165
+value: 19
+Arrival index: 166
+value: 23
+Arrival index: 167
+value: 19
+Arrival index: 168
+value: 24
+Arrival index: 169
+value: 23
+Arrival index: 170
+value: 24
+Arrival index: 171
+value: 26
+Arrival index: 172
+value: 19
+Arrival index: 173
+value: 23
+Arrival index: 174
+value: 20
+Arrival index: 175
+value: 20
+Arrival index: 176
+value: 22
+Arrival index: 177
+value: 19
+Arrival index: 178
+value: 24
+Arrival index: 179
+value: 22
+Arrival index: 180
+value: 23
+Arrival index: 181
+value: 23
+Arrival index: 182
+value: 17
+Arrival index: 183
+value: 20
+Arrival index: 184
+value: 19
+Arrival index: 185
+value: 14
+Arrival index: 186
+value: 16
+Arrival index: 187
+value: 14
+Arrival index: 188
+value: 13
+Arrival index: 189
+value: 19
+Arrival index: 190
+value: 14
+Arrival index: 191
+value: 17
+Arrival index: 192
+value: 15
+Arrival index: 193
+value: 14
+Arrival index: 194
+value: 22
+Arrival index: 195
+value: 14
+Arrival index: 196
+value: 19
+Arrival index: 197
+value: 18
+Arrival index: 198
+value: 17
+Arrival index: 199
+value: 22
+Arrival index: 200
+value: 17
+Arrival index: 201
+value: 20
+Arrival index: 202
+value: 16
+Arrival index: 203
+value: 20
+Arrival index: 204
+value: 22
+Arrival index: 205
+value: 18
+Arrival index: 206
+value: 19
+Arrival index: 207
+value: 18
+Arrival index: 208
+value: 16
+Arrival index: 209
+value: 18
+Arrival index: 210
+value: 12
+Arrival index: 211
+value: 14
+Arrival index: 212
+value: 13
+Arrival index: 213
+value: 13
+Arrival index: 214
+value: 20
+Arrival index: 215
+value: 14
+Arrival index: 216
+value: 21
+Arrival index: 217
+value: 21
+Arrival index: 218
+value: 21
+Arrival index: 219
+value: 25
+Arrival index: 220
+value: 18
+Arrival index: 221
+value: 20
+Arrival index: 222
+value: 18
+Arrival index: 223
+value: 14
+Arrival index: 224
+value: 19
+Arrival index: 225
+value: 12
+Arrival index: 226
+value: 16
+Arrival index: 227
+value: 14
+Arrival index: 228
+value: 12
+Arrival index: 229
+value: 18
+Arrival index: 230
+value: 12
+Arrival index: 231
+value: 20
+Arrival index: 232
+value: 14
+Arrival index: 233
+value: 20
+Arrival index: 234
+value: 23
+Arrival index: 235
+value: 19
+Arrival index: 236
+value: 23
+Arrival index: 237
+value: 18
+Arrival index: 238
+value: 19
+Arrival index: 239
+value: 20
+Arrival index: 240
+value: 14
+Arrival index: 241
+value: 16
+Arrival index: 242
+value: 13
+Arrival index: 243
+value: 14
+Arrival index: 244
+value: 21
+Arrival index: 245
+value: 13
+Arrival index: 246
+value: 22
+Arrival index: 247
+value: 20
+Arrival index: 248
+value: 20
+Arrival index: 249
+value: 21
+Arrival index: 250
+value: 18
+Arrival index: 251
+value: 21
+Arrival index: 252
+value: 17
+Arrival index: 253
+value: 19
+Arrival index: 254
+value: 19
+Arrival index: 255
+value: 17
+Arrival index: 256
+value: 20
+Arrival index: 257
+value: 15
+Arrival index: 258
+value: 16
+Arrival index: 259
+value: 17
+Arrival index: 260
+value: 12
+Arrival index: 261
+value: 16
+Arrival index: 262
+value: 11
+Arrival index: 263
+value: 18
+Arrival index: 264
+value: 19
+Arrival index: 265
+value: 16
+Arrival index: 266
+value: 24
+Arrival index: 267
+value: 20
+Arrival index: 268
+value: 23
+Arrival index: 269
+value: 23
+Arrival index: 270
+value: 19
+Arrival index: 271
+value: 21
+Arrival index: 272
+value: 16
+Arrival index: 273
+value: 16
+Arrival index: 274
+value: 20
+Arrival index: 275
+value: 14
+Arrival index: 276
+value: 17
+Arrival index: 277
+value: 14
+Arrival index: 278
+value: 15
+Arrival index: 279
+value: 17
+Arrival index: 280
+value: 12
+Arrival index: 281
+value: 16
+Arrival index: 282
+value: 10
+Arrival index: 283
+value: 15
+Arrival index: 284
+value: 16
+Arrival index: 285
+value: 11
+Arrival index: 286
+value: 18
+Arrival index: 287
+value: 13
+Arrival index: 288
+value: 17
+Arrival index: 289
+value: 18
+Arrival index: 290
+value: 14
+Arrival index: 291
+value: 19
+Arrival index: 292
+value: 15
+Arrival index: 293
+value: 19
+Arrival index: 294
+value: 20
+Arrival index: 295
+value: 16
+Arrival index: 296
+value: 24
+Arrival index: 297
+value: 22
+Arrival index: 298
+value: 21
+Arrival index: 299
+value: 22
+Arrival index: 300
+value: 19
+Arrival index: 301
+value: 24
+Arrival index: 302
+value: 19
+Arrival index: 303
+value: 21
+Arrival index: 304
+value: 23
+Arrival index: 305
+value: 17
+Arrival index: 306
+value: 25
+Arrival index: 307
+value: 22
+Arrival index: 308
+value: 24
+Arrival index: 309
+value: 26
+Arrival index: 310
+value: 21
+Arrival index: 311
+value: 24
+Arrival index: 312
+value: 20
+Arrival index: 313
+value: 23
+Arrival index: 314
+value: 25
+Arrival index: 315
+value: 19
+Arrival index: 316
+value: 25
+Arrival index: 317
+value: 24
+Arrival index: 318
+value: 22
+Arrival index: 319
+value: 26
+Arrival index: 320
+value: 21
+Arrival index: 321
+value: 24
+Arrival index: 322
+value: 22
+Arrival index: 323
+value: 22
+Arrival index: 324
+value: 24
+Arrival index: 325
+value: 20
+Arrival index: 326
+value: 23
+Arrival index: 327
+value: 24
+Arrival index: 328
+value: 21
+Arrival index: 329
+value: 27
+Arrival index: 330
+value: 22
+Arrival index: 331
+value: 25
+Arrival index: 332
+value: 24
+Arrival index: 333
+value: 22
+Arrival index: 334
+value: 28
+Arrival index: 335
+value: 19
+Arrival index: 336
+value: 23
+Arrival index: 337
+value: 25
+Arrival index: 338
+value: 20
+Arrival index: 339
+value: 27
+Arrival index: 340
+value: 22
+Arrival index: 341
+value: 22
+Arrival index: 342
+value: 24
+Arrival index: 343
+value: 20
+Arrival index: 344
+value: 25
+Arrival index: 345
+value: 21
+Arrival index: 346
+value: 21
+Arrival index: 347
+value: 26
+Arrival index: 348
+value: 19
+Arrival index: 349
+value: 23
+Arrival index: 350
+value: 25
+Arrival index: 351
+value: 22
+Arrival index: 352
+value: 26
+Arrival index: 353
+value: 21
+Arrival index: 354
+value: 23
+Arrival index: 355
+value: 21
+Arrival index: 356
+value: 21
+Arrival index: 357
+value: 27
+Arrival index: 358
+value: 20
+Arrival index: 359
+value: 25
+Arrival index: 360
+value: 24
+Arrival index: 361
+value: 19
+Arrival index: 362
+value: 24
+Arrival index: 363
+value: 17
+Arrival index: 364
+value: 21
+Arrival index: 365
+value: 19
+Arrival index: 366
+value: 18
+Arrival index: 367
+value: 26
+Arrival index: 368
+value: 21
+Arrival index: 369
+value: 21
+Arrival index: 370
+value: 24
+Arrival index: 371
+value: 18
+Arrival index: 372
+value: 23
+Arrival index: 373
+value: 19
+Arrival index: 374
+value: 17
+Arrival index: 375
+value: 23
+Arrival index: 376
+value: 17
+Arrival index: 377
+value: 23
+Arrival index: 378
+value: 23
+Arrival index: 379
+value: 20
+Arrival index: 380
+value: 26
+Arrival index: 381
+value: 18
+Arrival index: 382
+value: 22
+Arrival index: 383
+value: 23
+Arrival index: 384
+value: 19
+Arrival index: 385
+value: 24
+Arrival index: 386
+value: 18
+Arrival index: 387
+value: 23
+Arrival index: 388
+value: 23
+Arrival index: 389
+value: 19
+Arrival index: 390
+value: 26
+Arrival index: 391
+value: 21
+Arrival index: 392
+value: 19
+Arrival index: 393
+value: 24
+Arrival index: 394
+value: 19
+Arrival index: 395
+value: 21
+Arrival index: 396
+value: 22
+Arrival index: 397
+value: 20
+Arrival index: 398
+value: 22
+Arrival index: 399
+value: 20
+Arrival index: 400
+value: 18
+Arrival index: 401
+value: 17
+Arrival index: 402
+value: 15
+Arrival index: 403
+value: 16
+Arrival index: 404
+value: 17
+Arrival index: 405
+value: 12
+Arrival index: 406
+value: 18
+Arrival index: 407
+value: 16
+Arrival index: 408
+value: 17
+Arrival index: 409
+value: 19
+Arrival index: 410
+value: 13
+Arrival index: 411
+value: 17
+Arrival index: 412
+value: 13
+Arrival index: 413
+value: 14
+Arrival index: 414
+value: 19
+Arrival index: 415
+value: 13
+Arrival index: 416
+value: 18
+Arrival index: 417
+value: 18
+Arrival index: 418
+value: 15
+Arrival index: 419
+value: 20
+Arrival index: 420
+value: 16
+Arrival index: 421
+value: 20
+Arrival index: 422
+value: 22
+Arrival index: 423
+value: 15
+Arrival index: 424
+value: 21
+Arrival index: 425
+value: 18
+Arrival index: 426
+value: 19
+Arrival index: 427
+value: 27
+Arrival index: 428
+value: 20
+Arrival index: 429
+value: 22
+Arrival index: 430
+value: 24
+Arrival index: 431
+value: 22
+Arrival index: 432
+value: 25
+Arrival index: 433
+value: 22
+Arrival index: 434
+value: 22
+Arrival index: 435
+value: 24
+Arrival index: 436
+value: 20
+Arrival index: 437
+value: 23
+Arrival index: 438
+value: 20
+Arrival index: 439
+value: 18
+Arrival index: 440
+value: 23
+Arrival index: 441
+value: 19
+Arrival index: 442
+value: 19
+Arrival index: 443
+value: 21
+Arrival index: 444
+value: 17
+Arrival index: 445
+value: 19
+Arrival index: 446
+value: 18
+Arrival index: 447
+value: 14
+Arrival index: 448
+value: 20
+Arrival index: 449
+value: 13
+Arrival index: 450
+value: 15
+Arrival index: 451
+value: 18
+Arrival index: 452
+value: 13
+Arrival index: 453
+value: 21
+Arrival index: 454
+value: 18
+Arrival index: 455
+value: 18
+Arrival index: 456
+value: 25
+Arrival index: 457
+value: 18
+Arrival index: 458
+value: 22
+Arrival index: 459
+value: 19
+Arrival index: 460
+value: 17
+Arrival index: 461
+value: 23
+Arrival index: 462
+value: 18
+Arrival index: 463
+value: 22
+Arrival index: 464
+value: 21
+Arrival index: 465
+value: 18
+Arrival index: 466
+value: 25
+Arrival index: 467
+value: 22
+Arrival index: 468
+value: 22
+Arrival index: 469
+value: 21
+Arrival index: 470
+value: 19
+Arrival index: 471
+value: 22
+Arrival index: 472
+value: 20
+Arrival index: 473
+value: 16
+Arrival index: 474
+value: 18
+Arrival index: 475
+value: 17
+Arrival index: 476
+value: 19
+Arrival index: 477
+value: 21
+Arrival index: 478
+value: 15
+Arrival index: 479
+value: 17
+Arrival index: 480
+value: 18
+Arrival index: 481
+value: 13
+Arrival index: 482
+value: 18
+Arrival index: 483
+value: 13
+Arrival index: 484
+value: 16
+Arrival index: 485
+value: 19
+Arrival index: 486
+value: 14
+Arrival index: 487
+value: 22
+Arrival index: 488
+value: 17
+Arrival index: 489
+value: 18
+Arrival index: 490
+value: 20
+Arrival index: 491
+value: 14
+Arrival index: 492
+value: 21
+Arrival index: 493
+value: 16
+Arrival index: 494
+value: 17
+Arrival index: 495
+value: 21
+Arrival index: 496
+value: 20
+Arrival index: 497
+value: 23
+Arrival index: 498
+value: 18
+Arrival index: 499
+value: 18
+Arrival index: 500
+value: 24
+Arrival index: 501
+value: 18
+Arrival index: 502
+value: 20
+Arrival index: 503
+value: 22
+Arrival index: 504
+value: 18
+Arrival index: 505
+value: 22
+Arrival index: 506
+value: 20
+Arrival index: 507
+value: 20
+Arrival index: 508
+value: 23
+Arrival index: 509
+value: 19
+Arrival index: 510
+value: 24
+Arrival index: 511
+value: 22
+Arrival index: 512
+value: 20
+Arrival index: 513
+value: 25
+Arrival index: 514
+value: 22
+Arrival index: 515
+value: 24
+Arrival index: 516
+value: 24
+Arrival index: 517
+value: 23
+Arrival index: 518
+value: 26
+Arrival index: 519
+value: 23
+Arrival index: 520
+value: 28
+Arrival index: 521
+value: 26
+Arrival index: 522
+value: 23
+Arrival index: 523
+value: 29
+Arrival index: 524
+value: 23
+Arrival index: 525
+value: 23
+Arrival index: 526
+value: 27
+Arrival index: 527
+value: 24
+Arrival index: 528
+value: 28
+Arrival index: 529
+value: 25
+Arrival index: 530
+value: 24
+Arrival index: 531
+value: 29
+Arrival index: 532
+value: 25
+Arrival index: 533
+value: 26
+Arrival index: 534
+value: 25
+Arrival index: 535
+value: 22
+Arrival index: 536
+value: 28
+Arrival index: 537
+value: 25
+Arrival index: 538
+value: 22
+Arrival index: 539
+value: 27
+Arrival index: 540
+value: 20
+Arrival index: 541
+value: 26
+Arrival index: 542
+value: 22
+Arrival index: 543
+value: 22
+Arrival index: 544
+value: 26
+Arrival index: 545
+value: 17
+Arrival index: 546
+value: 21
+Arrival index: 547
+value: 22
+Arrival index: 548
+value: 13
+Arrival index: 549
+value: 19
+Arrival index: 550
+value: 16
+Arrival index: 551
+value: 16
+Arrival index: 552
+value: 21
+Arrival index: 553
+value: 15
+Arrival index: 554
+value: 17
+Arrival index: 555
+value: 20
+Arrival index: 556
+value: 17
+Arrival index: 557
+value: 21
+Arrival index: 558
+value: 19
+Arrival index: 559
+value: 15
+Arrival index: 560
+value: 20
+Arrival index: 561
+value: 17
+Arrival index: 562
+value: 18
+Arrival index: 563
+value: 23
+Arrival index: 564
+value: 21
+Arrival index: 565
+value: 25
+Arrival index: 566
+value: 25
+Arrival index: 567
+value: 27
+Arrival index: 568
+value: 27
+Arrival index: 569
+value: 24
+Arrival index: 570
+value: 29
+Arrival index: 571
+value: 23
+Arrival index: 572
+value: 23
+Arrival index: 573
+value: 25
+Arrival index: 574
+value: 17
+Arrival index: 575
+value: 20
+Arrival index: 576
+value: 22
+Arrival index: 577
+value: 17
+Arrival index: 578
+value: 21
+Arrival index: 579
+value: 18
+Arrival index: 580
+value: 16
+Arrival index: 581
+value: 21
+Arrival index: 582
+value: 17
+Arrival index: 583
+value: 19
+Arrival index: 584
+value: 22
+Arrival index: 585
+value: 19
+Arrival index: 586
+value: 23
+Arrival index: 587
+value: 24
+Arrival index: 588
+value: 23
+Arrival index: 589
+value: 26
+Arrival index: 590
+value: 24
+Arrival index: 591
+value: 30
+Arrival index: 592
+value: 27
+Arrival index: 593
+value: 26
+Arrival index: 594
+value: 29
+Arrival index: 595
+value: 20
+Arrival index: 596
+value: 26
+Arrival index: 597
+value: 23
+Arrival index: 598
+value: 14
+Arrival index: 599
+value: 21
+Arrival index: 600
+value: 18
+Arrival index: 601
+value: 18
+Arrival index: 602
+value: 22
+Arrival index: 603
+value: 21
+Arrival index: 604
+value: 24
+Arrival index: 605
+value: 23
+Arrival index: 606
+value: 22
+Arrival index: 607
+value: 28
+Arrival index: 608
+value: 23
+Arrival index: 609
+value: 26
+Arrival index: 610
+value: 27
+Arrival index: 611
+value: 23
+Arrival index: 612
+value: 28
+Arrival index: 613
+value: 23
+Arrival index: 614
+value: 24
+Arrival index: 615
+value: 26
+Arrival index: 616
+value: 20
+Arrival index: 617
+value: 26
+Arrival index: 618
+value: 21
+Arrival index: 619
+value: 22
+Arrival index: 620
+value: 24
+Arrival index: 621
+value: 16
+Arrival index: 622
+value: 19
+Arrival index: 623
+value: 19
+Arrival index: 624
+value: 18
+Arrival index: 625
+value: 23
+Arrival index: 626
+value: 23
+Arrival index: 627
+value: 27
+Arrival index: 628
+value: 25
+Arrival index: 629
+value: 26
+Arrival index: 630
+value: 30
+Arrival index: 631
+value: 25
+Arrival index: 632
+value: 27
+Arrival index: 633
+value: 29
+Arrival index: 634
+value: 23
+Arrival index: 635
+value: 28
+Arrival index: 636
+value: 24
+Arrival index: 637
+value: 23
+Arrival index: 638
+value: 25
+Arrival index: 639
+value: 20
+Arrival index: 640
+value: 24
+Arrival index: 641
+value: 23
+Arrival index: 642
+value: 15
+Arrival index: 643
+value: 23
+Arrival index: 644
+value: 17
+Arrival index: 645
+value: 17
+Arrival index: 646
+value: 21
+Arrival index: 647
+value: 14
+Arrival index: 648
+value: 19
+Arrival index: 649
+value: 18
+Arrival index: 650
+value: 20
+Arrival index: 651
+value: 23
+Arrival index: 652
+value: 18
+Arrival index: 653
+value: 23
+Arrival index: 654
+value: 22
+Arrival index: 655
+value: 24
+Arrival index: 656
+value: 27
+Arrival index: 657
+value: 24
+Arrival index: 658
+value: 26
+Arrival index: 659
+value: 25
+Arrival index: 660
+value: 24
+Arrival index: 661
+value: 24
+Arrival index: 662
+value: 20
+Arrival index: 663
+value: 24
+Arrival index: 664
+value: 24
+Arrival index: 665
+value: 21
+Arrival index: 666
+value: 27
+Arrival index: 667
+value: 25
+Arrival index: 668
+value: 27
+Arrival index: 669
+value: 27
+Arrival index: 670
+value: 24
+Arrival index: 671
+value: 27
+Arrival index: 672
+value: 23
+Arrival index: 673
+value: 23
+Arrival index: 674
+value: 25
+Arrival index: 675
+value: 19
+Arrival index: 676
+value: 26
+Arrival index: 677
+value: 24
+Arrival index: 678
+value: 24
+Arrival index: 679
+value: 27
+Arrival index: 680
+value: 21
+Arrival index: 681
+value: 26
+Arrival index: 682
+value: 23
+Arrival index: 683
+value: 22
+Arrival index: 684
+value: 27
+Arrival index: 685
+value: 18
+Arrival index: 686
+value: 21
+Arrival index: 687
+value: 25
+Arrival index: 688
+value: 19
+Arrival index: 689
+value: 23
+Arrival index: 690
+value: 22
+Arrival index: 691
+value: 19
+Arrival index: 692
+value: 24
+Arrival index: 693
+value: 20
+Arrival index: 694
+value: 22
+Arrival index: 695
+value: 23
+Arrival index: 696
+value: 21
+Arrival index: 697
+value: 27
+Arrival index: 698
+value: 20
+Arrival index: 699
+value: 21
+Arrival index: 700
+value: 23
+Arrival index: 701
+value: 20
+Arrival index: 702
+value: 26
+Arrival index: 703
+value: 23
+Arrival index: 704
+value: 24
+Arrival index: 705
+value: 24
+Arrival index: 706
+value: 21
+Arrival index: 707
+value: 28
+Arrival index: 708
+value: 24
+Arrival index: 709
+value: 23
+Arrival index: 710
+value: 25
+Arrival index: 711
+value: 19
+Arrival index: 712
+value: 22
+Arrival index: 713
+value: 25
+Arrival index: 714
+value: 21
+Arrival index: 715
+value: 24
+Arrival index: 716
+value: 24
+Arrival index: 717
+value: 21
+Arrival index: 718
+value: 26
+Arrival index: 719
+value: 21
+Arrival index: 720
+value: 21
+Arrival index: 721
+value: 23
+Arrival index: 722
+value: 19
+Arrival index: 723
+value: 24
+Arrival index: 724
+value: 22
+Arrival index: 725
+value: 20
+Arrival index: 726
+value: 25
+Arrival index: 727
+value: 20
+Arrival index: 728
+value: 24
+Arrival index: 729
+value: 23
+Arrival index: 730
+value: 19
+Arrival index: 731
+value: 23
+Arrival index: 732
+value: 16
+Arrival index: 733
+value: 22
+Arrival index: 734
+value: 23
+Arrival index: 735
+value: 14
+Arrival index: 736
+value: 21
+Arrival index: 737
+value: 19
+Arrival index: 738
+value: 15
+Arrival index: 739
+value: 21
+Arrival index: 740
+value: 15
+Arrival index: 741
+value: 15
+Arrival index: 742
+value: 17
+Arrival index: 743
+value: 13
+Arrival index: 744
+value: 19
+Arrival index: 745
+value: 18
+Arrival index: 746
+value: 15
+Arrival index: 747
+value: 21
+Arrival index: 748
+value: 16
+Arrival index: 749
+value: 21
+Arrival index: 750
+value: 23
+Arrival index: 751
+value: 22
+Arrival index: 752
+value: 26
+Arrival index: 753
+value: 25
+Arrival index: 754
+value: 29
+Arrival index: 755
+value: 25
+Arrival index: 756
+value: 26
+Arrival index: 757
+value: 28
+Arrival index: 758
+value: 22
+Arrival index: 759
+value: 26
+Arrival index: 760
+value: 21
+Arrival index: 761
+value: 15
+Arrival index: 762
+value: 22
+Arrival index: 763
+value: 17
+Arrival index: 764
+value: 20
+Arrival index: 765
+value: 22
+Arrival index: 766
+value: 17
+Arrival index: 767
+value: 22
+Arrival index: 768
+value: 22
+Arrival index: 769
+value: 23
+Arrival index: 770
+value: 27
+Arrival index: 771
+value: 24
+Arrival index: 772
+value: 28
+Arrival index: 773
+value: 28
+Arrival index: 774
+value: 26
+Arrival index: 775
+value: 26
+Arrival index: 776
+value: 22
+Arrival index: 777
+value: 25
+Arrival index: 778
+value: 22
+Arrival index: 779
+value: 15
+Arrival index: 780
+value: 22
+Arrival index: 781
+value: 19
+Arrival index: 782
+value: 22
+Arrival index: 783
+value: 28
+Arrival index: 784
+value: 28
+Arrival index: 785
+value: 29
+Arrival index: 786
+value: 24
+Arrival index: 787
+value: 29
+Arrival index: 788
+value: 26
+Arrival index: 789
+value: 20
+Arrival index: 790
+value: 25
+Arrival index: 791
+value: 18
+Arrival index: 792
+value: 16
+Arrival index: 793
+value: 24
+Arrival index: 794
+value: 16
+Arrival index: 795
+value: 19
+Arrival index: 796
+value: 22
+Arrival index: 797
+value: 22
+Arrival index: 798
+value: 26
+Arrival index: 799
+value: 25
+Arrival index: 800
+value: 29
+Arrival index: 801
+value: 27
+Arrival index: 802
+value: 25
+Arrival index: 803
+value: 30
+Arrival index: 804
+value: 20
+Arrival index: 805
+value: 20
+Arrival index: 806
+value: 24
+Arrival index: 807
+value: 18
+Arrival index: 808
+value: 22
+Arrival index: 809
+value: 20
+Arrival index: 810
+value: 21
+Arrival index: 811
+value: 23
+Arrival index: 812
+value: 23
+Arrival index: 813
+value: 29
+Arrival index: 814
+value: 27
+Arrival index: 815
+value: 28
+Arrival index: 816
+value: 30
+Arrival index: 817
+value: 24
+Arrival index: 818
+value: 26
+Arrival index: 819
+value: 24
+Arrival index: 820
+value: 17
+Arrival index: 821
+value: 21
+Arrival index: 822
+value: 18
+Arrival index: 823
+value: 15
+Arrival index: 824
+value: 20
+Arrival index: 825
+value: 15
+Arrival index: 826
+value: 20
+Arrival index: 827
+value: 23
+Arrival index: 828
+value: 24
+Arrival index: 829
+value: 26
+Arrival index: 830
+value: 23
+Arrival index: 831
+value: 28
+Arrival index: 832
+value: 25
+Arrival index: 833
+value: 27
+Arrival index: 834
+value: 27
+Arrival index: 835
+value: 19
+Arrival index: 836
+value: 26
+Arrival index: 837
+value: 23
+Arrival index: 838
+value: 18
+Arrival index: 839
+value: 24
+Arrival index: 840
+value: 17
+Arrival index: 841
+value: 20
+Arrival index: 842
+value: 21
+Arrival index: 843
+value: 16
+Arrival index: 844
+value: 21
+Arrival index: 845
+value: 19
+Arrival index: 846
+value: 21
+Arrival index: 847
+value: 24
+Arrival index: 848
+value: 20
+Arrival index: 849
+value: 25
+Arrival index: 850
+value: 25
+Arrival index: 851
+value: 23
+Arrival index: 852
+value: 26
+Arrival index: 853
+value: 23
+Arrival index: 854
+value: 28
+Arrival index: 855
+value: 24
+Arrival index: 856
+value: 22
+Arrival index: 857
+value: 28
+Arrival index: 858
+value: 24
+Arrival index: 859
+value: 31
+Arrival index: 860
+value: 23
+Arrival index: 861
+value: 23
+Arrival index: 862
+value: 25
+Arrival index: 863
+value: 18
+Arrival index: 864
+value: 25
+Arrival index: 865
+value: 18
+Arrival index: 866
+value: 17
+Arrival index: 867
+value: 22
+Arrival index: 868
+value: 15
+Arrival index: 869
+value: 20
+Arrival index: 870
+value: 19
+Arrival index: 871
+value: 17
+Arrival index: 872
+value: 22
+Arrival index: 873
+value: 16
+Arrival index: 874
+value: 19
+Arrival index: 875
+value: 17
+Arrival index: 876
+value: 14
+Arrival index: 877
+value: 22
+Arrival index: 878
+value: 15
+Arrival index: 879
+value: 17
+Arrival index: 880
+value: 20
+Arrival index: 881
+value: 15
+Arrival index: 882
+value: 23
+Arrival index: 883
+value: 16
+Arrival index: 884
+value: 21
+Arrival index: 885
+value: 17
+Arrival index: 886
+value: 16
+Arrival index: 887
+value: 22
+Arrival index: 888
+value: 15
+Arrival index: 889
+value: 20
+Arrival index: 890
+value: 18
+Arrival index: 891
+value: 19
+Arrival index: 892
+value: 20
+Arrival index: 893
+value: 18
+Arrival index: 894
+value: 22
+Arrival index: 895
+value: 17
+Arrival index: 896
+value: 17
+Arrival index: 897
+value: 21
+Arrival index: 898
+value: 12
+Arrival index: 899
+value: 17
+Arrival index: 900
+value: 14
+Arrival index: 901
+value: 15
+Arrival index: 902
+value: 18
+Arrival index: 903
+value: 10
+Arrival index: 904
+value: 18
+Arrival index: 905
+value: 13
+Arrival index: 906
+value: 16
+Arrival index: 907
+value: 18
+Arrival index: 908
+value: 12
+Arrival index: 909
+value: 18
+Arrival index: 910
+value: 12
+Arrival index: 911
+value: 19
+Arrival index: 912
+value: 16
+Arrival index: 913
+value: 17
+Arrival index: 914
+value: 19
+Arrival index: 915
+value: 15
+Arrival index: 916
+value: 22
+Arrival index: 917
+value: 19
+Arrival index: 918
+value: 20
+Arrival index: 919
+value: 19
+Arrival index: 920
+value: 16
+Arrival index: 921
+value: 21
+Arrival index: 922
+value: 15
+Arrival index: 923
+value: 18
+Arrival index: 924
+value: 19
+Arrival index: 925
+value: 17
+Arrival index: 926
+value: 22
+Arrival index: 927
+value: 19
+Arrival index: 928
+value: 22
+Arrival index: 929
+value: 20
+Arrival index: 930
+value: 19
+Arrival index: 931
+value: 22
+Arrival index: 932
+value: 18
+Arrival index: 933
+value: 23
+Arrival index: 934
+value: 21
+Arrival index: 935
+value: 22
+Arrival index: 936
+value: 25
+Arrival index: 937
+value: 25
+Arrival index: 938
+value: 27
+Arrival index: 939
+value: 23
+Arrival index: 940
+value: 29
+Arrival index: 941
+value: 24
+Arrival index: 942
+value: 26
+Arrival index: 943
+value: 27
+Arrival index: 944
+value: 21
+Arrival index: 945
+value: 27
+Arrival index: 946
+value: 20
+Arrival index: 947
+value: 21
+Arrival index: 948
+value: 23
+Arrival index: 949
+value: 17
+Arrival index: 950
+value: 24
+Arrival index: 951
+value: 17
+Arrival index: 952
+value: 16
+Arrival index: 953
+value: 22
+Arrival index: 954
+value: 14
+Arrival index: 955
+value: 19
+Arrival index: 956
+value: 18
+Arrival index: 957
+value: 18
+Arrival index: 958
+value: 23
+Arrival index: 959
+value: 19
+Arrival index: 960
+value: 27
+Arrival index: 961
+value: 24
+Arrival index: 962
+value: 25
+Arrival index: 963
+value: 26
+Arrival index: 964
+value: 26
+Arrival index: 965
+value: 31
+Arrival index: 966
+value: 23
+Arrival index: 967
+value: 29
+Arrival index: 968
+value: 21
+Arrival index: 969
+value: 20
+Arrival index: 970
+value: 25
+Arrival index: 971
+value: 16
+Arrival index: 972
+value: 20
+Arrival index: 973
+value: 19
+Arrival index: 974
+value: 20
+Arrival index: 975
+value: 24
+Arrival index: 976
+value: 23
+Arrival index: 977
+value: 29
+Arrival index: 978
+value: 26
+Arrival index: 979
+value: 28
+Arrival index: 980
+value: 30
+Arrival index: 981
+value: 24

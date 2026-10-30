@@ -12,7 +12,7 @@ tdoa[i - 2]가 delta_t_i에 해당한다.
 최적화 변수
 -----------
 p = (x, y) in R^2: 추정할 음원의 위치 [m].
-기준 센서까지의 거리 r_1 = ||p - s_1||_2는 p로 결정되므로
+기준 센서까지의 거리 r0 = ||p - sensors[0]||_2는 p로 결정되므로
 별도의 독립 변수로 두지 않는다.
 
 측정 모델과 잔차
@@ -43,47 +43,40 @@ p = (x, y) in R^2: 추정할 음원의 위치 [m].
 거리의 비선형성 때문에 일반적으로 비볼록이며, 해의 유일성이나
 전역 최적해 도달은 보장되지 않는다. 목적함수는 센서 위치에서도
 정의되지만 거리 노름은 p = s_i에서 미분 불가능하다.
-구현에서는 해당 지점에서 명시적으로 실패를 보고한다.
+구현에서는 공통 목적함수의 1 nm 거리 평활화로 해당 지점의 미분을 정의한다.
 
-선형 최소제곱 해를 초기값으로 사용하며 Armijo backtracking으로
+센서 중심점을 공통 초기값으로 사용하며 Armijo backtracking으로
 스텝 크기를 정한다. 그래디언트 노름으로 수렴을 판정한다.
 """
 
 import numpy as np
+from ocp.registry import DEFAULT_OCP, get_ocp
 
 from optimization.linear_least_squares import (
-    SOUND_SPEED, estimate_position as linear_estimate,
+    SOUND_SPEED, initial_position,
 )
 
 
-def _objective_gradient(position, sensors, delta_r):
-    offsets = position - sensors
-    distances = np.linalg.norm(offsets, axis=1)
-    if np.any(distances == 0):
-        raise ValueError('Gradient is undefined at a sensor position')
-    residual = distances[1:] - distances[0] - delta_r
-    directions = offsets / distances[:, None]
-    jacobian = directions[1:] - directions[0]
-    return 0.5 * (residual @ residual), jacobian.T @ residual
 
 
-def estimate_position(sensors, tdoa, c=SOUND_SPEED, *,
+def estimate_position(sensors, tdoa, c=SOUND_SPEED, *, ocp=DEFAULT_OCP,
                       max_iterations=10_000, gradient_tolerance=1e-8):
-    """Refine the linear estimate; return (position, distance to S1).
+    """Refine the sensor-centroid initial position; return (position, distance to the reference sensor).
 
     Raises RuntimeError on non-convergence rather than returning an
     unconverged iterate as a successful estimate. A stationary point need
     not be a global minimum of this nonconvex objective.
     """
+    problem = get_ocp(ocp, solver='gradient_descent')
     if not isinstance(max_iterations, int) or max_iterations < 1:
         raise ValueError('max_iterations must be a positive integer')
     if not np.isfinite(gradient_tolerance) or gradient_tolerance <= 0:
         raise ValueError('gradient_tolerance must be positive and finite')
-    position, _ = linear_estimate(sensors, tdoa, c)
+    position, _ = initial_position(sensors, tdoa, c)
     sensors = np.asarray(sensors, dtype=float)
     delta_r = c * np.asarray(tdoa, dtype=float)
     for iteration in range(max_iterations + 1):
-        value, gradient = _objective_gradient(position, sensors, delta_r)
+        value, gradient = problem.objective_gradient(position, sensors, delta_r)
         if not np.isfinite(value) or not np.isfinite(gradient).all():
             raise RuntimeError('Gradient descent encountered non-finite values')
         gradient_norm = np.linalg.norm(gradient)
@@ -95,8 +88,7 @@ def estimate_position(sensors, tdoa, c=SOUND_SPEED, *,
         for _ in range(60):
             candidate = position - step * gradient
             distances = np.linalg.norm(candidate - sensors, axis=1)
-            residual = distances[1:] - distances[0] - delta_r
-            candidate_value = 0.5 * (residual @ residual)
+            candidate_value = problem.objective(candidate, sensors, delta_r)
             if (np.all(distances > 0) and np.isfinite(candidate_value)
                     and candidate_value <= value - 1e-4 * step * gradient_norm**2):
                 position = candidate

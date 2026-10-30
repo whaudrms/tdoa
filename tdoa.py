@@ -4,51 +4,67 @@ import argparse
 from pathlib import Path
 
 import numpy as np
+from ocp.registry import DEFAULT_OCP, OCP_NAMES, solver_options as ocp_solver_options
 
 from optimization.linear_least_squares import SOUND_SPEED, estimate_position
 from optimization.gradient_descent import estimate_position as estimate_gradient_descent
 from optimization.newton_method import estimate_position as estimate_newton
 from optimization.gauss_newton import estimate_position as estimate_gauss_newton
 from optimization.levenberg_marquardt import estimate_position as estimate_lm
+from optimization.sqp import estimate_position as estimate_sqp
 from signal_process.tdoa_signal_processing import (
     plot_processed, print_peak_times, process_measurement, load_measurement,
+    load_sensor_samples, CSV_FILES, SAMPLE_RATE_HZ, RX_COLUMNS, SENSOR_COORDINATES,
 )
 from visualization.tdoa_visualization import visualize_tdoa
 from visualization.waveform_visualization import DATA_DIR
 
 
-# Sensor coordinates [m], in S1, S2, S3, S4 order. S1 is the reference.
-SENSORS = np.array([[0., 0.], [1., 0.], [0., 1.], [1., 1.]])
+# Sensor coordinates [m], in rx0, rx1, rx2, rx3 order. rx0 is the reference.
+SENSORS = np.asarray(SENSOR_COORDINATES, dtype=float)
 SOLVERS = {'linear_least_squares': estimate_position,
            'gradient_descent': estimate_gradient_descent,
            'newton_method': estimate_newton,
            'gauss_newton': estimate_gauss_newton,
-           'levenberg_marquardt': estimate_lm}
-EXAMPLE_TRUE_POS = None  # Evaluation only; never used to estimate.
+           'levenberg_marquardt': estimate_lm,
+           'sqp': estimate_sqp}
+EXAMPLE_TRUE_POS = [0.40,0.20]
 
 
-def run_pipeline(csv_path, sensors=SENSORS, c=SOUND_SPEED,
+def run_pipeline(csv_path=None, sensors=SENSORS, c=SOUND_SPEED,
                  low_hz=30_000, high_hz=50_000, search_range_ms=None,
-                 solver='linear_least_squares', lm_lambda=1e-3):
+                 solver='linear_least_squares', lm_lambda=1e-3, round_trip=None, ocp=DEFAULT_OCP):
     """Process measured waveforms without using ground-truth positions or times."""
     if solver not in SOLVERS:
         raise ValueError(f'Unknown solver: {solver}; choose from {tuple(SOLVERS)}')
-    time_s, raw = load_measurement(csv_path)
-    expected = [f'S{i + 1}' for i in range(len(sensors))]
+    if csv_path is None:
+        time_s, raw = load_sensor_samples(CSV_FILES, SAMPLE_RATE_HZ)
+    else:
+        time_s, raw = load_measurement(csv_path)
+    expected = RX_COLUMNS.copy()
     if len(raw) != len(sensors):
         raise ValueError('CSV channels must match sensor coordinates')
     processed = process_measurement(time_s, raw, low_hz, high_hz, search_range_ms)
-    tdoa = processed['tdoa']
-    solver_options = {'damping': lm_lambda} if solver == 'levenberg_marquardt' else {}
-    position, r1 = SOLVERS[solver](sensors, tdoa, c, **solver_options)
+    # Separate real sensor captures are pulse-echo; combined legacy CSVs are one-way.
+    if round_trip is None:
+        round_trip = csv_path is None
+    tdoa = processed['tdoa'] / (2.0 if round_trip else 1.0)
+    solver_options = ocp_solver_options(solver, ocp, lm_lambda)
+    position, r0 = SOLVERS[solver](sensors, tdoa, c, **solver_options)
     return dict(time_s=time_s, raw=raw, labels=expected, **processed,
-                position=position, r1=r1, solver=solver)
+                position=position, r0=r0, solver=solver,
+                localization_tdoa=tdoa, round_trip=round_trip)
 
 
 def main():
     results_dir = Path(__file__).resolve().parent / 'results'
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--csv', type=Path, default=DATA_DIR / 'waveforms_noisy.csv')
+    parser.add_argument('--csv', type=Path,
+                        help='Combined CSV; defaults to the four real sensor sample_1 files')
+    parser.add_argument('--propagation', choices=('auto', 'one-way', 'round-trip'),
+                        default='auto', help='auto: real sensor files round-trip; combined CSV one-way')
+    parser.add_argument('--ocp', choices=OCP_NAMES, default=DEFAULT_OCP,
+                        help='Nonlinear OCP; linear solver always uses linear_least_square')
     parser.add_argument('--solver', choices=tuple(SOLVERS),
                         default='linear_least_squares', help='Position estimation method')
     parser.add_argument('--lm-lambda', type=float, default=1e-3,
@@ -73,23 +89,33 @@ def main():
     try:
         result = run_pipeline(args.csv, SENSORS, args.sound_speed,
                               args.low_hz, args.high_hz, args.search_range_ms,
-                              solver=args.solver, lm_lambda=args.lm_lambda)
+                              solver=args.solver, lm_lambda=args.lm_lambda,
+                              round_trip=None if args.propagation == 'auto' else
+                              args.propagation == 'round-trip', ocp=args.ocp)
     except (ValueError, OSError, RuntimeError) as exc:
         parser.error(str(exc))
 
     true_pos = None
     if args.true_pos is not None:
         true_pos = np.array(args.true_pos)
-    elif args.csv.resolve() in {
+    elif args.csv is None or args.csv.resolve() in {
             (DATA_DIR / 'waveforms_noisy.csv').resolve(),
             (DATA_DIR / 'waveforms_clean.csv').resolve()}:
         true_pos = EXAMPLE_TRUE_POS
 
-    print(f'Input CSV: {args.csv}')
+    if args.csv is None:
+        for label, path in zip(RX_COLUMNS, CSV_FILES):
+            print(f'Input {label}: {path}')
+    else:
+        print(f'Input CSV: {args.csv}')
     print(f'Solver: {result["solver"]}')
+    print('OCP:', 'linear_least_square' if args.solver == 'linear_least_squares' else args.ocp)
     print_peak_times(result['time_s'], result['peaks'], result['labels'], result['tdoa'])
+    print('Propagation:', 'round-trip' if result['round_trip'] else 'one-way')
+    print('Localization TDOA [us]:', result['localization_tdoa'] * 1e6)
+    print('Distance differences [mm]:', result['localization_tdoa'] * args.sound_speed * 1000)
     print('\nEstimated position [m]:', result['position'])
-    print('Estimated r1 [m]:', result['r1'])
+    print('Estimated r0 [m]:', result['r0'])
     if true_pos is not None:
         print('True position [m] (evaluation only):', true_pos)
         print('Position error [m]:', np.linalg.norm(true_pos - result['position']))
@@ -108,8 +134,8 @@ def main():
             result['peaks'], result['labels'], output=args.save_signals,
             show=False, time_range_ms=args.search_range_ms, close=False, tdoa=result['tdoa']))
         figures.append(visualize_tdoa(
-            SENSORS, true_pos, result['position'], result['tdoa'], args.sound_speed,
-            output=args.save, show=False, close=False))
+            SENSORS, true_pos, result['position'], result['localization_tdoa'], args.sound_speed,
+            output=args.save, show=False, close=False, labels=result['labels']))
         if not args.no_show:
             plt.show()  # Display both figures together.
     finally:

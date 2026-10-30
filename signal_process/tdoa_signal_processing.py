@@ -1,8 +1,8 @@
-"""Four-channel offline ultrasonic TDOA processing.
+"""Four-receiver offline ultrasonic TDOA processing (rx0 reference).
 
 CSV -> DC removal -> Butterworth band-pass -> Hilbert envelope ->
 reference-channel cross-correlation -> three-point parabolic interpolation.
-Positive TDOA means the target received later than S1. Peak times are diagnostic.
+Positive TDOA means the target received later than rx0. Peak times are diagnostic.
 
 Run: python3 -m signal_process.tdoa_signal_processing --no-show
 """
@@ -28,10 +28,11 @@ from scipy.signal import (
 # USER SETTINGS
 # ============================================================
 
-CSV_FILE = Path(__file__).resolve().parents[1] / "signal_example" / "waveforms_noisy.csv"
+from sensor_config import SAMPLE_RATE_HZ, selected_sensor_data
+
+RX_COLUMNS, CSV_FILES, SENSOR_COORDINATES = selected_sensor_data()
 
 TIME_COLUMN = "time_s"
-RX_COLUMNS = ["rx1", "rx2", "rx3", "rx4"]
 
 LOW_HZ = 30_000.0
 HIGH_HZ = 50_000.0
@@ -68,9 +69,9 @@ def load_measurement(path):
         selected = RX_COLUMNS
         if any(name.startswith('rx') and name[2:].isdigit() and name not in selected
                for name in columns):
-            raise ValueError('Expected exactly four receiver columns')
+            raise ValueError('Receiver columns must match selected sensors')
     else:
-        raise ValueError('CSV requires s1_amplitude through s4_amplitude, or rx1 through rx4')
+        raise ValueError(f'CSV requires s1_amplitude through s4_amplitude, or {RX_COLUMNS}')
     time_s = np.asarray(data[TIME_COLUMN], dtype=float)
     signals = np.vstack([np.asarray(data[name], dtype=float) for name in selected])
 
@@ -149,9 +150,9 @@ def process_channel(raw_signal, sos):
 # ============================================================
 
 def process_all_channels(signals, fs, low_hz=LOW_HZ, high_hz=HIGH_HZ):
-    if signals.ndim != 2 or signals.shape[0] < 2:
+    if signals.ndim != 2 or signals.shape[0] < 1:
         raise ValueError(
-            "Expected at least two receiver channels."
+            "Expected at least one receiver channel."
         )
 
     sos = make_bandpass_filter(fs, low_hz, high_hz)
@@ -438,7 +439,8 @@ def plot_processed(time_s, raw, filtered, envelope, peaks, labels,
     time_ms = time_s * 1000
     for i, ax in enumerate(axes[:, 0]):
         peak = peaks[i]
-        ax.plot(time_ms, raw[i], color='gray', alpha=0.35, linewidth=0.6, label='Raw')
+        ax.plot(time_ms, raw[i] - np.mean(raw[i]), color='gray', alpha=0.35,
+                linewidth=0.6, label='Raw (DC removed)')
         ax.plot(time_ms, filtered[i], color='tab:blue', linewidth=0.8, label='Bandpass')
         ax.plot(time_ms, envelope[i], color='tab:orange', linewidth=1.4, label='Envelope')
         ax.scatter(time_ms[peak], envelope[i, peak], color='red', zorder=5)
@@ -503,17 +505,94 @@ def make_demo_measurement():
     return time_s, np.asarray(signals), delays[1:]
 
 
+def load_rx1(path):
+    """Read values in file order, ignoring the CSV sample index."""
+    data = np.atleast_1d(np.genfromtxt(
+        path, delimiter=',', names=True, encoding='utf-8-sig'))
+    columns = data.dtype.names or ()
+    column = next((name for name in ('value', 'rx1', 's1_amplitude')
+                   if name in columns), None)
+    if column is None:
+        raise ValueError('CSV requires value, rx1 or s1_amplitude')
+    raw = np.asarray(data[column], dtype=float)
+    if not len(raw) or not np.isfinite(raw).all():
+        raise ValueError('RX1 requires finite sample values')
+    time_s = np.asarray(data[TIME_COLUMN], dtype=float) if TIME_COLUMN in columns else None
+    return time_s, raw[None, :]
+
+
+def plot_rx1(raw, time_s=None, result=None, output=None, show=True,
+             time_range_ms=None):
+    """Keep four receiver panels; only RX1 contains data."""
+    import matplotlib.pyplot as plt
+
+    fig = plt.figure(figsize=(12, 11), constrained_layout=True)
+    layout = fig.add_gridspec(4, 1, height_ratios=[3, 1, 1, 1])
+    rx1_layout = layout[0].subgridspec(2 if result is not None else 1, 1)
+    ax = fig.add_subplot(rx1_layout[0])
+    x = np.arange(raw.shape[1]) if time_s is None else time_s * 1000
+    ax.plot(x, raw[0], color='gray', linewidth=0.8, label='Raw')
+    ax.set_title('RX1: raw signal')
+    ax.set_ylabel('Raw amplitude [a.u.]')
+    ax.grid(alpha=0.25)
+    ax.legend(loc='upper right')
+    if result is not None:
+        filtered, envelope, peaks = result
+        ax = fig.add_subplot(rx1_layout[1], sharex=ax)
+        ax.plot(x, filtered[0], linewidth=0.8, label='Bandpass')
+        ax.plot(x, envelope[0], linewidth=1.2, label='Envelope')
+        ax.scatter(x[peaks[0]], envelope[0, peaks[0]], color='red', zorder=5)
+        ax.set_title('RX1: bandpass and Hilbert envelope (DC removed)')
+        ax.set_ylabel('Amplitude [a.u.]')
+    ax.set_xlabel('Sample index' if time_s is None else 'Time since recording start [ms]')
+    ax.grid(alpha=0.25)
+    ax.legend(loc='upper right')
+    if time_range_ms is not None:
+        ax.set_xlim(*time_range_ms)
+    for i in range(2, 5):
+        empty_ax = fig.add_subplot(layout[i - 1])
+        empty_ax.set_title(f'RX{i}')
+        empty_ax.set_axis_off()
+    if output:
+        fig.savefig(output, dpi=160)
+        print(f'RX1 plot saved to: {output}')
+    if show:
+        plt.show()
+    plt.close(fig)
+    return fig
+
+
+def load_sensor_samples(paths, sample_rate):
+    """Stack separate value CSVs in rx0..rx3 order without sorting indices."""
+    if not np.isfinite(sample_rate) or sample_rate <= 0:
+        raise ValueError('Sample rate must be positive and finite')
+    if len(paths) != len(RX_COLUMNS):
+        raise ValueError(f'Expected {len(RX_COLUMNS)} sensor CSV files')
+    channels = [load_rx1(path)[1][0] for path in paths]
+    if len({len(channel) for channel in channels}) != 1:
+        raise ValueError('All sensor CSV files must have the same sample count')
+    raw = np.vstack(channels)
+    return np.arange(raw.shape[1]) / sample_rate, raw
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     source = parser.add_mutually_exclusive_group()
-    source.add_argument('--csv', type=Path, default=CSV_FILE)
+    source.add_argument('--csv', type=Path, help='Combined four-channel CSV with time_s')
+    source.add_argument('--sensor-csvs', nargs=len(RX_COLUMNS), type=Path,
+                        metavar='CSV',
+                        help='Separate value CSVs; defaults to each sensor sample_1')
     source.add_argument('--demo', action='store_true')
+    parser.add_argument('--propagation', choices=('auto', 'one-way', 'round-trip'),
+                        default='auto', help='auto: sensor files round-trip; demo/combined CSV one-way')
     parser.add_argument('--low-hz', type=float, default=LOW_HZ)
     parser.add_argument('--high-hz', type=float, default=HIGH_HZ)
     parser.add_argument('--search-range-ms', nargs=2, type=float, metavar=('START', 'END'),
                         help='Envelope correlation / peak diagnostic and plot interval [ms]')
     parser.add_argument('--save', type=Path)
     parser.add_argument('--no-show', action='store_true')
+    parser.add_argument('--sample-rate', type=float,
+                        help='Sampling rate [Hz]; separate CSVs default to 500 kHz (2 us)')
     parser.add_argument('--sound-speed', type=float, default=SOUND_SPEED)
     args = parser.parse_args()
     if not np.isfinite(args.sound_speed) or args.sound_speed <= 0:
@@ -521,22 +600,37 @@ def main():
     try:
         if args.demo:
             time_s, raw, true_tdoa = make_demo_measurement()
-        else:
+        elif args.csv:
             time_s, raw = load_measurement(args.csv)
-        result = process_measurement(time_s, raw, args.low_hz, args.high_hz,
-                                     args.search_range_ms)
+        else:
+            paths = args.sensor_csvs or CSV_FILES
+            time_s, raw = load_sensor_samples(
+                paths, SAMPLE_RATE_HZ if args.sample_rate is None else args.sample_rate)
+            for label, path in zip(RX_COLUMNS, paths):
+                print(f'{label}: {path}')
+        if args.sample_rate is not None:
+            if not np.isfinite(args.sample_rate) or args.sample_rate <= 0:
+                raise ValueError('--sample-rate must be positive and finite')
+            time_s = np.arange(raw.shape[1]) / args.sample_rate
+        elif time_s is None:
+            time_s = np.arange(raw.shape[1]) / SAMPLE_RATE_HZ
+        if time_s is None and args.search_range_ms is not None:
+            raise ValueError('--search-range-ms requires time_s or --sample-rate')
+        result = process_measurement(
+            time_s, raw, args.low_hz, args.high_hz, args.search_range_ms)
     except (ValueError, OSError) as exc:
         parser.error(str(exc))
-    labels = [f'S{i + 1}' for i in range(len(raw))]
-    print_peak_times(time_s, result['peaks'], labels, result['tdoa'])
+    print(f'{len(raw)} receivers, {raw.shape[1]} samples/channel')
+    print_peak_times(time_s, result['peaks'], RX_COLUMNS, result['tdoa'])
     print('Lag [samples]:', result['lag_samples'])
-    print('Distance differences [mm]:', result['tdoa'] * args.sound_speed * 1000)
-    if args.demo:
-        print('Demo true TDOA [us]:', true_tdoa * 1e6)
-        print('Demo TDOA error [us]:', (result['tdoa'] - true_tdoa) * 1e6)
+    round_trip = (not args.demo and args.csv is None) if args.propagation == 'auto' else args.propagation == 'round-trip'
+    localization_tdoa = result['tdoa'] / (2.0 if round_trip else 1.0)
+    print('Propagation:', 'round-trip' if round_trip else 'one-way')
+    print('Localization TDOA [us]:', localization_tdoa * 1e6)
+    print('Distance differences [mm]:', localization_tdoa * args.sound_speed * 1000)
     plot_processed(time_s, raw, result['filtered'], result['envelope'], result['peaks'],
-                   labels, args.save, SHOW_PLOTS and not args.no_show, args.search_range_ms,
-                   tdoa=result['tdoa'])
+                   RX_COLUMNS, args.save, SHOW_PLOTS and not args.no_show,
+                   args.search_range_ms, tdoa=result['tdoa'])
 
 
 if __name__ == '__main__':

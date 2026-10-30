@@ -1,7 +1,7 @@
 """Compare all TDOA solvers on one measurement; truth is evaluation-only.
 
 Position/distance errors use one record. Timing shows repeated-call median and IQR.
-d_0 denotes distance to S1 (the value called r1 by the solvers).
+r0 denotes distance to the first selected (reference) sensor.
 """
 
 import argparse
@@ -11,8 +11,14 @@ from time import perf_counter
 
 import numpy as np
 
-from tdoa import SENSORS, SOLVERS, SOUND_SPEED
-from signal_process.tdoa_signal_processing import process_measurement, load_measurement
+from ocp.registry import DEFAULT_OCP, OCP_NAMES, get_ocp, solver_options as ocp_solver_options
+
+from optimization.linear_least_squares import initial_position
+from tdoa import SENSORS, SOLVERS, SOUND_SPEED, EXAMPLE_TRUE_POS
+from signal_process.tdoa_signal_processing import (
+    process_measurement, load_measurement, load_sensor_samples,
+    CSV_FILES, SAMPLE_RATE_HZ, RX_COLUMNS,
+)
 from visualization.waveform_visualization import DATA_DIR
 
 
@@ -37,8 +43,8 @@ def example_truth(csv_path):
     return positions[0]
 
 
-def benchmark_solvers(tdoa, c, lm_lambda, *, warmup=5, repeats=100, seed=42):
-    """Time full solver calls, including linear initialization, in shuffled rounds.
+def benchmark_solvers(tdoa, c, lm_lambda, *, warmup=5, repeats=100, seed=42, ocp=DEFAULT_OCP):
+    """Time full solver calls, including shared initialization, in shuffled rounds.
 
     Warmup, validation, RNG, and aggregation are outside the timed region.
     A failed solver has no reported timing statistics, even after partial success.
@@ -50,7 +56,7 @@ def benchmark_solvers(tdoa, c, lm_lambda, *, warmup=5, repeats=100, seed=42):
     names = list(SOLVERS)
     samples = {name: [] for name in names}
     failures = {}
-    options = {name: {'damping': lm_lambda} if name == 'levenberg_marquardt' else {}
+    options = {name: ocp_solver_options(name, ocp, lm_lambda)
                for name in names}
     for measured, rounds in [(False, warmup), (True, repeats)]:
         for _ in range(rounds):
@@ -62,11 +68,11 @@ def benchmark_solvers(tdoa, c, lm_lambda, *, warmup=5, repeats=100, seed=42):
                 try:
                     if measured:
                         start = perf_counter()
-                        position, d0 = solver(SENSORS, tdoa, c, **kwargs)
+                        position, r0 = solver(SENSORS, tdoa, c, **kwargs)
                         elapsed_ms = (perf_counter() - start) * 1000
                     else:
-                        position, d0 = solver(SENSORS, tdoa, c, **kwargs)
-                    if not np.isfinite(position).all() or not np.isfinite(d0):
+                        position, r0 = solver(SENSORS, tdoa, c, **kwargs)
+                    if not np.isfinite(position).all() or not np.isfinite(r0):
                         raise RuntimeError('Solver returned non-finite values')
                     if measured:
                         samples[name].append(elapsed_ms)
@@ -90,8 +96,9 @@ def benchmark_solvers(tdoa, c, lm_lambda, *, warmup=5, repeats=100, seed=42):
 
 def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
                     high_hz=50_000, search_range_ms=None, lm_lambda=1e-3,
-                    warmup=5, repeats=100, timing_seed=42):
+                    warmup=5, repeats=100, timing_seed=42, round_trip=None, ocp=DEFAULT_OCP):
     """Process once, then independently solve the same measured TDOA vector."""
+    problem = get_ocp(ocp)  # Fail clearly before comparing unimplemented objectives.
     true_pos = np.asarray(true_pos, dtype=float)
     if true_pos.shape != (2,) or not np.isfinite(true_pos).all():
         raise ValueError('true_pos must contain two finite coordinates')
@@ -99,59 +106,65 @@ def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
         raise ValueError('Sound speed must be positive and finite')
     if not np.isfinite(lm_lambda) or lm_lambda < 0:
         raise ValueError('lm_lambda must be non-negative and finite')
-    time_s, raw = load_measurement(csv_path)
+    if csv_path is None:
+        time_s, raw = load_sensor_samples(CSV_FILES, SAMPLE_RATE_HZ)
+    else:
+        time_s, raw = load_measurement(csv_path)
     if len(raw) != len(SENSORS):
         raise ValueError('CSV channels must match sensor coordinates')
     processed = process_measurement(time_s, raw, low_hz, high_hz, search_range_ms)
-    tdoa = processed['tdoa']
-    true_d0 = np.linalg.norm(true_pos - SENSORS[0])
+    if round_trip is None:
+        round_trip = csv_path is None
+    tdoa = processed['tdoa'] / (2.0 if round_trip else 1.0)
+    true_r0 = np.linalg.norm(true_pos - SENSORS[0])
     rows = []
     for name, solver in SOLVERS.items():
-        row = dict(solver=name, status='ok', x_m=np.nan, y_m=np.nan,
-                   position_error_m=np.nan, d0_m=np.nan, true_d0_m=true_d0,
-                   d0_signed_error_m=np.nan, d0_absolute_error_m=np.nan,
-                   geometric_d0_m=np.nan, geometric_d0_absolute_error_m=np.nan,
-                   d0_consistency_gap_m=np.nan, objective_m2=np.nan, solve_time_ms=np.nan)
+        row = dict(solver=name,
+                   ocp='linear_least_square' if name == 'linear_least_squares' else ocp,
+                   evaluation_ocp=ocp, status='ok', x_m=np.nan, y_m=np.nan,
+                   position_error_m=np.nan, r0_m=np.nan, true_r0_m=true_r0,
+                   r0_signed_error_m=np.nan, r0_absolute_error_m=np.nan,
+                   geometric_r0_m=np.nan, geometric_r0_absolute_error_m=np.nan,
+                   r0_consistency_gap_m=np.nan, objective_m2=np.nan, solve_time_ms=np.nan)
         try:
-            options = {'damping': lm_lambda} if name == 'levenberg_marquardt' else {}
-            position, d0 = solver(SENSORS, tdoa, c, **options)
-            if not np.isfinite(position).all() or not np.isfinite(d0):
+            options = ocp_solver_options(name, ocp, lm_lambda)
+            position, r0 = solver(SENSORS, tdoa, c, **options)
+            if not np.isfinite(position).all() or not np.isfinite(r0):
                 raise RuntimeError('Solver returned non-finite values')
             distances = np.linalg.norm(position - SENSORS, axis=1)
-            residual = distances[1:] - distances[0] - c * tdoa
             row.update(x_m=position[0], y_m=position[1],
                        position_error_m=np.linalg.norm(position - true_pos),
-                       d0_m=d0, d0_signed_error_m=d0 - true_d0,
-                       d0_absolute_error_m=abs(d0 - true_d0),
-                       geometric_d0_m=distances[0],
-                       geometric_d0_absolute_error_m=abs(distances[0] - true_d0),
-                       d0_consistency_gap_m=d0 - distances[0],
-                       objective_m2=0.5 * (residual @ residual))
+                       r0_m=r0, r0_signed_error_m=r0 - true_r0,
+                       r0_absolute_error_m=abs(r0 - true_r0),
+                       geometric_r0_m=distances[0],
+                       geometric_r0_absolute_error_m=abs(distances[0] - true_r0),
+                       r0_consistency_gap_m=r0 - distances[0],
+                       objective_m2=problem.objective(position, SENSORS, c * tdoa))
         except (ValueError, RuntimeError, np.linalg.LinAlgError) as exc:
             row['status'] = f'failed: {exc}'
         rows.append(row)
     timing = benchmark_solvers(tdoa, c, lm_lambda, warmup=warmup,
-                               repeats=repeats, seed=timing_seed)
+                               repeats=repeats, seed=timing_seed, ocp=ocp)
     for row in rows:
         row.update(timing[row['solver']])
     return rows, tdoa
 
 
-def plot_comparison(rows, true_pos):
+def plot_comparison(rows, true_pos, tdoa=None, c=SOUND_SPEED):
     import matplotlib.pyplot as plt
 
     fig, axes = plt.subplots(2, 2, figsize=(15, 10), constrained_layout=True)
-    ax, time_ax, error_ax, d0_ax = axes.flat
+    ax, time_ax, error_ax, r0_ax = axes.flat
     colors = plt.get_cmap('tab10').colors
-    markers = ['o', 's', '^', 'D', 'p']
+    markers = ['o', 's', '^', 'D', 'p', 'h']
     for axis in (ax,):
         axis.scatter(*true_pos, marker='*', s=180, color='black', label='True source', zorder=5)
         axis.set(xlabel='X [m]', ylabel='Y [m]')
-        axis.set_aspect('equal', adjustable='datalim')
+        axis.set_aspect('equal', adjustable='box')
         axis.grid(alpha=0.25)
     ax.scatter(SENSORS[:, 0], SENSORS[:, 1], marker='^', color='gray', s=70, label='Sensors')
     for i, sensor in enumerate(SENSORS):
-        ax.annotate(f'S{i+1}', sensor, xytext=(5, 5), textcoords='offset points')
+        ax.annotate(RX_COLUMNS[i], sensor, xytext=(5, 5), textcoords='offset points')
     for i, row in enumerate(rows):
         if row['status'] != 'ok':
             continue
@@ -159,7 +172,44 @@ def plot_comparison(rows, true_pos):
             axis.scatter(row['x_m'], row['y_m'], marker=markers[i % len(markers)],
                          s=100 + i * 45, facecolors='none',
                          edgecolors=colors[i], linewidths=1.8, label=row['solver'], zorder=3)
-    ax.set_title('Sensor geometry and estimates')
+    ax.set_title('Sensor geometry, TDOA hyperbolas and estimates')
+    points = np.vstack((SENSORS, true_pos))
+    estimates = [[row['x_m'], row['y_m']] for row in rows
+                 if row['status'] == 'ok' and
+                 np.isfinite([row['x_m'], row['y_m']]).all()]
+    if estimates:
+        points = np.vstack((points, estimates))
+    lower, upper = points.min(axis=0), points.max(axis=0)
+    margin = max(np.max(upper - lower) * 0.35, 0.05)
+    ax.set_xlim(lower[0] - margin, upper[0] + margin)
+    ax.set_ylim(lower[1] - margin, upper[1] + margin)
+    if tdoa is not None:
+        # Parameterize the correct hyperbola branch directly. A uniform grid
+        # loses the sensor neighborhood when an estimate is extremely distant.
+        for i, delay in enumerate(tdoa, 1):
+            offset = SENSORS[i] - SENSORS[0]
+            baseline = np.linalg.norm(offset)
+            difference = c * delay
+            if baseline == 0 or abs(difference) >= baseline:
+                continue
+            direction = offset / baseline
+            perpendicular = np.array([-direction[1], direction[0]])
+            midpoint = (SENSORS[i] + SENSORS[0]) / 2
+            radius = np.max(np.linalg.norm(points - midpoint, axis=1)) + 2 * margin
+            if abs(difference) < 1e-12:
+                curve = midpoint + np.linspace(-radius, radius, 1000)[:, None] * perpendicular
+            else:
+                a = abs(difference) / 2
+                b = np.sqrt((baseline / 2)**2 - a**2)
+                extent = np.arcsinh(radius / b)
+                parameter = np.linspace(-extent, extent, 2000)
+                along = -np.sign(difference) * a * np.cosh(parameter)
+                across = b * np.sinh(parameter)
+                curve = (midpoint + along[:, None] * direction
+                         + across[:, None] * perpendicular)
+            ax.plot(curve[:, 0], curve[:, 1], linewidth=1.1, alpha=0.75,
+                    color=colors[i % len(colors)], zorder=1,
+                    label=f'{RX_COLUMNS[i]} - {RX_COLUMNS[0]} TDOA')
     ax.legend(fontsize=8)
     labels = [row['solver'].replace('_', '\n') for row in rows]
     indices = np.arange(len(rows))
@@ -185,13 +235,13 @@ def plot_comparison(rows, true_pos):
                         color=colors[:len(rows)])
     error_ax.bar_label(bars, fmt='%.4f', padding=4, fontsize=9)
     error_ax.set(title='Position estimation error', ylabel='||estimated position - true position|| [mm]')
-    bars = d0_ax.bar(indices, [row['d0_absolute_error_m'] * 1000 for row in rows],
-                     label='Returned d_0', color='#4477aa')
-    d0_ax.bar_label(bars, fmt='%.4f', padding=4, fontsize=8)
-    d0_ax.set(title='Reference distance error (d_0 = distance to S1)',
-              ylabel='|estimated d_0 - true d_0| [mm]')
-    d0_ax.legend(fontsize=8)
-    for axis in (time_ax, error_ax, d0_ax):
+    bars = r0_ax.bar(indices, [row['r0_absolute_error_m'] * 1000 for row in rows],
+                     label='Returned r0', color='#4477aa')
+    r0_ax.bar_label(bars, fmt='%.4f', padding=4, fontsize=8)
+    r0_ax.set(title='Reference distance error (r0 = distance to reference sensor)',
+              ylabel='|estimated r0 - true r0| [mm]')
+    r0_ax.legend(fontsize=8)
+    for axis in (time_ax, error_ax, r0_ax):
         axis.set_xticks(indices, labels, fontsize=8)
         axis.set_ylim(bottom=0)
         axis.margins(y=0.25)
@@ -206,7 +256,11 @@ def plot_comparison(rows, true_pos):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--csv', type=Path, default=DATA_DIR / 'waveforms_noisy.csv')
+    parser.add_argument('--ocp', choices=OCP_NAMES, default=DEFAULT_OCP)
+    parser.add_argument('--csv', type=Path,
+                        help='Combined CSV; defaults to four real sensor sample_1 files')
+    parser.add_argument('--propagation', choices=('auto', 'one-way', 'round-trip'),
+                        default='auto', help='auto: real sensor files round-trip; combined CSV one-way')
     parser.add_argument('--true-pos', type=float, nargs=2, metavar=('X', 'Y'))
     parser.add_argument('--sound-speed', type=float, default=SOUND_SPEED)
     parser.add_argument('--low-hz', type=float, default=30_000)
@@ -220,20 +274,37 @@ def main():
     parser.add_argument('--no-show', action='store_true')
     args = parser.parse_args()
     try:
-        true_pos = np.asarray(args.true_pos) if args.true_pos is not None else example_truth(args.csv)
+        if args.true_pos is not None:
+            true_pos = np.asarray(args.true_pos)
+        elif args.csv is None:
+            if EXAMPLE_TRUE_POS is None:
+                raise ValueError('Set EXAMPLE_TRUE_POS or provide --true-pos X Y')
+            true_pos = np.asarray(EXAMPLE_TRUE_POS, dtype=float)
+        else:
+            true_pos = example_truth(args.csv)
+        round_trip = (args.csv is None) if args.propagation == 'auto' else args.propagation == 'round-trip'
         rows, tdoa = compare_solvers(args.csv, true_pos, c=args.sound_speed,
                                     low_hz=args.low_hz, high_hz=args.high_hz,
                                     search_range_ms=args.search_range_ms, lm_lambda=args.lm_lambda,
-                                    warmup=args.warmup, repeats=args.repeats, timing_seed=args.timing_seed)
-    except (ValueError, OSError, KeyError) as exc:
+                                    warmup=args.warmup, repeats=args.repeats, timing_seed=args.timing_seed,
+                                    round_trip=round_trip, ocp=args.ocp)
+    except (ValueError, OSError, KeyError, NotImplementedError) as exc:
         parser.error(str(exc))
-    print(f'True position [m]: {true_pos}; true d_0 [m]: {rows[0]["true_d0_m"]:.9f}')
-    print(f'Measured TDOA [s]: {tdoa}')
-    print(f'{"Solver":<24} {"Position error [mm]":>20} {"d_0 error [mm]":>17} {"d_0 - geometric [mm]":>23}')
+    print(f'Nonlinear initial position [m]: {initial_position(SENSORS, tdoa, args.sound_speed)[0]}')
+    print(f'True position [m]: {true_pos}; true r0 [m]: {rows[0]["true_r0_m"]:.9f}')
+    if len(SENSORS) < 4:
+        print('linear_least_squares: FAILED; select at least four sensors.')
+    if args.csv is None:
+        for label, path in zip(RX_COLUMNS, CSV_FILES):
+            print(f'Input {label}: {path}')
+    print('Nonlinear OCP:', args.ocp, '; linear OCP: linear_least_square')
+    print('Propagation:', 'round-trip' if round_trip else 'one-way')
+    print(f'Localization TDOA [s] (round-trip corrected when enabled): {tdoa}')
+    print(f'{"Solver":<24} {"Position error [mm]":>20} {"r0 error [mm]":>17} {"r0 - geometric [mm]":>23}')
     for row in rows:
         if row['status'] == 'ok':
             print(f'{row["solver"]:<24} {row["position_error_m"]*1000:>20.6f} '
-                  f'{row["d0_signed_error_m"]*1000:>+17.6f} {row["d0_consistency_gap_m"]*1000:>+23.6f}')
+                  f'{row["r0_signed_error_m"]*1000:>+17.6f} {row["r0_consistency_gap_m"]*1000:>+23.6f}')
         else:
             print(f'{row["solver"]}: {row["status"]}')
     print('Timing: full solver calls, including initialization; median [25%, 75%] ms')
@@ -250,7 +321,7 @@ def main():
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator='\n')
         writer.writeheader()
         writer.writerows(rows)
-    fig = plot_comparison(rows, true_pos)
+    fig = plot_comparison(rows, true_pos, tdoa, args.sound_speed)
     try:
         fig.savefig(args.output_dir / 'comparison.png', dpi=160)
         print(f'Saved: {args.output_dir / "comparison.png"}, {args.output_dir / "metrics.csv"}')
