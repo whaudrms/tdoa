@@ -17,7 +17,7 @@ from signal_process.tdoa_signal_processing import (
     load_sensor_samples, CSV_FILES, SAMPLE_RATE_HZ, RX_COLUMNS, SENSOR_COORDINATES,
 )
 from visualization.tdoa_visualization import visualize_tdoa
-from visualization.waveform_visualization import DATA_DIR
+from visualization.waveform_visualization import DATA_DIR, visualize_waveforms
 
 
 # Sensor coordinates [m], in rx0, rx1, rx2, rx3 order. rx0 is the reference.
@@ -80,6 +80,8 @@ def main():
                         help='Position plot path (default: results/tdoa_position.png)')
     parser.add_argument('--save-signals', type=Path, default=results_dir / 'processed_signals.png',
                         help='Waveform plot path (default: results/processed_signals.png)')
+    parser.add_argument('--save-raw', type=Path, default=results_dir / 'raw_signals.png',
+                        help='Raw waveform plot path (default: results/raw_signals.png)')
     parser.add_argument('--no-show', action='store_true', help='Do not open plot windows')
     args = parser.parse_args()
     if not np.isfinite(args.lm_lambda) or args.lm_lambda < 0:
@@ -129,6 +131,11 @@ def main():
     try:
         args.save.parent.mkdir(parents=True, exist_ok=True)
         args.save_signals.parent.mkdir(parents=True, exist_ok=True)
+        args.save_raw.parent.mkdir(parents=True, exist_ok=True)
+        figures.append(visualize_waveforms(
+            result['time_s'], result['raw'], labels=result['labels'],
+            output=args.save_raw, show=False, time_range_ms=args.search_range_ms,
+            close=False))
         figures.append(plot_processed(
             result['time_s'], result['raw'], result['filtered'], result['envelope'],
             result['peaks'], result['labels'], output=args.save_signals,
@@ -137,7 +144,7 @@ def main():
             SENSORS, true_pos, result['position'], result['localization_tdoa'], args.sound_speed,
             output=args.save, show=False, close=False, labels=result['labels']))
         if not args.no_show:
-            plt.show()  # Display both figures together.
+            plt.show()  # Display raw, processed, and position figures together.
     finally:
         for figure in figures:
             plt.close(figure)

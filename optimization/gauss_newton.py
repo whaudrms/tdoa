@@ -72,12 +72,14 @@ from optimization.linear_least_squares import (
 
 
 def estimate_position(sensors, tdoa, c=SOUND_SPEED, *, ocp=DEFAULT_OCP,
-                      max_iterations=10_000, gradient_tolerance=1e-8):
+                      max_iterations=10_000, gradient_tolerance=1e-8,
+                      return_iterations=False):
     """Refine the sensor-centroid initial position with full-step Gauss-Newton updates.
 
     Return (position, distance to the reference sensor). Raise RuntimeError on failure.
     Gradient convergence does not guarantee a local or global minimum.
     """
+    # return_iterations=True adds the completed update count as a third return value.
     problem = get_ocp(ocp, solver='gauss_newton')
     if not isinstance(max_iterations, int) or max_iterations < 1:
         raise ValueError('max_iterations must be a positive integer')
@@ -93,7 +95,9 @@ def estimate_position(sensors, tdoa, c=SOUND_SPEED, *, ocp=DEFAULT_OCP,
                 or not np.isfinite(hessian).all()):
             raise RuntimeError('Gauss-Newton method encountered non-finite values')
         if np.linalg.norm(gradient) <= gradient_tolerance:
-            return position, np.linalg.norm(position - sensors[0])
+            result = (position, np.linalg.norm(position - sensors[0]))
+            # Count completed outer updates, excluding convergence checks and line search.
+            return (*result, iteration) if return_iterations else result
         if iteration == max_iterations:
             break
         if np.linalg.matrix_rank(jacobian) < 2:

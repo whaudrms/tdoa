@@ -1,5 +1,17 @@
 # OCP selection
 
+Plot the `error_least_square` objective using the current sensor configuration
+and measured TDOA (including the pipeline's pulse-echo correction):
+
+```bash
+python3 -m ocp.plot_error_least_square
+python3 -m ocp.plot_error_least_square --no-show --xlim -0.1 0.6 --ylim -0.1 0.5
+```
+
+The 3D surface uses `(x, y, F(x,y))`; the adjacent panel shows contours.
+The red marker is the LM solver estimate, not a certified global minimum.
+Output defaults to `results/error_least_square_3d.png`.
+
 `tdoa.py` and `run.py` accept `--ocp NAME`. The default is
 `error_least_square`. `linear_least_squares` always uses
 `linear_least_square`, regardless of this option.

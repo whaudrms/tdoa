@@ -35,7 +35,7 @@ def load_arrival_times(path, labels):
 
 
 def visualize_waveforms(time_s, raw, labels=None, arrival_times=None,
-                        output=None, show=True, time_range_ms=None):
+                        output=None, show=True, time_range_ms=None, close=True):
     """Plot one panel per channel; all input times are in seconds."""
     import matplotlib.pyplot as plt
 
@@ -85,7 +85,9 @@ def visualize_waveforms(time_s, raw, labels=None, arrival_times=None,
         print(f'Waveform plot saved to: {output}')
     if show:
         plt.show()
-    plt.close(fig)
+    if close:
+        plt.close(fig)
+    return fig
 
 
 def main():

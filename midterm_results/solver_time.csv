@@ -1,0 +1,5 @@
+solver,status,ocp,solve_time_ms,solve_time_p25_ms,solve_time_p75_ms,timing_samples,timing_warmup,timing_repeats,timing_seed,timing_status
+linear_least_squares,ok,linear_least_square,0.08400100000471866,0.07859275004307165,0.09358100001577441,100,5,100,42,ok
+gradient_descent,ok,error_least_square,4.545234499971684,4.500260000014578,4.663529250024112,100,5,100,42,ok
+newton_method,ok,error_least_square,0.3135229999884359,0.30156225002997417,0.32931200004782113,100,5,100,42,ok
+gauss_newton,ok,error_least_square,0.2649134999614944,0.2585392499554473,0.2795972499711752,100,5,100,42,ok

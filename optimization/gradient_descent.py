@@ -60,13 +60,15 @@ from optimization.linear_least_squares import (
 
 
 def estimate_position(sensors, tdoa, c=SOUND_SPEED, *, ocp=DEFAULT_OCP,
-                      max_iterations=10_000, gradient_tolerance=1e-8):
+                      max_iterations=10_000, gradient_tolerance=1e-8,
+                      return_iterations=False):
     """Refine the sensor-centroid initial position; return (position, distance to the reference sensor).
 
     Raises RuntimeError on non-convergence rather than returning an
     unconverged iterate as a successful estimate. A stationary point need
     not be a global minimum of this nonconvex objective.
     """
+    # return_iterations=True adds the completed update count as a third return value.
     problem = get_ocp(ocp, solver='gradient_descent')
     if not isinstance(max_iterations, int) or max_iterations < 1:
         raise ValueError('max_iterations must be a positive integer')
@@ -81,7 +83,9 @@ def estimate_position(sensors, tdoa, c=SOUND_SPEED, *, ocp=DEFAULT_OCP,
             raise RuntimeError('Gradient descent encountered non-finite values')
         gradient_norm = np.linalg.norm(gradient)
         if gradient_norm <= gradient_tolerance:
-            return position, np.linalg.norm(position - sensors[0])
+            result = (position, np.linalg.norm(position - sensors[0]))
+            # Count completed outer updates, excluding convergence checks and line search.
+            return (*result, iteration) if return_iterations else result
         if iteration == max_iterations:
             break
         step = 1.0
