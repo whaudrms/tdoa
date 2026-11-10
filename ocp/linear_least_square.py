@@ -4,7 +4,7 @@ z = [x, y, r0], where r0 is an independent linear variable. No constraint
 r0 = ||[x,y] - sensors[0]|| is imposed. With three sensors the system is
 underdetermined; the pseudoinverse solver selects a minimum-norm solution.
 Inputs use one-way-equivalent TDOA; pulse-echo correction is upstream.
-This OCP is fixed for optimization.linear_least_squares.
+This OCP is fixed for optimization.unconstrained_solver.linear_least_squares.
 """
 
 import numpy as np

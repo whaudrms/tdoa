@@ -6,12 +6,17 @@ from pathlib import Path
 import numpy as np
 from ocp.registry import DEFAULT_OCP, OCP_NAMES, solver_options as ocp_solver_options
 
-from optimization.linear_least_squares import SOUND_SPEED, estimate_position
-from optimization.gradient_descent import estimate_position as estimate_gradient_descent
-from optimization.newton_method import estimate_position as estimate_newton
-from optimization.gauss_newton import estimate_position as estimate_gauss_newton
-from optimization.levenberg_marquardt import estimate_position as estimate_lm
-from optimization.sqp import estimate_position as estimate_sqp
+from optimization.unconstrained_solver.linear_least_squares import SOUND_SPEED, estimate_position
+from optimization.unconstrained_solver.gradient_descent import estimate_position as estimate_gradient_descent
+from optimization.unconstrained_solver.newton_method import estimate_position as estimate_newton
+from optimization.unconstrained_solver.gauss_newton import estimate_position as estimate_gauss_newton
+from optimization.unconstrained_solver.levenberg_marquardt import estimate_position as estimate_lm
+from optimization.constrained_solver.sqp import estimate_position as estimate_sqp
+from optimization.constrained_solver.active_set import estimate_position as estimate_active_set
+from optimization.constrained_solver.barrier import estimate_position as estimate_barrier
+from optimization.constrained_solver.penalty import estimate_position as estimate_penalty
+from optimization.constrained_solver.augmented_lagrangian import estimate_position as estimate_augmented_lagrangian
+from optimization.constrained_solver.interior_point import estimate_position as estimate_interior_point
 from signal_process.tdoa_signal_processing import (
     plot_processed, print_peak_times, process_measurement, load_measurement,
     load_sensor_samples, CSV_FILES, SAMPLE_RATE_HZ, RX_COLUMNS, SENSOR_COORDINATES,
@@ -27,7 +32,12 @@ SOLVERS = {'linear_least_squares': estimate_position,
            'newton_method': estimate_newton,
            'gauss_newton': estimate_gauss_newton,
            'levenberg_marquardt': estimate_lm,
-           'sqp': estimate_sqp}
+           'sqp': estimate_sqp,
+           'active_set': estimate_active_set,
+           'barrier': estimate_barrier,
+           'penalty': estimate_penalty,
+           'augmented_lagrangian': estimate_augmented_lagrangian,
+           'interior_point': estimate_interior_point}
 EXAMPLE_TRUE_POS = [0.40,0.20]
 
 

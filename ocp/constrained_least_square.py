@@ -8,8 +8,8 @@ The norm uses a zero subgradient at that initial position.
 
 import numpy as np
 
-IMPLEMENTED = True
-SUPPORTED_SOLVERS = ('sqp',)
+SUPPORTED_SOLVERS = ('sqp', 'active_set', 'barrier', 'penalty',
+                     'augmented_lagrangian', 'interior_point')
 CONSTRAINT_TOLERANCE = 1e-7
 
 from ocp.measurement import validate_measurement

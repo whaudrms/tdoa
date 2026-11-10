@@ -3,3 +3,4 @@ linear_least_squares,ok,linear_least_square,0.6900441941163682,0.213527644101595
 gradient_descent,ok,error_least_square,0.44467339390987143,0.20750656039223056,0.4,0.2
 newton_method,ok,error_least_square,0.44467324621628734,0.20750655776751925,0.4,0.2
 gauss_newton,ok,error_least_square,0.44467330357474943,0.2075065587441102,0.4,0.2
+levenberg_marquardt,ok,error_least_square,0.44467323966831024,0.20750655572385565,0.4,0.2

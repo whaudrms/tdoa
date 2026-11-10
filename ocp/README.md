@@ -16,14 +16,14 @@ Output defaults to `results/error_least_square_3d.png`.
 `error_least_square`. `linear_least_squares` always uses
 `linear_least_square`, regardless of this option.
 
-`noise_least_square` is a registered placeholder and raises
-`NotImplementedError` until implemented.
+Available OCPs are `error_least_square` and `constrained_least_square`.
 
-`constrained_least_square` is implemented for SQP only. Its state is
+`constrained_least_square` supports `sqp`, `active_set`, `penalty`, `barrier`,
+`augmented_lagrangian`, and `interior_point`. Its state is
 `[x, y, r0]`, objective is `0.5 ||A state - b||^2`, and constraints are
 `r0^2 = ||position - reference||^2` and `r0 >= 0`. SQP enforces the equivalent
 `r0 - ||position - reference|| = 0` equality to avoid a zero constraint
-Jacobian at the reference-sensor initial state. Other nonlinear solvers
+Jacobian at the reference-sensor initial state. Unconstrained solvers
 explicitly reject this OCP because they do not enforce constraints.
 
 Example: `python3 tdoa.py --solver sqp --ocp constrained_least_square`.
@@ -42,7 +42,7 @@ Provider functions:
 - `gauss_newton_terms(...) -> (value, gradient, approximate_hessian, jacobian)`:
   Gauss–Newton and LM.
 
-Set `IMPLEMENTED = True` only after the applicable functions are implemented.
+Register a new provider in `OCP_NAMES` after implementing the applicable functions.
 Use `SUPPORTED_SOLVERS` to restrict providers that need special solver support.
 Implementing constrained objectives also requires explicit constraint support
 in the solvers. Selecting the name alone does not enforce any constraints.

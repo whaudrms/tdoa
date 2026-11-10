@@ -3,3 +3,4 @@ linear_least_squares,ok,linear_least_square,0
 gradient_descent,ok,error_least_square,200
 newton_method,ok,error_least_square,7
 gauss_newton,ok,error_least_square,6
+levenberg_marquardt,ok,error_least_square,6

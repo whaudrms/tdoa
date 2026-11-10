@@ -13,13 +13,31 @@ import numpy as np
 
 from ocp.registry import DEFAULT_OCP, OCP_NAMES, get_ocp, solver_options as ocp_solver_options
 
-from optimization.linear_least_squares import initial_position
+from optimization.unconstrained_solver.linear_least_squares import initial_position
 from tdoa import SENSORS, SOLVERS, SOUND_SPEED, EXAMPLE_TRUE_POS
 from signal_process.tdoa_signal_processing import (
     process_measurement, load_measurement, load_sensor_samples,
     CSV_FILES, SAMPLE_RATE_HZ, RX_COLUMNS,
 )
 from visualization.waveform_visualization import DATA_DIR
+
+UNCONSTRAINED_SOLVERS = (
+    'linear_least_squares', 'gradient_descent', 'newton_method',
+    'gauss_newton', 'levenberg_marquardt',
+)
+CONSTRAINED_SOLVERS = (
+    'sqp', 'active_set', 'barrier', 'penalty',
+    'augmented_lagrangian', 'interior_point',
+)
+
+
+def selected_solvers(ocp):
+    """Select the solver family for every comparison, benchmark and export."""
+    get_ocp(ocp)
+    names = (CONSTRAINED_SOLVERS if ocp == 'constrained_least_square'
+             else UNCONSTRAINED_SOLVERS)
+    return {name: SOLVERS[name] for name in names}
+
 
 
 def example_truth(csv_path):
@@ -53,7 +71,7 @@ def benchmark_solvers(tdoa, c, lm_lambda, *, warmup=5, repeats=100, seed=42, ocp
         if not isinstance(value, int) or isinstance(value, bool) or value < 1:
             raise ValueError(f'{name} must be a positive integer')
     rng = np.random.default_rng(seed)
-    names = list(SOLVERS)
+    names = list(selected_solvers(ocp))
     samples = {name: [] for name in names}
     failures = {}
     options = {name: ocp_solver_options(name, ocp, lm_lambda)
@@ -98,7 +116,7 @@ def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
                     high_hz=50_000, search_range_ms=None, lm_lambda=1e-3,
                     warmup=5, repeats=100, timing_seed=42, round_trip=None, ocp=DEFAULT_OCP):
     """Process once, then independently solve the same measured TDOA vector."""
-    problem = get_ocp(ocp)  # Fail clearly before comparing unimplemented objectives.
+    problem = get_ocp(ocp)  # Validate the OCP selection before comparison.
     true_pos = np.asarray(true_pos, dtype=float)
     if true_pos.shape != (2,) or not np.isfinite(true_pos).all():
         raise ValueError('true_pos must contain two finite coordinates')
@@ -118,28 +136,32 @@ def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
     tdoa = processed['tdoa'] / (2.0 if round_trip else 1.0)
     true_r0 = np.linalg.norm(true_pos - SENSORS[0])
     rows = []
-    for name, solver in SOLVERS.items():
+    for name, solver in selected_solvers(ocp).items():
         row = dict(solver=name,
                    ocp='linear_least_square' if name == 'linear_least_squares' else ocp,
                    evaluation_ocp=ocp, status='ok', x_m=np.nan, y_m=np.nan,
                    position_error_m=np.nan, r0_m=np.nan, true_r0_m=true_r0,
                    r0_signed_error_m=np.nan, r0_absolute_error_m=np.nan,
                    geometric_r0_m=np.nan, geometric_r0_absolute_error_m=np.nan,
-                   r0_consistency_gap_m=np.nan, objective_m2=np.nan, solve_time_ms=np.nan)
+                   r0_consistency_gap_m=np.nan, objective_m2=np.nan, solve_time_ms=np.nan, iterations=np.nan)
         try:
             options = ocp_solver_options(name, ocp, lm_lambda)
-            position, r0 = solver(SENSORS, tdoa, c, **options)
+            position, r0, history = solver(
+                SENSORS, tdoa, c, return_history=True, **options)
+            iterations = len(history) - 1
             if not np.isfinite(position).all() or not np.isfinite(r0):
                 raise RuntimeError('Solver returned non-finite values')
             distances = np.linalg.norm(position - SENSORS, axis=1)
-            row.update(x_m=position[0], y_m=position[1],
+            row.update(x_m=position[0], y_m=position[1], iterations=iterations,
                        position_error_m=np.linalg.norm(position - true_pos),
                        r0_m=r0, r0_signed_error_m=r0 - true_r0,
                        r0_absolute_error_m=abs(r0 - true_r0),
                        geometric_r0_m=distances[0],
                        geometric_r0_absolute_error_m=abs(distances[0] - true_r0),
                        r0_consistency_gap_m=r0 - distances[0],
-                       objective_m2=problem.objective(position, SENSORS, c * tdoa))
+                       objective_m2=problem.objective(
+                           np.r_[position, r0] if ocp == 'constrained_least_square' else position,
+                           SENSORS, c * tdoa))
         except (ValueError, RuntimeError, np.linalg.LinAlgError) as exc:
             row['status'] = f'failed: {exc}'
         rows.append(row)
@@ -150,12 +172,21 @@ def compare_solvers(csv_path, true_pos, *, c=SOUND_SPEED, low_hz=30_000,
     return rows, tdoa
 
 
-def plot_comparison(rows, true_pos, tdoa=None, c=SOUND_SPEED):
+def plot_comparison(rows, true_pos, tdoa=None, c=SOUND_SPEED, *, separate=False):
     import matplotlib.pyplot as plt
 
-    fig, axes = plt.subplots(2, 2, figsize=(15, 10), constrained_layout=True)
-    ax, time_ax, error_ax, r0_ax = axes.flat
-    colors = plt.get_cmap('tab10').colors
+    if not rows:
+        raise ValueError('No midterm solvers available to plot')
+
+    if separate:
+        panels = [plt.subplots(figsize=(8, 6.4), constrained_layout=True) for _ in range(4)]
+        figures, axes = zip(*panels)
+        ax, time_ax, error_ax, iteration_ax = axes
+    else:
+        fig, axes = plt.subplots(2, 2, figsize=(16, 12.8), constrained_layout=True)
+        ax, time_ax, error_ax, iteration_ax = axes.flat
+    # ColorBrewer qualitative colors, as used by the reference linspecer palette.
+    colors = ['#377eb8', '#e41a1c', '#4daf4a', '#ff7f00', '#984ea3', '#a65628']
     markers = ['o', 's', '^', 'D', 'p', 'h']
     for axis in (ax,):
         axis.scatter(*true_pos, marker='*', s=180, color='black', label='True source', zorder=5)
@@ -171,8 +202,8 @@ def plot_comparison(rows, true_pos, tdoa=None, c=SOUND_SPEED):
         for axis in (ax,):
             axis.scatter(row['x_m'], row['y_m'], marker=markers[i % len(markers)],
                          s=100 + i * 45, facecolors='none',
-                         edgecolors=colors[i], linewidths=1.8, label=row['solver'], zorder=3)
-    ax.set_title('Sensor geometry, TDOA hyperbolas and estimates')
+                         edgecolors=colors[i], linewidths=1.8, label='baseline' if row['solver'] == 'linear_least_squares' else row['solver'].replace('_', ' '), zorder=3)
+    ax.set_title('Position estimation')
     points = np.vstack((SENSORS, true_pos))
     estimates = [[row['x_m'], row['y_m']] for row in rows
                  if row['status'] == 'ok' and
@@ -209,9 +240,10 @@ def plot_comparison(rows, true_pos, tdoa=None, c=SOUND_SPEED):
                          + across[:, None] * perpendicular)
             ax.plot(curve[:, 0], curve[:, 1], linewidth=1.1, alpha=0.75,
                     color=colors[i % len(colors)], zorder=1,
-                    label=f'{RX_COLUMNS[i]} - {RX_COLUMNS[0]} TDOA')
-    ax.legend(fontsize=8)
-    labels = [row['solver'].replace('_', '\n') for row in rows]
+                    label='_nolegend_')
+    ax.legend(loc='lower right', fontsize=8)
+    labels = ['baseline' if row['solver'] == 'linear_least_squares'
+              else row['solver'].replace('_', '\n') for row in rows]
     indices = np.arange(len(rows))
     times = np.array([row['solve_time_ms'] if row['status'] == 'ok'
                       and row['timing_status'] == 'ok' else np.nan for row in rows])
@@ -228,20 +260,20 @@ def plot_comparison(rows, true_pos, tdoa=None, c=SOUND_SPEED):
         time_ax.annotate(f'{times[i]:.3f}',
                          (i, rows[i]['solve_time_p75_ms']), xytext=(0, 5),
                          textcoords='offset points', ha='center', fontsize=9)
-    time_ax.set(title=f"Solver time: median of {rows[0]['timing_repeats']} shuffled calls"
-                      f" ({rows[0]['timing_warmup']} warmups)",
+    time_ax.set(title='Solver time',
                 ylabel='Full call including initialization [ms]')
     bars = error_ax.bar(indices, [row['position_error_m'] * 1000 for row in rows],
                         color=colors[:len(rows)])
     error_ax.bar_label(bars, fmt='%.4f', padding=4, fontsize=9)
     error_ax.set(title='Position estimation error', ylabel='||estimated position - true position|| [mm]')
-    bars = r0_ax.bar(indices, [row['r0_absolute_error_m'] * 1000 for row in rows],
-                     label='Returned r0', color='#4477aa')
-    r0_ax.bar_label(bars, fmt='%.4f', padding=4, fontsize=8)
-    r0_ax.set(title='Reference distance error (r0 = distance to reference sensor)',
-              ylabel='|estimated r0 - true r0| [mm]')
-    r0_ax.legend(fontsize=8)
-    for axis in (time_ax, error_ax, r0_ax):
+    counts = [row['iterations'] if row['status'] == 'ok' else np.nan for row in rows]
+    bars = iteration_ax.bar(indices, counts, color=colors[:len(rows)])
+    iteration_ax.bar_label(bars, fmt='%.0f', padding=4, fontsize=9)
+    iteration_ax.set(title='Solver iterations',
+                     ylabel='Completed outer iterations (direct solve: 0)')
+    from matplotlib.ticker import MaxNLocator
+    iteration_ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+    for axis in (time_ax, error_ax, iteration_ax):
         axis.set_xticks(indices, labels, fontsize=8)
         axis.set_ylim(bottom=0)
         axis.margins(y=0.25)
@@ -250,8 +282,62 @@ def plot_comparison(rows, true_pos, tdoa=None, c=SOUND_SPEED):
             if row['status'] != 'ok' or (axis is time_ax and row['timing_status'] != 'ok'):
                 axis.text(i, 0.05, 'FAILED', transform=axis.get_xaxis_transform(),
                           ha='center', color='red', fontsize=8)
+    # Typography and canvas proportions follow paper_quality_plot.matlab/template.m.
+    # Apply explicitly so other entry points are not affected by global rcParams.
+    from matplotlib.text import Text
+    for axis in (ax, time_ax, error_ax, iteration_ax):
+        axis.set_axisbelow(True)
+        axis.tick_params(axis='both', labelsize=13, direction='in', width=1, length=5)
+        for spine in axis.spines.values():
+            spine.set_linewidth(1)
+        axis.grid(True, alpha=0.22, linewidth=0.7)
+        axis.title.set_fontsize(19)
+        axis.xaxis.label.set_fontsize(17)
+        axis.yaxis.label.set_fontsize(17)
+        for text in axis.texts:
+            text.set_fontsize(13)
+        legend = axis.get_legend()
+        if legend is not None:
+            for text in legend.get_texts():
+                text.set_fontsize(15)
+            legend.get_frame().set_facecolor('white')
+            legend.get_frame().set_alpha(0.95)
+            legend.get_frame().set_edgecolor('0.7')
+        for line in axis.lines:
+            line.set_linewidth(2.25)
+        for text in axis.findobj(match=Text):
+            text.set_fontfamily('DejaVu Serif')
+    if separate:
+        return figures
     fig.suptitle('TDOA solver comparison — single-record errors (not confidence intervals)')
     return fig
+
+
+def save_panel_results(figures, rows, true_pos, output_dir):
+    """Save four plots and their matching metrics for the displayed solvers."""
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    selected = [dict(row) for row in rows]
+    for row in selected:
+        row.update(true_x_m=float(true_pos[0]), true_y_m=float(true_pos[1]),
+                   position_error_mm=row['position_error_m'] * 1000)
+    common = ['solver', 'status', 'ocp']
+    panels = [
+        ('position_estimates', ['x_m', 'y_m', 'true_x_m', 'true_y_m']),
+        ('solver_time', ['solve_time_ms', 'solve_time_p25_ms', 'solve_time_p75_ms',
+                         'timing_samples', 'timing_warmup', 'timing_repeats',
+                         'timing_seed', 'timing_status']),
+        ('position_error', ['position_error_mm']),
+        ('iterations', ['iterations']),
+    ]
+    for figure, (name, fields) in zip(figures, panels):
+        figure.savefig(output_dir / f'{name}.png', dpi=300)
+        with (output_dir / f'{name}.csv').open('w', newline='') as stream:
+            writer = csv.DictWriter(stream, fieldnames=common + fields,
+                                    extrasaction='ignore', lineterminator='\n')
+            writer.writeheader()
+            writer.writerows(selected)
+        print(f'Saved: {output_dir / name}.png, {output_dir / name}.csv')
 
 
 def main():
@@ -270,7 +356,7 @@ def main():
     parser.add_argument('--warmup', type=int, default=5, help='Warmup calls per solver (default: 5)')
     parser.add_argument('--repeats', type=int, default=100, help='Timed calls per solver (default: 100)')
     parser.add_argument('--timing-seed', type=int, default=42, help='Seed for shuffled solver order')
-    parser.add_argument('--output-dir', type=Path, default=Path('results/solver_comparison'))
+    parser.add_argument('--output-dir', type=Path, default=Path(__file__).resolve().parent / 'midterm_results')
     parser.add_argument('--no-show', action='store_true')
     args = parser.parse_args()
     try:
@@ -292,12 +378,15 @@ def main():
         parser.error(str(exc))
     print(f'Nonlinear initial position [m]: {initial_position(SENSORS, tdoa, args.sound_speed)[0]}')
     print(f'True position [m]: {true_pos}; true r0 [m]: {rows[0]["true_r0_m"]:.9f}')
-    if len(SENSORS) < 4:
+    if 'linear_least_squares' in selected_solvers(args.ocp) and len(SENSORS) < 4:
         print('linear_least_squares: FAILED; select at least four sensors.')
     if args.csv is None:
         for label, path in zip(RX_COLUMNS, CSV_FILES):
             print(f'Input {label}: {path}')
-    print('Nonlinear OCP:', args.ocp, '; linear OCP: linear_least_square')
+    print('OCP:', args.ocp)
+    print('Solver family:', 'constrained' if args.ocp == 'constrained_least_square' else 'unconstrained')
+    if args.ocp == 'error_least_square':
+        print('Linear baseline OCP: linear_least_square')
     print('Propagation:', 'round-trip' if round_trip else 'one-way')
     print(f'Localization TDOA [s] (round-trip corrected when enabled): {tdoa}')
     print(f'{"Solver":<24} {"Position error [mm]":>20} {"r0 error [mm]":>17} {"r0 - geometric [mm]":>23}')
@@ -316,19 +405,14 @@ def main():
     if args.no_show:
         matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    args.output_dir.mkdir(parents=True, exist_ok=True)
-    with (args.output_dir / 'metrics.csv').open('w', newline='') as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator='\n')
-        writer.writeheader()
-        writer.writerows(rows)
-    fig = plot_comparison(rows, true_pos, tdoa, args.sound_speed)
+    figures = plot_comparison(rows, true_pos, tdoa, args.sound_speed, separate=True)
     try:
-        fig.savefig(args.output_dir / 'comparison.png', dpi=160)
-        print(f'Saved: {args.output_dir / "comparison.png"}, {args.output_dir / "metrics.csv"}')
+        save_panel_results(figures, rows, true_pos, args.output_dir)
         if not args.no_show:
             plt.show()
     finally:
-        plt.close(fig)
+        for figure in figures:
+            plt.close(figure)
     if any(row['status'] != 'ok' or row['timing_status'] != 'ok' for row in rows):
         raise SystemExit(1)
 

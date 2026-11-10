@@ -11,7 +11,6 @@ can start exactly at the reference sensor without undefined derivatives.
 import numpy as np
 
 DISTANCE_EPS_M = 1e-9
-IMPLEMENTED = True
 
 
 def _distances(offsets):
